@@ -1,0 +1,1612 @@
+Added Component: Designator=C?_Balance_Circuit1(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit2(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit3(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit4(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit5(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit6(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit7(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit8(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit9(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit10(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit11(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?_Balance_Circuit12(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Added Component: Designator=C?(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Added Component: Designator=C?(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Added Component: Designator=C?(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit1(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit2(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit3(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit4(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit5(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit6(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit7(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit8(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit9(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit10(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit11(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=D?_Balance_Circuit12(LED (0603))
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/150060BS55040.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2621640.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "470nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Size"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "80mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150060BS55040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "4000=0.09100, 8000=0.08800, 12000=0.08500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "950"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1764994"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit1(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit2(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit3(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit4(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit5(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit6(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit7(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit8(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit9(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit10(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit11(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=F?_Balance_Circuit12(LFUS-461_V)
+Add component (AddParameter): Name = "Body Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Height"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Length"; Value = "10.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Width"; Value = "3.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_461_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "05/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimensions"; Value = "10.1mmLx3.12mmW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Factory Pack Quantity"; Value = "2500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Size / Group"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "TimeDelay/SlowBlow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interrupt Rating"; Value = "60Ampsat600VoltsAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.littelfuse.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-55Cto+125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 10.1 x 3.12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "SurfaceMountFuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "SurfaceMountFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "560mOhms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "461"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tradename"; Value = "TeleLink"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "TelelinkSurgeResistantSMD/SMTFuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating AC"; Value = "600V"; VariantName = "[No Variations]"
+Added Component: Designator=Q?_Balance_Circuit1(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit2(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit3(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit4(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit5(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit6(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit7(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit8(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit9(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit10(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit11(FP-SOT23-MFG)
+Added Component: Designator=Q?_Balance_Circuit12(FP-SOT23-MFG)
+Added Component: Designator=Q?(ONSC-SOT-223-4-318E-04_V)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.onsemi.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.onsemi.cn/pub_link/Collateral/NSS1C201MZ4-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.onsemi.com/pub_link/Collateral/318E-04.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. 4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "IC Continuous (A)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "On Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "4-Pin Small Outline Transistor, Body 6.5 x 3.5 mm, Pitch 2.3 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT-223-4-318E-04"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Rev. N, 08/2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "NSV1C201MZ4T1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit1(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit1(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit1(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit1(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit2(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit2(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit2(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit2(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit3(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit3(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit3(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit3(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit4(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit4(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit4(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit4(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit5(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit5(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit5(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit5(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit6(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit6(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit6(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit6(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit7(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit7(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit7(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit7(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit8(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit8(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit8(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit8(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit9(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit9(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit9(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit9(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit10(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit10(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit10(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit10(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit11(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit11(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit11(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit11(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit12(R-0603)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.14000, 10=0.07400, 50=0.07400, 100=0.02600, 1000=0.01900, 10000=0.01200 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "583R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "17347"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "603-RT0603DRE07583RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "583R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit12(R_0805)
+Add component (AddParameter): Name = "Value"; Value = "??R"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit12(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R?_Balance_Circuit12(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "3.3k"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R-0603)
+Add component (AddParameter): Name = "Value"; Value = "100R"; VariantName = "[No Variations]"
+Added Component: Designator=U?(48-Lead SSOP)
+Add component (AddParameter): Name = "Case/Package"; Value = "SSOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Battery Management"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.linear.com/docs/55980?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.linear.com/docs/55980?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices / Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "LTC6811"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Add_me"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=C0 Pin=U?-26
+Added Net: Name=C0
+Added Pin To Net: NetName=C1 Pin=U?-24
+Added Net: Name=C1
+Added Pin To Net: NetName=C2 Pin=U?-22
+Added Net: Name=C2
+Added Pin To Net: NetName=C3 Pin=U?-20
+Added Net: Name=C3
+Added Pin To Net: NetName=C4 Pin=U?-18
+Added Net: Name=C4
+Added Pin To Net: NetName=C5 Pin=U?-16
+Added Net: Name=C5
+Added Pin To Net: NetName=C6 Pin=U?-14
+Added Net: Name=C6
+Added Pin To Net: NetName=C7 Pin=U?-12
+Added Net: Name=C7
+Added Pin To Net: NetName=C8 Pin=U?-10
+Added Net: Name=C8
+Added Pin To Net: NetName=C9 Pin=U?-8
+Added Net: Name=C9
+Added Pin To Net: NetName=C10 Pin=U?-6
+Added Net: Name=C10
+Added Pin To Net: NetName=C11 Pin=U?-4
+Added Net: Name=C11
+Added Pin To Net: NetName=C12 Pin=U?-2
+Added Net: Name=C12
+Added Pin To Net: NetName=Cn1 Pin=C?_Balance_Circuit1-2
+Added Pin To Net: NetName=Cn1 Pin=R?_Balance_Circuit1-2
+Added Net: Name=Cn1
+Added Pin To Net: NetName=Cn2 Pin=C?_Balance_Circuit2-2
+Added Pin To Net: NetName=Cn2 Pin=R?_Balance_Circuit2-2
+Added Net: Name=Cn2
+Added Pin To Net: NetName=Cn3 Pin=C?_Balance_Circuit3-2
+Added Pin To Net: NetName=Cn3 Pin=R?_Balance_Circuit3-2
+Added Net: Name=Cn3
+Added Pin To Net: NetName=Cn4 Pin=C?_Balance_Circuit4-2
+Added Pin To Net: NetName=Cn4 Pin=R?_Balance_Circuit4-2
+Added Net: Name=Cn4
+Added Pin To Net: NetName=Cn5 Pin=C?_Balance_Circuit5-2
+Added Pin To Net: NetName=Cn5 Pin=R?_Balance_Circuit5-2
+Added Net: Name=Cn5
+Added Pin To Net: NetName=Cn6 Pin=C?_Balance_Circuit6-2
+Added Pin To Net: NetName=Cn6 Pin=R?_Balance_Circuit6-2
+Added Net: Name=Cn6
+Added Pin To Net: NetName=Cn7 Pin=C?_Balance_Circuit7-2
+Added Pin To Net: NetName=Cn7 Pin=R?_Balance_Circuit7-2
+Added Net: Name=Cn7
+Added Pin To Net: NetName=Cn8 Pin=C?_Balance_Circuit8-2
+Added Pin To Net: NetName=Cn8 Pin=R?_Balance_Circuit8-2
+Added Net: Name=Cn8
+Added Pin To Net: NetName=Cn9 Pin=C?_Balance_Circuit9-2
+Added Pin To Net: NetName=Cn9 Pin=R?_Balance_Circuit9-2
+Added Net: Name=Cn9
+Added Pin To Net: NetName=Cn10 Pin=C?_Balance_Circuit10-2
+Added Pin To Net: NetName=Cn10 Pin=R?_Balance_Circuit10-2
+Added Net: Name=Cn10
+Added Pin To Net: NetName=Cn11 Pin=C?_Balance_Circuit11-2
+Added Pin To Net: NetName=Cn11 Pin=R?_Balance_Circuit11-2
+Added Net: Name=Cn11
+Added Pin To Net: NetName=Cn12 Pin=C?_Balance_Circuit12-2
+Added Pin To Net: NetName=Cn12 Pin=R?_Balance_Circuit12-2
+Added Net: Name=Cn12
+Added Pin To Net: NetName=DRIVE Pin=Q?-1
+Added Pin To Net: NetName=DRIVE Pin=U?-38
+Added Net: Name=DRIVE
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=U?-30
+Added Pin To Net: NetName=GND Pin=U?-31
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=Q?-4
+Added Pin To Net: NetName=NetC?_2 Pin=R?-1
+Added Net: Name=NetC?_2
+Added Pin To Net: NetName=NetC?_Balance_Circuit1_1 Pin=C?_Balance_Circuit1-1
+Added Net: Name=NetC?_Balance_Circuit1_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit2_1 Pin=C?_Balance_Circuit2-1
+Added Net: Name=NetC?_Balance_Circuit2_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit3_1 Pin=C?_Balance_Circuit3-1
+Added Net: Name=NetC?_Balance_Circuit3_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit4_1 Pin=C?_Balance_Circuit4-1
+Added Net: Name=NetC?_Balance_Circuit4_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit5_1 Pin=C?_Balance_Circuit5-1
+Added Net: Name=NetC?_Balance_Circuit5_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit6_1 Pin=C?_Balance_Circuit6-1
+Added Net: Name=NetC?_Balance_Circuit6_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit7_1 Pin=C?_Balance_Circuit7-1
+Added Net: Name=NetC?_Balance_Circuit7_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit8_1 Pin=C?_Balance_Circuit8-1
+Added Net: Name=NetC?_Balance_Circuit8_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit9_1 Pin=C?_Balance_Circuit9-1
+Added Net: Name=NetC?_Balance_Circuit9_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit10_1 Pin=C?_Balance_Circuit10-1
+Added Net: Name=NetC?_Balance_Circuit10_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit11_1 Pin=C?_Balance_Circuit11-1
+Added Net: Name=NetC?_Balance_Circuit11_1
+Added Pin To Net: NetName=NetC?_Balance_Circuit12_1 Pin=C?_Balance_Circuit12-1
+Added Net: Name=NetC?_Balance_Circuit12_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit1_1 Pin=D?_Balance_Circuit1-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit1_1 Pin=R?_Balance_Circuit1-1
+Added Net: Name=NetD?_Balance_Circuit1_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit1_2 Pin=D?_Balance_Circuit1-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit1_2 Pin=Q?_Balance_Circuit1-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit1_2 Pin=R?_Balance_Circuit1-1
+Added Net: Name=NetD?_Balance_Circuit1_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit2_1 Pin=D?_Balance_Circuit2-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit2_1 Pin=R?_Balance_Circuit2-1
+Added Net: Name=NetD?_Balance_Circuit2_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit2_2 Pin=D?_Balance_Circuit2-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit2_2 Pin=Q?_Balance_Circuit2-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit2_2 Pin=R?_Balance_Circuit2-1
+Added Net: Name=NetD?_Balance_Circuit2_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit3_1 Pin=D?_Balance_Circuit3-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit3_1 Pin=R?_Balance_Circuit3-1
+Added Net: Name=NetD?_Balance_Circuit3_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit3_2 Pin=D?_Balance_Circuit3-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit3_2 Pin=Q?_Balance_Circuit3-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit3_2 Pin=R?_Balance_Circuit3-1
+Added Net: Name=NetD?_Balance_Circuit3_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit4_1 Pin=D?_Balance_Circuit4-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit4_1 Pin=R?_Balance_Circuit4-1
+Added Net: Name=NetD?_Balance_Circuit4_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit4_2 Pin=D?_Balance_Circuit4-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit4_2 Pin=Q?_Balance_Circuit4-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit4_2 Pin=R?_Balance_Circuit4-1
+Added Net: Name=NetD?_Balance_Circuit4_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit5_1 Pin=D?_Balance_Circuit5-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit5_1 Pin=R?_Balance_Circuit5-1
+Added Net: Name=NetD?_Balance_Circuit5_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit5_2 Pin=D?_Balance_Circuit5-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit5_2 Pin=Q?_Balance_Circuit5-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit5_2 Pin=R?_Balance_Circuit5-1
+Added Net: Name=NetD?_Balance_Circuit5_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit6_1 Pin=D?_Balance_Circuit6-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit6_1 Pin=R?_Balance_Circuit6-1
+Added Net: Name=NetD?_Balance_Circuit6_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit6_2 Pin=D?_Balance_Circuit6-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit6_2 Pin=Q?_Balance_Circuit6-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit6_2 Pin=R?_Balance_Circuit6-1
+Added Net: Name=NetD?_Balance_Circuit6_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit7_1 Pin=D?_Balance_Circuit7-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit7_1 Pin=R?_Balance_Circuit7-1
+Added Net: Name=NetD?_Balance_Circuit7_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit7_2 Pin=D?_Balance_Circuit7-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit7_2 Pin=Q?_Balance_Circuit7-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit7_2 Pin=R?_Balance_Circuit7-1
+Added Net: Name=NetD?_Balance_Circuit7_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit8_1 Pin=D?_Balance_Circuit8-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit8_1 Pin=R?_Balance_Circuit8-1
+Added Net: Name=NetD?_Balance_Circuit8_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit8_2 Pin=D?_Balance_Circuit8-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit8_2 Pin=Q?_Balance_Circuit8-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit8_2 Pin=R?_Balance_Circuit8-1
+Added Net: Name=NetD?_Balance_Circuit8_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit9_1 Pin=D?_Balance_Circuit9-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit9_1 Pin=R?_Balance_Circuit9-1
+Added Net: Name=NetD?_Balance_Circuit9_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit9_2 Pin=D?_Balance_Circuit9-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit9_2 Pin=Q?_Balance_Circuit9-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit9_2 Pin=R?_Balance_Circuit9-1
+Added Net: Name=NetD?_Balance_Circuit9_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit10_1 Pin=D?_Balance_Circuit10-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit10_1 Pin=R?_Balance_Circuit10-1
+Added Net: Name=NetD?_Balance_Circuit10_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit10_2 Pin=D?_Balance_Circuit10-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit10_2 Pin=Q?_Balance_Circuit10-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit10_2 Pin=R?_Balance_Circuit10-1
+Added Net: Name=NetD?_Balance_Circuit10_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit11_1 Pin=D?_Balance_Circuit11-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit11_1 Pin=R?_Balance_Circuit11-1
+Added Net: Name=NetD?_Balance_Circuit11_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit11_2 Pin=D?_Balance_Circuit11-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit11_2 Pin=Q?_Balance_Circuit11-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit11_2 Pin=R?_Balance_Circuit11-1
+Added Net: Name=NetD?_Balance_Circuit11_2
+Added Pin To Net: NetName=NetD?_Balance_Circuit12_1 Pin=D?_Balance_Circuit12-1
+Added Pin To Net: NetName=NetD?_Balance_Circuit12_1 Pin=R?_Balance_Circuit12-1
+Added Net: Name=NetD?_Balance_Circuit12_1
+Added Pin To Net: NetName=NetD?_Balance_Circuit12_2 Pin=D?_Balance_Circuit12-2
+Added Pin To Net: NetName=NetD?_Balance_Circuit12_2 Pin=Q?_Balance_Circuit12-3
+Added Pin To Net: NetName=NetD?_Balance_Circuit12_2 Pin=R?_Balance_Circuit12-1
+Added Net: Name=NetD?_Balance_Circuit12_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit1_1 Pin=F?_Balance_Circuit1-1
+Added Net: Name=NetF?_Balance_Circuit1_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit1_2 Pin=F?_Balance_Circuit1-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit1_2 Pin=Q?_Balance_Circuit1-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit1_2 Pin=R?_Balance_Circuit1-1
+Added Net: Name=NetF?_Balance_Circuit1_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit2_1 Pin=F?_Balance_Circuit2-1
+Added Net: Name=NetF?_Balance_Circuit2_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit2_2 Pin=F?_Balance_Circuit2-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit2_2 Pin=Q?_Balance_Circuit2-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit2_2 Pin=R?_Balance_Circuit2-1
+Added Net: Name=NetF?_Balance_Circuit2_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit3_1 Pin=F?_Balance_Circuit3-1
+Added Net: Name=NetF?_Balance_Circuit3_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit3_2 Pin=F?_Balance_Circuit3-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit3_2 Pin=Q?_Balance_Circuit3-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit3_2 Pin=R?_Balance_Circuit3-1
+Added Net: Name=NetF?_Balance_Circuit3_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit4_1 Pin=F?_Balance_Circuit4-1
+Added Net: Name=NetF?_Balance_Circuit4_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit4_2 Pin=F?_Balance_Circuit4-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit4_2 Pin=Q?_Balance_Circuit4-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit4_2 Pin=R?_Balance_Circuit4-1
+Added Net: Name=NetF?_Balance_Circuit4_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit5_1 Pin=F?_Balance_Circuit5-1
+Added Net: Name=NetF?_Balance_Circuit5_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit5_2 Pin=F?_Balance_Circuit5-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit5_2 Pin=Q?_Balance_Circuit5-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit5_2 Pin=R?_Balance_Circuit5-1
+Added Net: Name=NetF?_Balance_Circuit5_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit6_1 Pin=F?_Balance_Circuit6-1
+Added Net: Name=NetF?_Balance_Circuit6_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit6_2 Pin=F?_Balance_Circuit6-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit6_2 Pin=Q?_Balance_Circuit6-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit6_2 Pin=R?_Balance_Circuit6-1
+Added Net: Name=NetF?_Balance_Circuit6_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit7_1 Pin=F?_Balance_Circuit7-1
+Added Net: Name=NetF?_Balance_Circuit7_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit7_2 Pin=F?_Balance_Circuit7-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit7_2 Pin=Q?_Balance_Circuit7-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit7_2 Pin=R?_Balance_Circuit7-1
+Added Net: Name=NetF?_Balance_Circuit7_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit8_1 Pin=F?_Balance_Circuit8-1
+Added Net: Name=NetF?_Balance_Circuit8_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit8_2 Pin=F?_Balance_Circuit8-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit8_2 Pin=Q?_Balance_Circuit8-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit8_2 Pin=R?_Balance_Circuit8-1
+Added Net: Name=NetF?_Balance_Circuit8_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit9_1 Pin=F?_Balance_Circuit9-1
+Added Net: Name=NetF?_Balance_Circuit9_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit9_2 Pin=F?_Balance_Circuit9-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit9_2 Pin=Q?_Balance_Circuit9-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit9_2 Pin=R?_Balance_Circuit9-1
+Added Net: Name=NetF?_Balance_Circuit9_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit10_1 Pin=F?_Balance_Circuit10-1
+Added Net: Name=NetF?_Balance_Circuit10_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit10_2 Pin=F?_Balance_Circuit10-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit10_2 Pin=Q?_Balance_Circuit10-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit10_2 Pin=R?_Balance_Circuit10-1
+Added Net: Name=NetF?_Balance_Circuit10_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit11_1 Pin=F?_Balance_Circuit11-1
+Added Net: Name=NetF?_Balance_Circuit11_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit11_2 Pin=F?_Balance_Circuit11-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit11_2 Pin=Q?_Balance_Circuit11-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit11_2 Pin=R?_Balance_Circuit11-1
+Added Net: Name=NetF?_Balance_Circuit11_2
+Added Pin To Net: NetName=NetF?_Balance_Circuit12_1 Pin=F?_Balance_Circuit12-1
+Added Net: Name=NetF?_Balance_Circuit12_1
+Added Pin To Net: NetName=NetF?_Balance_Circuit12_2 Pin=F?_Balance_Circuit12-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit12_2 Pin=Q?_Balance_Circuit12-2
+Added Pin To Net: NetName=NetF?_Balance_Circuit12_2 Pin=R?_Balance_Circuit12-1
+Added Net: Name=NetF?_Balance_Circuit12_2
+Added Pin To Net: NetName=NetQ?_Balance_Circuit1_1 Pin=Q?_Balance_Circuit1-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit1_1 Pin=R?_Balance_Circuit1-1
+Added Net: Name=NetQ?_Balance_Circuit1_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit2_1 Pin=Q?_Balance_Circuit2-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit2_1 Pin=R?_Balance_Circuit2-1
+Added Net: Name=NetQ?_Balance_Circuit2_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit3_1 Pin=Q?_Balance_Circuit3-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit3_1 Pin=R?_Balance_Circuit3-1
+Added Net: Name=NetQ?_Balance_Circuit3_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit4_1 Pin=Q?_Balance_Circuit4-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit4_1 Pin=R?_Balance_Circuit4-1
+Added Net: Name=NetQ?_Balance_Circuit4_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit5_1 Pin=Q?_Balance_Circuit5-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit5_1 Pin=R?_Balance_Circuit5-1
+Added Net: Name=NetQ?_Balance_Circuit5_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit6_1 Pin=Q?_Balance_Circuit6-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit6_1 Pin=R?_Balance_Circuit6-1
+Added Net: Name=NetQ?_Balance_Circuit6_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit7_1 Pin=Q?_Balance_Circuit7-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit7_1 Pin=R?_Balance_Circuit7-1
+Added Net: Name=NetQ?_Balance_Circuit7_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit8_1 Pin=Q?_Balance_Circuit8-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit8_1 Pin=R?_Balance_Circuit8-1
+Added Net: Name=NetQ?_Balance_Circuit8_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit9_1 Pin=Q?_Balance_Circuit9-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit9_1 Pin=R?_Balance_Circuit9-1
+Added Net: Name=NetQ?_Balance_Circuit9_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit10_1 Pin=Q?_Balance_Circuit10-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit10_1 Pin=R?_Balance_Circuit10-1
+Added Net: Name=NetQ?_Balance_Circuit10_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit11_1 Pin=Q?_Balance_Circuit11-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit11_1 Pin=R?_Balance_Circuit11-1
+Added Net: Name=NetQ?_Balance_Circuit11_1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit12_1 Pin=Q?_Balance_Circuit12-1
+Added Pin To Net: NetName=NetQ?_Balance_Circuit12_1 Pin=R?_Balance_Circuit12-1
+Added Net: Name=NetQ?_Balance_Circuit12_1
+Added Pin To Net: NetName=NetR?_Balance_Circuit1_2 Pin=R?_Balance_Circuit1-2
+Added Net: Name=NetR?_Balance_Circuit1_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit2_2 Pin=R?_Balance_Circuit2-2
+Added Net: Name=NetR?_Balance_Circuit2_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit3_2 Pin=R?_Balance_Circuit3-2
+Added Net: Name=NetR?_Balance_Circuit3_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit4_2 Pin=R?_Balance_Circuit4-2
+Added Net: Name=NetR?_Balance_Circuit4_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit5_2 Pin=R?_Balance_Circuit5-2
+Added Net: Name=NetR?_Balance_Circuit5_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit6_2 Pin=R?_Balance_Circuit6-2
+Added Pin To Net: NetName=NetR?_Balance_Circuit6_2 Pin=R?_Balance_Circuit6-2
+Added Net: Name=NetR?_Balance_Circuit6_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit7_2 Pin=R?_Balance_Circuit7-2
+Added Pin To Net: NetName=NetR?_Balance_Circuit7_2 Pin=R?_Balance_Circuit7-2
+Added Net: Name=NetR?_Balance_Circuit7_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit8_2 Pin=R?_Balance_Circuit8-2
+Added Net: Name=NetR?_Balance_Circuit8_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit9_2 Pin=R?_Balance_Circuit9-2
+Added Net: Name=NetR?_Balance_Circuit9_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit10_2 Pin=R?_Balance_Circuit10-2
+Added Net: Name=NetR?_Balance_Circuit10_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit11_2 Pin=R?_Balance_Circuit11-2
+Added Pin To Net: NetName=NetR?_Balance_Circuit11_2 Pin=R?_Balance_Circuit11-2
+Added Net: Name=NetR?_Balance_Circuit11_2
+Added Pin To Net: NetName=NetR?_Balance_Circuit12_2 Pin=R?_Balance_Circuit12-2
+Added Pin To Net: NetName=NetR?_Balance_Circuit12_2 Pin=R?_Balance_Circuit12-2
+Added Net: Name=NetR?_Balance_Circuit12_2
+Added Pin To Net: NetName=S1 Pin=U?-25
+Added Net: Name=S1
+Added Pin To Net: NetName=S2 Pin=U?-23
+Added Net: Name=S2
+Added Pin To Net: NetName=S4 Pin=U?-19
+Added Pin To Net: NetName=S4 Pin=U?-21
+Added Net: Name=S4
+Added Pin To Net: NetName=S5 Pin=U?-17
+Added Net: Name=S5
+Added Pin To Net: NetName=S6 Pin=U?-15
+Added Net: Name=S6
+Added Pin To Net: NetName=S7 Pin=U?-13
+Added Net: Name=S7
+Added Pin To Net: NetName=S8 Pin=U?-11
+Added Net: Name=S8
+Added Pin To Net: NetName=S9 Pin=U?-9
+Added Net: Name=S9
+Added Pin To Net: NetName=S10 Pin=U?-7
+Added Net: Name=S10
+Added Pin To Net: NetName=S11 Pin=U?-5
+Added Net: Name=S11
+Added Pin To Net: NetName=S12 Pin=U?-3
+Added Net: Name=S12
+Added Pin To Net: NetName=SCL1 Pin=U?-33
+Added Net: Name=SCL1
+Added Pin To Net: NetName=SDA1 Pin=U?-32
+Added Net: Name=SDA1
+Added Pin To Net: NetName=V_C12 Pin=R?-2
+Added Pin To Net: NetName=V_C12 Pin=U?-1
+Added Net: Name=V_C12
+Added Pin To Net: NetName=VREF1 Pin=C?-2
+Added Pin To Net: NetName=VREF1 Pin=U?-35
+Added Net: Name=VREF1
+Added Pin To Net: NetName=VREF2 Pin=C?-2
+Added Pin To Net: NetName=VREF2 Pin=U?-34
+Added Net: Name=VREF2
+Added Pin To Net: NetName=VREG Pin=C?-2
+Added Pin To Net: NetName=VREG Pin=Q?-3
+Added Pin To Net: NetName=VREG Pin=U?-37
+Added Net: Name=VREG
+Added Class: Name=Balance_Circuit1
+Added Class: Name=Balance_Circuit2
+Added Class: Name=Balance_Circuit3
+Added Class: Name=Balance_Circuit4
+Added Class: Name=Balance_Circuit5
+Added Class: Name=Balance_Circuit6
+Added Class: Name=Balance_Circuit7
+Added Class: Name=Balance_Circuit8
+Added Class: Name=Balance_Circuit9
+Added Class: Name=Balance_Circuit10
+Added Class: Name=Balance_Circuit11
+Added Class: Name=Balance_Circuit12
+Added Class: Name=Designator
+Added Class: Name=C[12..1]
+Added Class: Name=Balance_Circuit
+Added Room: Name=Balance_Circuit1
+Added Room: Name=Balance_Circuit2
+Added Room: Name=Balance_Circuit3
+Added Room: Name=Balance_Circuit4
+Added Room: Name=Balance_Circuit5
+Added Room: Name=Balance_Circuit6
+Added Room: Name=Balance_Circuit7
+Added Room: Name=Balance_Circuit8
+Added Room: Name=Balance_Circuit9
+Added Room: Name=Balance_Circuit10
+Added Room: Name=Balance_Circuit11
+Added Room: Name=Balance_Circuit12
+Added Room: Name=Designator
