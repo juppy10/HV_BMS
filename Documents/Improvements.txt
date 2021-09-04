@@ -3,3 +3,6 @@ Improvements
 - Selection of components after track data is obtain
 	- Current sense rate/accuracy
 	- Voltage sense rate
+- Power supply layout
+
+-babysitter for the cells
