@@ -193,12 +193,12 @@ GenerateClassCluster=0
 DocumentUniqueId=RBUXISFX
 
 [Parameter1]
-Name=Version
-Value=V1.0
-
-[Parameter2]
 Name=ProAuthor
 Value=William Jupp
+
+[Parameter2]
+Name=Version
+Value=V1.0
 
 [Configuration1]
 Name=Sources
