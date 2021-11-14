@@ -108,23 +108,6 @@ GenerateClassCluster=0
 DocumentUniqueId=MLXKVTFI
 
 [Document5]
-DocumentPath=Voltage Regulator.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=5
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HZBPGYJB
-
-[Document6]
 DocumentPath=Microcontroller.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -141,7 +124,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XQBSWYJZ
 
-[Document7]
+[Document6]
 DocumentPath=BSPD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -158,7 +141,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQBQKSMZ
 
-[Document8]
+[Document7]
 DocumentPath=Latching.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,6 +157,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YPWVQPCU
+
+[Document8]
+DocumentPath=ADC.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GJJKXADO
 
 [Document9]
 DocumentPath=Latching 2.SchDoc
@@ -276,6 +276,48 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document15]
+DocumentPath=SnapDocs\UA78M33CKVURG3.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document16]
+DocumentPath=SnapDocs\UA78M33CKVURG3.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Parameter1]
+Name=Version
+Value=V1.0
+
+[Parameter2]
+Name=ProAuthor
+Value=William J
 
 [Configuration1]
 Name=Sources
