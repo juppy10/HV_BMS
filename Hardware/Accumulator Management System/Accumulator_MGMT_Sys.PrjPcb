@@ -108,7 +108,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MLXKVTFI
 
 [Document5]
-DocumentPath=Microcontroller.SchDoc
+DocumentPath=STM32F4 - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -142,7 +142,7 @@ GenerateClassCluster=0
 DocumentUniqueId=JQBQKSMZ
 
 [Document7]
-DocumentPath=Latching.SchDoc
+DocumentPath=Latching - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -159,7 +159,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YPWVQPCU
 
 [Document8]
-DocumentPath=ADC.SchDoc
+DocumentPath=Current Sense - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -176,23 +176,6 @@ GenerateClassCluster=0
 DocumentUniqueId=GJJKXADO
 
 [Document9]
-DocumentPath=Latching 2.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=6
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NROBBZUS
-
-[Document10]
 DocumentPath=PDOC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -209,7 +192,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SRQXUKXA
 
-[Document11]
+[Document10]
 DocumentPath=PCHLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -226,7 +209,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JODNDIHF
 
-[Document12]
+[Document11]
 DocumentPath=PCBLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -243,7 +226,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ISCDRGQM
 
-[Document13]
+[Document12]
 DocumentPath=SnapDocs\LTC6820HMS#PBF.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -260,7 +243,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JVHTISAB
 
-[Document14]
+[Document13]
 DocumentPath=SnapDocs\LTC6820HMS#PBF.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -277,7 +260,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=SnapDocs\UA78M33CKVURG3.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -294,7 +277,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=SnapDocs\UA78M33CKVURG3.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -311,13 +294,47 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Parameter1]
-Name=Version
-Value=V1.0
+[Document16]
+DocumentPath=Independent Power Supply - AMS.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SDVRLYLO
 
-[Parameter2]
+[Document17]
+DocumentPath=CAN - STM32F4.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NVBZERYX
+
+[Parameter1]
 Name=ProAuthor
 Value=William J
+
+[Parameter2]
+Name=Version
+Value=V1.0
 
 [Configuration1]
 Name=Sources
@@ -1324,6 +1341,10 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=3V3-BMS|NetColor=$006666E0
+Net2=NetName=GND|NetColor=$00E8864A
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
