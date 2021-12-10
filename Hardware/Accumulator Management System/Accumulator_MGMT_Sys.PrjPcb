@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=2
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -13,7 +13,7 @@ TemplateLocationPath=
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
 AllowPortNetNames=0
-AllowSheetEntryNetNames=1
+AllowSheetEntryNetNames=0
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
 DefaultConfiguration=Sources
@@ -21,7 +21,7 @@ UserID=0xFFFFFFFF
 DefaultPcbProtel=1
 DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
-NameNetsHierarchically=0
+NameNetsHierarchically=1
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=0
 PushECOToAnnotationFile=1
@@ -91,7 +91,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ALQGNKEX
 
 [Document4]
-DocumentPath=Isolated Comms.SchDoc
+DocumentPath=Isolated Comms - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -101,14 +101,14 @@ AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MLXKVTFI
 
 [Document5]
-DocumentPath=STM32F4 - AMS.SchDoc
+DocumentPath=Battery Mgmt Sys - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -118,14 +118,14 @@ AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XQBSWYJZ
 
 [Document6]
-DocumentPath=BSPD.SchDoc
+DocumentPath=BSPD - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -135,7 +135,7 @@ AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -152,7 +152,7 @@ AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -165,7 +165,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=5
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -176,7 +176,7 @@ GenerateClassCluster=0
 DocumentUniqueId=GJJKXADO
 
 [Document9]
-DocumentPath=PDOC.SchDoc
+DocumentPath=PDOC - AMS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -186,11 +186,11 @@ AnnotateOrder=4
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=SRQXUKXA
+DocumentUniqueId=RBBHROKO
 
 [Document10]
 DocumentPath=PCHLib.SchLib
@@ -301,7 +301,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -318,7 +318,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=7
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -328,13 +328,183 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NVBZERYX
 
-[Parameter1]
-Name=ProAuthor
-Value=William J
+[Document18]
+DocumentPath=AMS.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VQFGSJUB
 
-[Parameter2]
+[Document19]
+DocumentPath=Accumulator_MGMT.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=8
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UGXRRJKK
+
+[Document20]
+DocumentPath=Battery Mgmt Sys - AMS.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document21]
+DocumentPath=Current Sense - AMS.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document22]
+DocumentPath=Isolated Comms - AMS.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document23]
+DocumentPath=CAN - STM32F4.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document24]
+DocumentPath=Connectors - AMS.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=9
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DLNOOAPU
+
+[Document25]
+DocumentPath=LVR - AMS.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=10
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BNEIFKCF
+
+[Document26]
+DocumentPath=Connectors - AMS.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document27]
+DocumentPath=Latch - AMS.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=11
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SFRYJADA
+
+[Parameter1]
 Name=Version
 Value=V1.0
+
+[Parameter2]
+Name=ProAuthor
+Value=William J
 
 [Configuration1]
 Name=Sources
@@ -1151,7 +1321,7 @@ Type67=1
 Type68=1
 
 [Electrical Rules Check]
-Type1=1
+Type1=0
 Type2=1
 Type3=2
 Type4=1
@@ -1160,14 +1330,14 @@ Type6=2
 Type7=0
 Type8=1
 Type9=1
-Type10=1
+Type10=0
 Type11=2
 Type12=0
 Type13=0
 Type14=1
 Type15=1
 Type16=1
-Type17=1
+Type17=0
 Type18=1
 Type19=1
 Type20=0
@@ -1262,7 +1432,7 @@ Type108=2
 Type109=1
 Type110=1
 Type111=1
-Type112=1
+Type112=0
 Type113=1
 Type114=2
 Type115=2
@@ -1318,7 +1488,7 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
@@ -1344,7 +1514,8 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=3V3-BMS|NetColor=$006666E0
-Net2=NetName=GND|NetColor=$00E8864A
+Net2=NetName=AGND|NetColor=$00460000
+Net3=NetName=GND|NetColor=$00E8864A
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
