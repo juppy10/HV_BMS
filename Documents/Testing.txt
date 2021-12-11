@@ -1,0 +1,9 @@
+HV BMS Testing
+- Thermals:
+    - Power supply
+    - Balance circuit
+
+- isoSPI performance:
+   - Measure trace impedance
+
+- thermistor measurement calibration

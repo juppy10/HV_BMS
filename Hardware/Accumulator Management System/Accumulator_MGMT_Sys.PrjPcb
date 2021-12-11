@@ -499,12 +499,12 @@ GenerateClassCluster=0
 DocumentUniqueId=SFRYJADA
 
 [Parameter1]
-Name=Version
-Value=V1.0
-
-[Parameter2]
 Name=ProAuthor
 Value=William J
+
+[Parameter2]
+Name=Version
+Value=V1.0
 
 [Configuration1]
 Name=Sources

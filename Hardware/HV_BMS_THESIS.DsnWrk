@@ -3,4 +3,4 @@ Version=1.0
 [Project1]
 ProjectPath=PCB_Project\HV_BMS.PrjPcb
 [Project2]
-ProjectPath=Master_Test_Board\Master_Test_Board.PrjPcb
+ProjectPath=..\..\ELEC5552_Design2\Hardware\ELEC5552_DataLog\ELEC5552_DataLog.PrjPcb
