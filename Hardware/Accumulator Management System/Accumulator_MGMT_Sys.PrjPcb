@@ -22,7 +22,7 @@ DefaultPcbProtel=1
 DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=1
-PowerPortNamesTakePriority=0
+PowerPortNamesTakePriority=1
 AutoSheetNumbering=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
@@ -356,7 +356,7 @@ AnnotateOrder=8
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -441,7 +441,7 @@ AnnotateOrder=9
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -499,12 +499,12 @@ GenerateClassCluster=0
 DocumentUniqueId=SFRYJADA
 
 [Parameter1]
-Name=ProAuthor
-Value=William J
-
-[Parameter2]
 Name=Version
 Value=V1.0
+
+[Parameter2]
+Name=ProAuthor
+Value=William J
 
 [Configuration1]
 Name=Sources
@@ -1513,9 +1513,28 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=3V3-BMS|NetColor=$006666E0
-Net2=NetName=AGND|NetColor=$00460000
-Net3=NetName=GND|NetColor=$00E8864A
+Net1=NetName=+12|NetColor=$00000098
+Net2=NetName=3V3-BMS|NetColor=$006666E0
+Net3=NetName=3V3-BSPD|NetColor=$000000CC
+Net4=NetName=3V3-IMD|NetColor=$006262F1
+Net5=NetName=3V3-PDOC|NetColor=clRed
+Net6=NetName=AGND|NetColor=$00460000
+Net7=NetName=GND|NetColor=$00E8864A
+Net8=NetName=Latch 3V3|NetColor=$006262F1
+Net9=NetName=Latch 3V3_Latch Circuit1|NetColor=$000000CC
+Net10=NetName=Latch 3V3_Latch Circuit2|NetColor=clRed
+Net11=NetName=Latch 3V3_Latch Circuit4|NetColor=$006262F1
+Net12=NetName=N00000|NetColor=$006262F1
+Net13=NetName=NetC41_2|NetColor=$00000098
+Net14=NetName=NetC41_Vbat-3V31_2|NetColor=$00000098
+Net15=NetName=NetC41_Vbat-3V32_2|NetColor=$00000098
+Net16=NetName=NetC41_Vbat-3V33_2|NetColor=$00000098
+Net17=NetName=NetC41_Vbat-3V34_2|NetColor=$00000098
+Net18=NetName=NetC42_2|NetColor=$006262F1
+Net19=NetName=NetC42_Vbat-3V31_2|NetColor=$006262F1
+Net20=NetName=NetC42_Vbat-3V33_2|NetColor=$000000CC
+Net21=NetName=NetC42_Vbat-3V34_2|NetColor=clRed
+Net22=NetName=NetR32_2|NetColor=clRed
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
