@@ -151,7 +151,7 @@ AnnotateScope=All
 AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
+ClassGenCCAutoEnabled=0
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
@@ -304,7 +304,7 @@ AnnotateScope=All
 AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
+ClassGenCCAutoEnabled=0
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
@@ -448,23 +448,6 @@ GenerateClassCluster=0
 DocumentUniqueId=DLNOOAPU
 
 [Document25]
-DocumentPath=LVR - AMS.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=10
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BNEIFKCF
-
-[Document26]
 DocumentPath=Connectors - AMS.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -480,6 +463,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document26]
+DocumentPath=LVR - AMS.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=10
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BNEIFKCF
 
 [Document27]
 DocumentPath=Latch - AMS.SchDoc
@@ -1531,27 +1531,28 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=+12|NetColor=$00000098
-Net2=NetName=3V3-BMS|NetColor=$006666E0
-Net3=NetName=3V3-BSPD|NetColor=$000000CC
-Net4=NetName=3V3-IMD|NetColor=$006262F1
-Net5=NetName=3V3-PDOC|NetColor=clRed
-Net6=NetName=AGND|NetColor=$00460000
-Net7=NetName=GND|NetColor=$00E8864A
-Net8=NetName=Latch 3V3|NetColor=$006262F1
-Net9=NetName=Latch 3V3_Latch Circuit1|NetColor=$000000CC
-Net10=NetName=Latch 3V3_Latch Circuit2|NetColor=clRed
-Net11=NetName=Latch 3V3_Latch Circuit4|NetColor=$006262F1
-Net12=NetName=N00000|NetColor=$006262F1
-Net13=NetName=NetC41_2|NetColor=$00000098
-Net14=NetName=NetC41_Vbat-3V31_2|NetColor=$00000098
-Net15=NetName=NetC41_Vbat-3V32_2|NetColor=$00000098
-Net16=NetName=NetC41_Vbat-3V33_2|NetColor=$00000098
-Net17=NetName=NetC41_Vbat-3V34_2|NetColor=$00000098
-Net18=NetName=NetC42_2|NetColor=$006262F1
-Net19=NetName=NetC42_Vbat-3V31_2|NetColor=$006262F1
-Net20=NetName=NetC42_Vbat-3V33_2|NetColor=$000000CC
-Net21=NetName=NetC42_Vbat-3V34_2|NetColor=clRed
-Net22=NetName=NetR32_2|NetColor=clRed
+Net2=NetName=3V3|NetColor=$006BB2F6
+Net3=NetName=3V3-BMS|NetColor=$006666E0
+Net4=NetName=3V3-BSPD|NetColor=$00065FB4
+Net5=NetName=3V3-IMD|NetColor=$006262F1
+Net6=NetName=3V3-PDOC|NetColor=$006BB2F6
+Net7=NetName=AGND|NetColor=$00460000
+Net8=NetName=GND|NetColor=$00E8864A
+Net9=NetName=Latch 3V3|NetColor=$00065FB4
+Net10=NetName=Latch 3V3_Latch Circuit1|NetColor=$00065FB4
+Net11=NetName=Latch 3V3_Latch Circuit2|NetColor=$006BB2F6
+Net12=NetName=Latch 3V3_Latch Circuit4|NetColor=$006262F1
+Net13=NetName=N00000|NetColor=$00065FB4
+Net14=NetName=NetC41_2|NetColor=$00000098
+Net15=NetName=NetC41_Vbat-3V31_2|NetColor=$00000098
+Net16=NetName=NetC41_Vbat-3V32_2|NetColor=$00000098
+Net17=NetName=NetC41_Vbat-3V33_2|NetColor=$00000098
+Net18=NetName=NetC41_Vbat-3V34_2|NetColor=$00000098
+Net19=NetName=NetC42_2|NetColor=$00065FB4
+Net20=NetName=NetC42_Vbat-3V31_2|NetColor=$006262F1
+Net21=NetName=NetC42_Vbat-3V33_2|NetColor=$00065FB4
+Net22=NetName=NetC42_Vbat-3V34_2|NetColor=$006BB2F6
+Net23=NetName=NetR32_2|NetColor=$006BB2F6
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
