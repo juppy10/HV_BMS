@@ -275,7 +275,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JVHTISAB
 
 [Document15]
 DocumentPath=SnapDocs\UA78M33CKVURG3.PcbLib
@@ -292,7 +292,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GMIVLSFD
 
 [Document16]
 DocumentPath=Independent Power Supply - AMS.SchDoc
@@ -499,7 +499,7 @@ GenerateClassCluster=0
 DocumentUniqueId=SFRYJADA
 
 [Document28]
-DocumentPath=Accumulator_MGMT_Sys.IntLib
+DocumentPath=Latching - AMS.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -516,12 +516,12 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=Version
-Value=V1.0
-
-[Parameter2]
 Name=ProAuthor
 Value=William J
+
+[Parameter2]
+Name=Version
+Value=V1.0
 
 [Configuration1]
 Name=Sources
@@ -1509,19 +1509,104 @@ SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
-FullReplace=1
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=Resistors.IntLib
+ComponentDesignItemID0=RC0805JR-0710KL
+ComponentSymbolReference0=RC0805JR-0710KL
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+FullReplace=0
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
 PreserveParameterLocations=1
 PreserveParameterVisibility=1
 DoGraphics=1
-DoParameters=1
+DoParameters=0
 DoModels=1
 AddParameters=0
 RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Case Code (Imperial)
+ParameterUpdate0=1
+ParameterName1=Case Code (Metric)
+ParameterUpdate1=1
+ParameterName2=Case/Package
+ParameterUpdate2=1
+ParameterName3=Category
+ParameterUpdate3=1
+ParameterName4=Comment
+ParameterUpdate4=1
+ParameterName5=Component Kind
+ParameterUpdate5=1
+ParameterName6=ComponentLink1Description
+ParameterUpdate6=1
+ParameterName7=ComponentLink1URL
+ParameterUpdate7=1
+ParameterName8=ComponentLink2Description
+ParameterUpdate8=1
+ParameterName9=ComponentLink2URL
+ParameterUpdate9=1
+ParameterName10=ComponentLink3Description
+ParameterUpdate10=1
+ParameterName11=ComponentLink3URL
+ParameterUpdate11=1
+ParameterName12=Composition
+ParameterUpdate12=1
+ParameterName13=Contact Plating
+ParameterUpdate13=1
+ParameterName14=Depth
+ParameterUpdate14=1
+ParameterName15=Description
+ParameterUpdate15=1
+ParameterName16=Height
+ParameterUpdate16=1
+ParameterName17=Lead Free
+ParameterUpdate17=1
+ParameterName18=Length
+ParameterUpdate18=1
+ParameterName19=Library Reference
+ParameterUpdate19=1
+ParameterName20=Max Operating Temperature
+ParameterUpdate20=1
+ParameterName21=Military Standard
+ParameterUpdate21=1
+ParameterName22=Min Operating Temperature
+ParameterUpdate22=1
+ParameterName23=MPN
+ParameterUpdate23=1
+ParameterName24=Packaging
+ParameterUpdate24=1
+ParameterName25=Power Rating
+ParameterUpdate25=1
+ParameterName26=Radiation Hardening
+ParameterUpdate26=1
+ParameterName27=REACH SVHC
+ParameterUpdate27=1
+ParameterName28=Resistance
+ParameterUpdate28=1
+ParameterName29=RoHS
+ParameterUpdate29=1
+ParameterName30=Supplier 1
+ParameterUpdate30=1
+ParameterName31=Supplier Part Number 1
+ParameterUpdate31=1
+ParameterName32=Temperature Coefficient
+ParameterUpdate32=1
+ParameterName33=Termination
+ParameterUpdate33=1
+ParameterName34=Tolerance
+ParameterUpdate34=1
+ParameterName35=Voltage Rating
+ParameterUpdate35=1
+ParameterName36=Width
+ParameterUpdate36=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=RESC1608X55N
+ModelUpdate0=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1542,7 +1627,7 @@ Net9=NetName=Latch 3V3|NetColor=$00065FB4
 Net10=NetName=Latch 3V3_Latch Circuit1|NetColor=$00065FB4
 Net11=NetName=Latch 3V3_Latch Circuit2|NetColor=$006BB2F6
 Net12=NetName=Latch 3V3_Latch Circuit4|NetColor=$006262F1
-Net13=NetName=N00000|NetColor=$00065FB4
+Net13=NetName=N00000|NetColor=clBlack
 Net14=NetName=NetC41_2|NetColor=$00000098
 Net15=NetName=NetC41_Vbat-3V31_2|NetColor=$00000098
 Net16=NetName=NetC41_Vbat-3V32_2|NetColor=$00000098
@@ -1552,7 +1637,11 @@ Net19=NetName=NetC42_2|NetColor=$00065FB4
 Net20=NetName=NetC42_Vbat-3V31_2|NetColor=$006262F1
 Net21=NetName=NetC42_Vbat-3V33_2|NetColor=$00065FB4
 Net22=NetName=NetC42_Vbat-3V34_2|NetColor=$006BB2F6
-Net23=NetName=NetR32_2|NetColor=$006BB2F6
+Net23=NetName=NetK1_11|NetColor=clBlack
+Net24=NetName=NetK1_14|NetColor=clBlack
+Net25=NetName=NetK1_Latch Circuit1_11|NetColor=clBlack
+Net26=NetName=NetK1_Latch Circuit3_14|NetColor=clBlack
+Net27=NetName=NetR32_2|NetColor=$006BB2F6
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
