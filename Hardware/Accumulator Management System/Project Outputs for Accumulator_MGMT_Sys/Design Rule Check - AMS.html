@@ -1,0 +1,598 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">31/12/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">8:36:28 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc" class="file"><acronym title="D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc">D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">66</td></tr>
+</table>
+</td>
+</table><a name="IDDNJR3L5TI04UIIKS0FVNMFY4GKC2MXTAJUJ1ULF2I4UKVAJREMRP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCF5N20HUEA05EJAVC5DVEC2OWCYOQ1TMBJH4LRHL5R34KIQKYJEO">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJNDJ1KBHY4MPEAXFLMKSCCA4SNCH2RG3GKPJWHNUA1VSSQLLUDPH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX1APM3KEL1TJOTDZFDFIWQRYPBFZDQMQMKRNTXITNX2KBJDTVJO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ4WTJQKTC3X4IYNNXUYTORMKNLILVFGRJDYLF5BTNUBMSZCIGDJB">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOSXNPWDI2ASIN12ZNCEAFPVQHKJZRQJHRLBCDHI2VYZWQAL41FWM">Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUWOJZOVFAJGKISKTCBJ1R10ORH3YL2CSFBEAENI2WECBDPSF2N1M">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDE5NSMBSQ5ZOXF24UEM22RI0DKHIXFTG5WDWIVTOSM1YHZTFLYRIH">Hole Size Constraint (Min=0.2mm) (Max=6mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1ZU4PEK5JSFAGTPPJSM354UZPGSFFHY1LIXBI1F4KWVWJY2HQILC">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFMGMQDX1W3BHMSINVNZDO3QNLGT24CR0FATUUBDUBKHUXT1Y0W4M">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">57</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1T1TVQYR4EHXCV5MOAPBWKZSJL0WIEZSUBGVSRLU5FAOMACHC1GH">Minimum Solder Mask Sliver (Gap=0mm) (IsVia),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDH1AHPCODIRWGK1L1M0DJBC4GKJ3S2RMVLP11N1FA1GM41SG2HIKF">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRBMFCYSEPSPMBOJEAGNAPELR0CI1OTPT11PIDMFNY21XQQ0LMNFJ">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHE0MDKNCOG3YCUJGY4K0II2BTNYBOARH5HW3XUNPK2YSS1KQNNSF">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUNUD2IYGEJBZJSJ5LSFHKMNDMPBU2RA5DHAWD0OAXTXYLN0WUTVD">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID212EGY1SIFXBJ5NFLHVDV2UNCO422VRTACRNEDP24UTMAAQXSBXP">Room Vbat-3V32 (Bounding Region = (509.5mm, 412.5mm, 520.5mm, 423mm) (InComponentClass('Vbat-3V32'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUPVGB1PWQCRYJ113UKHD1GMIQPDOXHAUDOEE4UD4BJALY2P1JDTL">Room Latch Circuit2 (Bounding Region = (531.225mm, 425.375mm, 543.225mm, 459.825mm) (InComponentClass('Latch Circuit2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTXBCETT150XYD5U2HMKR31W0WNUIS2O15OXKCVM4APB2VPEI3YLK">Room Latch Circuit1 (Bounding Region = (508.825mm, 425.399mm, 520.825mm, 459.849mm) (InComponentClass('Latch Circuit1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVOOJBMWHGGHBPEQXOLYGSSHLRDL0WENC2AM1GIEI3F0AR4YVASNL">Room Latch Circuit4 (Bounding Region = (519.975mm, 425.4mm, 531.975mm, 459.85mm) (InComponentClass('Latch Circuit4'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOJXGG3R04JA3PUMT1G5SODLAVIM13FWDLVNHR0LOK4VCRLYVNBCH">Room Latch Circuit3 (Bounding Region = (497.6mm, 425.4mm, 509.6mm, 459.85mm) (InComponentClass('Latch Circuit3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5G2DYVPW3TBJPSXSXATUP5VYZECSWFXA13O02DG5JFNR4QTAK4PC">Room CAN-Trans (Bounding Region = (434.5mm, 408.9mm, 451.8mm, 422.3mm) (InComponentClass('CAN-Trans'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCXLQ5M0CNBLY0NMPXXCCSGUQHTPKZSTGMX4J4FNWZXILZY1T3KF">Room BSPD - AMS (Bounding Region = (469mm, 437.85mm, 493.45mm, 453.05mm) (InComponentClass('BSPD - AMS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAYENJK3DXBS2KSBXRPK3ODCC5DYKWK0ALAGOVRHTTASGLLCCU52C">Room PDOC - AMS (Bounding Region = (471.075mm, 399.949mm, 490.675mm, 430.149mm) (InComponentClass('PDOC - AMS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2D1QWVA5QJ2QOKIUSK24SVDPKEPNBXOMQQZ1LVPT1COBRPV3Y25B">Room Ext Current Sense (Bounding Region = (457.5mm, 400.25mm, 469.25mm, 433.25mm) (InComponentClass('Ext Current Sense'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIU0BNZCE5PJWHLKAS5UTOQIS0KTFFVZIREHO0TKRA501CFCCBLHF">Room Iso SPI Comms (Bounding Region = (412.075mm, 400.075mm, 429.75mm, 434.875mm) (InComponentClass('Iso SPI Comms'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1EPDTKCJR3BUN4XSNLJLIXOHCBRGZJ4G2BU4D1IW01YLGEYCKXX">Room Vbat-3V31 (Bounding Region = (521mm, 412.5mm, 532.5mm, 423mm) (InComponentClass('Vbat-3V31'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKQNQ1R0VPOEAFTXLE22FTXG1LJ5Q1WEKSXKMOTESZOA4ZK4A3CIO">Room Vbat-3V33 (Bounding Region = (533mm, 412.5mm, 544.5mm, 423mm) (InComponentClass('Vbat-3V33'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDT1MFCIEDD4WYG4N1FAHXDSMAOJOGWVHWQEKFCTGQ4HCAZLCAOKTJ">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">66</td>
+</tr>
+</table><br><a name="IDCF5N20HUEA05EJAVC5DVEC2OWCYOQ1TMBJH4LRHL5R34KIQKYJEO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16267.84mil|Location2.X=16275.507mil|Location1.Y=17552.735mil|Location2.Y=17560.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16267.84mil|Location2.X=16275.507mil|Location1.Y=17552.735mil|Location2.Y=17560.402mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Area Fill (-1.149mm,41.187mm) (4.751mm,44.787mm) on Top Layer And Pad J2-6(3.701mm,47.187mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16336.928mil|Location2.X=16348.178mil|Location1.Y=17318.66mil|Location2.Y=17329.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16336.928mil|Location2.X=16348.178mil|Location1.Y=17318.66mil|Location2.Y=17329.91mil|Absolute=True">Clearance Constraint: (0mm &lt; 0.254mm) Between Area Fill (-1.149mm,41.187mm) (4.751mm,44.787mm) on Top Layer And Pad J2-7(3.701mm,38.787mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFMGMQDX1W3BHMSINVNZDO3QNLGT24CR0FATUUBDUBKHUXT1Y0W4M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20177.525mil|Location2.X=20186.649mil|Location1.Y=16844.802mil|Location2.Y=16853.926mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20177.525mil|Location2.X=20186.649mil|Location1.Y=16844.802mil|Location2.Y=16853.926mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit1-1(100.65mm,28.674mm) on Top Layer And Pad IC1_Latch Circuit1-2(101.6mm,28.674mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20214.926mil|Location2.X=20224.05mil|Location1.Y=16844.802mil|Location2.Y=16853.926mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20214.926mil|Location2.X=20224.05mil|Location1.Y=16844.802mil|Location2.Y=16853.926mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit1-2(101.6mm,28.674mm) on Top Layer And Pad IC1_Latch Circuit1-3(102.55mm,28.674mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20214.926mil|Location2.X=20224.05mil|Location1.Y=16943.227mil|Location2.Y=16952.351mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20214.926mil|Location2.X=20224.05mil|Location1.Y=16943.227mil|Location2.Y=16952.351mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit1-4(102.55mm,31.174mm) on Top Layer And Pad IC1_Latch Circuit1-5(101.6mm,31.174mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20177.525mil|Location2.X=20186.649mil|Location1.Y=16943.227mil|Location2.Y=16952.351mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20177.525mil|Location2.X=20186.649mil|Location1.Y=16943.227mil|Location2.Y=16952.351mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit1-5(101.6mm,31.174mm) on Top Layer And Pad IC1_Latch Circuit1-6(100.65mm,31.174mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21059.414mil|Location2.X=21068.538mil|Location1.Y=16843.863mil|Location2.Y=16852.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21059.414mil|Location2.X=21068.538mil|Location1.Y=16843.863mil|Location2.Y=16852.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit2-1(123.05mm,28.65mm) on Top Layer And Pad IC1_Latch Circuit2-2(124mm,28.65mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21096.816mil|Location2.X=21105.94mil|Location1.Y=16843.863mil|Location2.Y=16852.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21096.816mil|Location2.X=21105.94mil|Location1.Y=16843.863mil|Location2.Y=16852.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit2-2(124mm,28.65mm) on Top Layer And Pad IC1_Latch Circuit2-3(124.95mm,28.65mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21096.816mil|Location2.X=21105.94mil|Location1.Y=16942.288mil|Location2.Y=16951.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21096.816mil|Location2.X=21105.94mil|Location1.Y=16942.288mil|Location2.Y=16951.412mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit2-4(124.95mm,31.15mm) on Top Layer And Pad IC1_Latch Circuit2-5(124mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21059.414mil|Location2.X=21068.538mil|Location1.Y=16942.288mil|Location2.Y=16951.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21059.414mil|Location2.X=21068.538mil|Location1.Y=16942.288mil|Location2.Y=16951.412mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit2-5(124mm,31.15mm) on Top Layer And Pad IC1_Latch Circuit2-6(123.05mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19735.595mil|Location2.X=19744.719mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19735.595mil|Location2.X=19744.719mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit3-1(89.425mm,28.675mm) on Top Layer And Pad IC1_Latch Circuit3-2(90.375mm,28.675mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19772.997mil|Location2.X=19782.121mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19772.997mil|Location2.X=19782.121mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit3-2(90.375mm,28.675mm) on Top Layer And Pad IC1_Latch Circuit3-3(91.325mm,28.675mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19772.997mil|Location2.X=19782.121mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19772.997mil|Location2.X=19782.121mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit3-4(91.325mm,31.175mm) on Top Layer And Pad IC1_Latch Circuit3-5(90.375mm,31.175mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19735.595mil|Location2.X=19744.719mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19735.595mil|Location2.X=19744.719mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit3-5(90.375mm,31.175mm) on Top Layer And Pad IC1_Latch Circuit3-6(89.425mm,31.175mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20616.501mil|Location2.X=20625.625mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20616.501mil|Location2.X=20625.625mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit4-1(111.8mm,28.675mm) on Top Layer And Pad IC1_Latch Circuit4-2(112.75mm,28.675mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20653.903mil|Location2.X=20663.027mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20653.903mil|Location2.X=20663.027mil|Location1.Y=16844.847mil|Location2.Y=16853.971mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit4-2(112.75mm,28.675mm) on Top Layer And Pad IC1_Latch Circuit4-3(113.7mm,28.675mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20653.903mil|Location2.X=20663.027mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20653.903mil|Location2.X=20663.027mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit4-4(113.7mm,31.175mm) on Top Layer And Pad IC1_Latch Circuit4-5(112.75mm,31.175mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20616.501mil|Location2.X=20625.625mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20616.501mil|Location2.X=20625.625mil|Location1.Y=16943.272mil|Location2.Y=16952.396mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad IC1_Latch Circuit4-5(112.75mm,31.175mm) on Top Layer And Pad IC1_Latch Circuit4-6(111.8mm,31.175mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17483.108mil|Location2.Y=17492.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17483.108mil|Location2.Y=17492.232mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.2mm) Between Pad J2-1(6.101mm,44.587mm) on Top Layer And Pad J2-2(6.101mm,43.787mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17451.612mil|Location2.Y=17460.736mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17451.612mil|Location2.Y=17460.736mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.2mm) Between Pad J2-2(6.101mm,43.787mm) on Top Layer And Pad J2-3(6.101mm,42.987mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17420.115mil|Location2.Y=17429.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17420.115mil|Location2.Y=17429.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.2mm) Between Pad J2-3(6.101mm,42.987mm) on Top Layer And Pad J2-4(6.101mm,42.187mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17388.62mil|Location2.Y=17397.744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16404.907mil|Location2.X=16414.031mil|Location1.Y=17388.62mil|Location2.Y=17397.744mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.2mm) Between Pad J2-4(6.101mm,42.187mm) on Top Layer And Pad J2-5(6.101mm,41.387mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17714.829mil|Location2.X=17723.953mil|Location1.Y=17457.835mil|Location2.Y=17466.959mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17714.829mil|Location2.X=17723.953mil|Location1.Y=17457.835mil|Location2.Y=17466.959mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad R17-1(39.156mm,43.598mm) on Top Layer And Pad R17-2(38.519mm,42.962mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18193.273mil|Location2.X=18202.397mil|Location1.Y=16139.139mil|Location2.Y=16148.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18193.273mil|Location2.X=18202.397mil|Location1.Y=16139.139mil|Location2.Y=16148.263mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad R39-1(50.35mm,9.6mm) on Top Layer And Pad R39-2(50.35mm,10.5mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18231.659mil|Location2.X=18240.783mil|Location1.Y=16139.139mil|Location2.Y=16148.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18231.659mil|Location2.X=18240.783mil|Location1.Y=16139.139mil|Location2.Y=16148.263mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad R40-1(51.325mm,9.6mm) on Top Layer And Pad R40-2(51.325mm,10.5mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16705.039mil|Location2.X=16714.163mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16705.039mil|Location2.X=16714.163mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-1(12.674mm,25.691mm) on Top Layer And Pad U1-2(13.174mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16803.539mil|Location2.X=16812.663mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16803.539mil|Location2.X=16812.663mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-10(15.676mm,30.059mm) on Top Layer And Pad U1-11(15.176mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16823.239mil|Location2.X=16832.363mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16823.239mil|Location2.X=16832.363mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-10(15.676mm,30.059mm) on Top Layer And Pad U1-9(16.176mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16783.839mil|Location2.X=16792.963mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16783.839mil|Location2.X=16792.963mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-11(15.176mm,30.059mm) on Top Layer And Pad U1-12(14.675mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16764.139mil|Location2.X=16773.263mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16764.139mil|Location2.X=16773.263mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-12(14.675mm,30.059mm) on Top Layer And Pad U1-13(14.175mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16744.439mil|Location2.X=16753.563mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16744.439mil|Location2.X=16753.563mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-13(14.175mm,30.059mm) on Top Layer And Pad U1-14(13.674mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16724.739mil|Location2.X=16733.863mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16724.739mil|Location2.X=16733.863mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-14(13.674mm,30.059mm) on Top Layer And Pad U1-15(13.174mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16705.039mil|Location2.X=16714.163mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16705.039mil|Location2.X=16714.163mil|Location1.Y=16895.474mil|Location2.Y=16904.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-15(13.174mm,30.059mm) on Top Layer And Pad U1-16(12.674mm,30.059mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16724.739mil|Location2.X=16733.863mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16724.739mil|Location2.X=16733.863mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-2(13.174mm,25.691mm) on Top Layer And Pad U1-3(13.674mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16744.439mil|Location2.X=16753.563mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16744.439mil|Location2.X=16753.563mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-3(13.674mm,25.691mm) on Top Layer And Pad U1-4(14.175mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16764.139mil|Location2.X=16773.263mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16764.139mil|Location2.X=16773.263mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-4(14.175mm,25.691mm) on Top Layer And Pad U1-5(14.675mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16783.839mil|Location2.X=16792.963mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16783.839mil|Location2.X=16792.963mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-5(14.675mm,25.691mm) on Top Layer And Pad U1-6(15.176mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16803.539mil|Location2.X=16812.663mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16803.539mil|Location2.X=16812.663mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-6(15.176mm,25.691mm) on Top Layer And Pad U1-7(15.676mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16823.239mil|Location2.X=16832.363mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16823.239mil|Location2.X=16832.363mil|Location1.Y=16723.474mil|Location2.Y=16732.597mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.021mm &lt; 0.2mm) Between Pad U1-7(15.676mm,25.691mm) on Top Layer And Pad U1-8(16.176mm,25.691mm) on Top Layer [Top Solder] Mask Sliver [0.021mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20356.659mil|Location2.X=20365.783mil|Location1.Y=16998.345mil|Location2.Y=17007.469mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20356.659mil|Location2.X=20365.783mil|Location1.Y=16998.345mil|Location2.Y=17007.469mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit1-1(106.15mm,31.149mm) on Top Layer And Pad U17_Latch Circuit1-2(105.2mm,31.149mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20319.257mil|Location2.X=20328.381mil|Location1.Y=16998.345mil|Location2.Y=17007.469mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20319.257mil|Location2.X=20328.381mil|Location1.Y=16998.345mil|Location2.Y=17007.469mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit1-2(105.2mm,31.149mm) on Top Layer And Pad U17_Latch Circuit1-3(104.25mm,31.149mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21238.548mil|Location2.X=21247.672mil|Location1.Y=16997.406mil|Location2.Y=17006.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21238.548mil|Location2.X=21247.672mil|Location1.Y=16997.406mil|Location2.Y=17006.53mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit2-1(128.55mm,31.125mm) on Top Layer And Pad U17_Latch Circuit2-2(127.6mm,31.125mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21201.147mil|Location2.X=21210.271mil|Location1.Y=16997.406mil|Location2.Y=17006.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21201.147mil|Location2.X=21210.271mil|Location1.Y=16997.406mil|Location2.Y=17006.53mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit2-2(127.6mm,31.125mm) on Top Layer And Pad U17_Latch Circuit2-3(126.65mm,31.125mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19914.729mil|Location2.X=19923.853mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19914.729mil|Location2.X=19923.853mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit3-1(94.925mm,31.15mm) on Top Layer And Pad U17_Latch Circuit3-2(93.975mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19877.328mil|Location2.X=19886.452mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19877.328mil|Location2.X=19886.452mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit3-2(93.975mm,31.15mm) on Top Layer And Pad U17_Latch Circuit3-3(93.025mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20795.635mil|Location2.X=20804.759mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20795.635mil|Location2.X=20804.759mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit4-1(117.3mm,31.15mm) on Top Layer And Pad U17_Latch Circuit4-2(116.35mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20758.233mil|Location2.X=20767.357mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20758.233mil|Location2.X=20767.357mil|Location1.Y=16998.391mil|Location2.Y=17007.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U17_Latch Circuit4-2(116.35mm,31.15mm) on Top Layer And Pad U17_Latch Circuit4-3(115.4mm,31.15mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16673.585mil|Location2.X=16682.709mil|Location1.Y=17431.462mil|Location2.Y=17440.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16673.585mil|Location2.X=16682.709mil|Location1.Y=17431.462mil|Location2.Y=17440.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U2-1(11.425mm,42.4mm) on Top Layer And Pad U2-2(11.425mm,43.35mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16673.585mil|Location2.X=16682.709mil|Location1.Y=17468.863mil|Location2.Y=17477.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16673.585mil|Location2.X=16682.709mil|Location1.Y=17468.863mil|Location2.Y=17477.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U2-2(11.425mm,43.35mm) on Top Layer And Pad U2-3(11.425mm,44.3mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16583.034mil|Location2.X=16592.158mil|Location1.Y=17468.863mil|Location2.Y=17477.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16583.034mil|Location2.X=16592.158mil|Location1.Y=17468.863mil|Location2.Y=17477.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U2-4(9.125mm,44.3mm) on Top Layer And Pad U2-5(9.125mm,43.35mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16583.034mil|Location2.X=16592.158mil|Location1.Y=17431.462mil|Location2.Y=17440.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16583.034mil|Location2.X=16592.158mil|Location1.Y=17431.462mil|Location2.Y=17440.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U2-5(9.125mm,43.35mm) on Top Layer And Pad U2-6(9.125mm,42.4mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19026.933mil|Location2.X=19036.057mil|Location1.Y=17631.265mil|Location2.Y=17640.389mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19026.933mil|Location2.X=19036.057mil|Location1.Y=17631.265mil|Location2.Y=17640.389mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U6-1(71.2mm,47.475mm) on Top Layer And Pad U6-2(71.2mm,48.425mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19026.933mil|Location2.X=19036.057mil|Location1.Y=17668.666mil|Location2.Y=17677.79mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19026.933mil|Location2.X=19036.057mil|Location1.Y=17668.666mil|Location2.Y=17677.79mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U6-2(71.2mm,48.425mm) on Top Layer And Pad U6-3(71.2mm,49.375mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19138.153mil|Location2.X=19147.277mil|Location1.Y=17771.029mil|Location2.Y=17780.153mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19138.153mil|Location2.X=19147.277mil|Location1.Y=17771.029mil|Location2.Y=17780.153mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U7-1(75.425mm,51.975mm) on Top Layer And Pad U7-2(75.425mm,51.025mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19138.153mil|Location2.X=19147.277mil|Location1.Y=17733.627mil|Location2.Y=17742.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19138.153mil|Location2.X=19147.277mil|Location1.Y=17733.627mil|Location2.Y=17742.751mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U7-2(75.425mm,51.025mm) on Top Layer And Pad U7-3(75.425mm,50.075mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19185.397mil|Location2.X=19194.521mil|Location1.Y=17595.832mil|Location2.Y=17604.956mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19185.397mil|Location2.X=19194.521mil|Location1.Y=17595.832mil|Location2.Y=17604.956mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U8-1(76.65mm,47.525mm) on Top Layer And Pad U8-2(76.65mm,46.575mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19185.397mil|Location2.X=19194.521mil|Location1.Y=17558.43mil|Location2.Y=17567.554mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19185.397mil|Location2.X=19194.521mil|Location1.Y=17558.43mil|Location2.Y=17567.554mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.15mm &lt; 0.2mm) Between Pad U8-2(76.65mm,46.575mm) on Top Layer And Pad U8-3(76.65mm,45.625mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17870.726mil|Location2.X=17879.85mil|Location1.Y=17473.146mil|Location2.Y=17482.27mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17870.726mil|Location2.X=17879.85mil|Location1.Y=17473.146mil|Location2.Y=17482.27mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.05mm &lt; 0.2mm) Between Pad Y1-1(42.55mm,44.8mm) on Top Layer And Pad Y1-4(41.666mm,43.916mm) on Top Layer [Top Solder] Mask Sliver [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17827.576mil|Location2.X=17836.7mil|Location1.Y=17516.297mil|Location2.Y=17525.421mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17827.576mil|Location2.X=17836.7mil|Location1.Y=17516.297mil|Location2.Y=17525.421mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.05mm &lt; 0.2mm) Between Pad Y1-2(41.454mm,45.896mm) on Top Layer And Pad Y1-3(40.57mm,45.012mm) on Top Layer [Top Solder] Mask Sliver [0.05mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDH1AHPCODIRWGK1L1M0DJBC4GKJ3S2RMVLP11N1FA1GM41SG2HIKF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20331.193mil|Location2.X=20336.13mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20331.193mil|Location2.X=20336.13mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Arc (105.1mm,37.85mm) on Bottom Overlay And Pad R54_Latch Circuit1-1(104.475mm,38.099mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20770.169mil|Location2.X=20775.106mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20770.169mil|Location2.X=20775.106mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Arc (116.25mm,37.85mm) on Bottom Overlay And Pad R54_Latch Circuit4-1(115.625mm,38.1mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21213.083mil|Location2.X=21218.02mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21213.083mil|Location2.X=21218.02mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Arc (127.5mm,37.85mm) on Bottom Overlay And Pad R54_Latch Circuit2-1(126.875mm,38.075mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19889.264mil|Location2.X=19894.201mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19889.264mil|Location2.X=19894.201mil|Location1.Y=17235.72mil|Location2.Y=17240.657mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Arc (93.875mm,37.85mm) on Bottom Overlay And Pad R54_Latch Circuit3-1(93.25mm,38.1mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDHE0MDKNCOG3YCUJGY4K0II2BTNYBOARH5HW3XUNPK2YSS1KQNNSF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17679.571mil|Location2.X=17700.845mil|Location1.Y=17450.24mil|Location2.Y=17480.623mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17679.571mil|Location2.X=17700.845mil|Location1.Y=17450.24mil|Location2.Y=17480.623mil|Absolute=True">Net Antennae: Track (37.15mm,42.825mm)(37.75mm,43.425mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUNUD2IYGEJBZJSJ5LSFHKMNDMPBU2RA5DHAWD0OAXTXYLN0WUTVD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16193.574mil|Location2.X=16241.527mil|Location1.Y=17281.789mil|Location2.Y=17295.912mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16193.574mil|Location2.X=16241.527mil|Location1.Y=17281.789mil|Location2.Y=17295.912mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (0.101mm,39.137mm)(1.401mm,39.137mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16193.574mil|Location2.X=16241.527mil|Location1.Y=17584.939mil|Location2.Y=17599.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Will\Documents\GitHub\HV_BMS\Hardware\Accumulator Management System\AMS.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16193.574mil|Location2.X=16241.527mil|Location1.Y=17584.939mil|Location2.Y=17599.062mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (0.101mm,46.837mm)(1.401mm,46.837mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
