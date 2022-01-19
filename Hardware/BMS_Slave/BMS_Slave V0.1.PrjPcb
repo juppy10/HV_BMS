@@ -250,11 +250,32 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EDSYQBDT
 
+[Document13]
+DocumentPath=BMS_Slave V0.1.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [Parameter1]
+Name=ProjectTitle
+Value=HV BMS Slave 12S
+
+[Parameter2]
 Name=Version
 Value=V0.1
 
-[Parameter2]
+[Parameter3]
 Name=ProAuthor
 Value=William J
 
@@ -1237,9 +1258,12 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=5V0|NetColor=$000000CC
-Net2=NetName=GND|NetColor=clGreen
-Net3=NetName=VBat|NetColor=$00000066
-Net4=NetName=Vreg|NetColor=$000000CC
+Net2=NetName=B1|NetColor=clGreen
+Net3=NetName=GND|NetColor=clGreen
+Net4=NetName=NetR3_1|NetColor=clGreen
+Net5=NetName=NetR3_Balance Circuit1_1|NetColor=clGreen
+Net6=NetName=VBat|NetColor=$00000066
+Net7=NetName=Vreg|NetColor=$000000CC
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0

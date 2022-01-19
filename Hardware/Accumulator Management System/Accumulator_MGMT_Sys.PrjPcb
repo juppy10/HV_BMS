@@ -522,7 +522,145 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document29]
+DocumentPath=Accumulator Management System.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document30]
+DocumentPath=Accumulator Management.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\NC Drill\AMS.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM20
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM21
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM23
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GM50
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\NC Drill\AMS.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.REP
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\Gerber\AMS.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Fabrication\NC Drill\AMS.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument27]
 DocumentPath=Project Outputs for Accumulator_MGMT_Sys\Design Rule Check - AMS.html
 DItemRevisionGUID=
 
