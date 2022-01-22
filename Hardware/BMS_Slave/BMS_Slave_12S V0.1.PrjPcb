@@ -268,16 +268,16 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
+Name=ProAuthor
+Value=William J
+
+[Parameter2]
 Name=ProjectTitle
 Value=HV BMS Slave 12S
 
-[Parameter2]
+[Parameter3]
 Name=Version
 Value=V0.1
-
-[Parameter3]
-Name=ProAuthor
-Value=William J
 
 [Configuration1]
 Name=Sources
