@@ -3,7 +3,7 @@ Version=1.0
 HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
-ChannelDesignatorFormatString=$RoomName_$Component
+ChannelDesignatorFormatString=$Component_$RoomName
 ChannelRoomLevelSeperator=_
 OpenOutputs=1
 ArchiveProject=0
@@ -234,23 +234,6 @@ GenerateClassCluster=0
 DocumentUniqueId=RHSHIXTF
 
 [Document12]
-DocumentPath=BMS_Slave V0.1.IntLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document13]
 DocumentPath=Temperature Sensing V0.1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -267,7 +250,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=Cell Monitor 8S LHS V0.1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -284,7 +267,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=BMS Slave V0.1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -301,7 +284,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=Cell Monitor 12S V0.1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -318,7 +301,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=Cell Monitor 8S RHS V0.1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -335,7 +318,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=BMS Slave V0.1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -350,19 +333,36 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=QESSVWUO
+DocumentUniqueId=PDBYPAXS
+
+[Document18]
+DocumentPath=BMS Slave V0.1.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TUDJBXGB
 
 [Parameter1]
-Name=Version
-Value=V0.1
+Name=ProAuthor
+Value=William J
 
 [Parameter2]
 Name=ProjectTitle
 Value=HV BMS Slave 12S
 
 [Parameter3]
-Name=ProAuthor
-Value=William J
+Name=Version
+Value=V0.1
 
 [Configuration1]
 Name=Sources
@@ -1289,9 +1289,9 @@ UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=Passives.IntLib
-ComponentDesignItemID0=Resistor
-ComponentSymbolReference0=Resistor
+ComponentLibraryIdentifier0=SchematicLib.SchLib
+ComponentDesignItemID0=NX2301PVL
+ComponentSymbolReference0=NX2301PVL
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1315,25 +1315,10 @@ ParameterName2=Description
 ParameterUpdate2=1
 ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Value
+ParameterName4=Supplier 1
 ParameterUpdate4=1
-ModelTypeGroup0=PCBLIB
-ModelTypeUpdate0=1
-ModelType0=PCBLIB
-ModelName0=R_0402
-ModelUpdate0=1
-ModelType1=PCBLIB
-ModelName1=R_0805
-ModelUpdate1=1
-ModelType2=PCBLIB
-ModelName2=R_2010
-ModelUpdate2=1
-ModelType3=PCBLIB
-ModelName3=R_2512
-ModelUpdate3=1
-ModelType4=PCBLIB
-ModelName4=R-0603
-ModelUpdate4=1
+ParameterName5=Supplier Part Number 1
+ParameterUpdate5=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1344,180 +1329,220 @@ PartTypes=0
 [NetInfos]
 Net1=NetName=5V0|NetColor=clRed
 Net2=NetName=5V0_12|NetColor=clRed
-Net3=NetName=5V0_12S|NetColor=clRed
-Net4=NetName=5V0_8L|NetColor=clRed
-Net5=NetName=5V0_8R|NetColor=clRed
-Net6=NetName=5V0_8S|NetColor=$000000CC
-Net7=NetName=5V0_8S_U_Cell Monitor1|NetColor=$000000CC
-Net8=NetName=5V0_8S_U_Cell Monitor2|NetColor=$000000CC
-Net9=NetName=5V0_8SL|NetColor=clRed
-Net10=NetName=5V0_8SR|NetColor=clRed
-Net11=NetName=5V0_U_Temperature Sensing1|NetColor=clRed
-Net12=NetName=5V0_U_Temperature Sensing2|NetColor=$000000CC
-Net13=NetName=5V0_U_Temperature Sensing3|NetColor=clRed
-Net14=NetName=B1|NetColor=clGreen
-Net15=NetName=Balance Circuit1_GND|NetColor=clGreen
-Net16=NetName=Balance Circuit10_GND|NetColor=clGreen
-Net17=NetName=Balance Circuit12_GND|NetColor=clGreen
-Net18=NetName=Balance Circuit13_GND|NetColor=clGreen
-Net19=NetName=Balance Circuit15_GND|NetColor=clGreen
-Net20=NetName=Balance Circuit16_GND|NetColor=clGreen
-Net21=NetName=Balance Circuit18_GND|NetColor=clGreen
-Net22=NetName=Balance Circuit19_GND|NetColor=clGreen
-Net23=NetName=Balance Circuit21_GND|NetColor=clGreen
-Net24=NetName=Balance Circuit22_GND|NetColor=clGreen
-Net25=NetName=Balance Circuit24_GND|NetColor=clGreen
-Net26=NetName=Balance Circuit25_GND|NetColor=clGreen
-Net27=NetName=Balance Circuit27_GND|NetColor=clGreen
-Net28=NetName=Balance Circuit28_GND|NetColor=clGreen
-Net29=NetName=Balance Circuit3_GND|NetColor=clGreen
-Net30=NetName=Balance Circuit30_GND|NetColor=clGreen
-Net31=NetName=Balance Circuit31_GND|NetColor=clGreen
-Net32=NetName=Balance Circuit33_GND|NetColor=clGreen
-Net33=NetName=Balance Circuit34_GND|NetColor=clGreen
-Net34=NetName=Balance Circuit36_GND|NetColor=clGreen
-Net35=NetName=Balance Circuit4_GND|NetColor=clGreen
-Net36=NetName=Balance Circuit6_GND|NetColor=clGreen
-Net37=NetName=Balance Circuit7_GND|NetColor=clGreen
-Net38=NetName=Balance Circuit9_GND|NetColor=clGreen
-Net39=NetName=GND|NetColor=clGreen
-Net40=NetName=GND_12|NetColor=clGreen
-Net41=NetName=GND_12S|NetColor=clGreen
-Net42=NetName=GND_8L|NetColor=clGreen
-Net43=NetName=GND_8R|NetColor=clGreen
-Net44=NetName=GND_8S|NetColor=clGreen
-Net45=NetName=GND_8S_U_Cell Monitor1|NetColor=clGreen
-Net46=NetName=GND_8S_U_Cell Monitor2|NetColor=clGreen
-Net47=NetName=GND_8SR|NetColor=clGreen
-Net48=NetName=GND_Balance Circuit1|NetColor=clGreen
-Net49=NetName=GND_Balance Circuit10|NetColor=clGreen
-Net50=NetName=GND_Balance Circuit13|NetColor=clGreen
-Net51=NetName=GND_Balance Circuit16|NetColor=clGreen
-Net52=NetName=GND_Balance Circuit19|NetColor=clGreen
-Net53=NetName=GND_Balance Circuit22|NetColor=clGreen
-Net54=NetName=GND_Balance Circuit25|NetColor=clGreen
-Net55=NetName=GND_Balance Circuit28|NetColor=clGreen
-Net56=NetName=GND_Balance Circuit31|NetColor=clGreen
-Net57=NetName=GND_Balance Circuit34|NetColor=clGreen
-Net58=NetName=GND_Balance Circuit4|NetColor=clGreen
-Net59=NetName=GND_Balance Circuit7|NetColor=clGreen
-Net60=NetName=GND_NTC Sense1|NetColor=clGreen
-Net61=NetName=GND_NTC Sense10|NetColor=clGreen
-Net62=NetName=GND_NTC Sense11|NetColor=clGreen
-Net63=NetName=GND_NTC Sense12|NetColor=clGreen
-Net64=NetName=GND_NTC Sense13|NetColor=clGreen
-Net65=NetName=GND_NTC Sense14|NetColor=clGreen
-Net66=NetName=GND_NTC Sense15|NetColor=clGreen
-Net67=NetName=GND_NTC Sense16|NetColor=clGreen
-Net68=NetName=GND_NTC Sense17|NetColor=clGreen
-Net69=NetName=GND_NTC Sense18|NetColor=clGreen
-Net70=NetName=GND_NTC Sense19|NetColor=clGreen
-Net71=NetName=GND_NTC Sense2|NetColor=clGreen
-Net72=NetName=GND_NTC Sense20|NetColor=clGreen
-Net73=NetName=GND_NTC Sense21|NetColor=clGreen
-Net74=NetName=GND_NTC Sense22|NetColor=clGreen
-Net75=NetName=GND_NTC Sense23|NetColor=clGreen
-Net76=NetName=GND_NTC Sense24|NetColor=clGreen
-Net77=NetName=GND_NTC Sense25|NetColor=clGreen
-Net78=NetName=GND_NTC Sense26|NetColor=clGreen
-Net79=NetName=GND_NTC Sense27|NetColor=clGreen
-Net80=NetName=GND_NTC Sense28|NetColor=clGreen
-Net81=NetName=GND_NTC Sense29|NetColor=clGreen
-Net82=NetName=GND_NTC Sense3|NetColor=clGreen
-Net83=NetName=GND_NTC Sense30|NetColor=clGreen
-Net84=NetName=GND_NTC Sense31|NetColor=clGreen
-Net85=NetName=GND_NTC Sense32|NetColor=clGreen
-Net86=NetName=GND_NTC Sense33|NetColor=clGreen
-Net87=NetName=GND_NTC Sense34|NetColor=clGreen
-Net88=NetName=GND_NTC Sense35|NetColor=clGreen
-Net89=NetName=GND_NTC Sense36|NetColor=clGreen
-Net90=NetName=GND_NTC Sense37|NetColor=clGreen
-Net91=NetName=GND_NTC Sense38|NetColor=clGreen
-Net92=NetName=GND_NTC Sense39|NetColor=clGreen
-Net93=NetName=GND_NTC Sense4|NetColor=clGreen
-Net94=NetName=GND_NTC Sense40|NetColor=clGreen
-Net95=NetName=GND_NTC Sense41|NetColor=clGreen
-Net96=NetName=GND_NTC Sense42|NetColor=clGreen
-Net97=NetName=GND_NTC Sense43|NetColor=clGreen
-Net98=NetName=GND_NTC Sense44|NetColor=clGreen
-Net99=NetName=GND_NTC Sense45|NetColor=clGreen
-Net100=NetName=GND_NTC Sense46|NetColor=clGreen
-Net101=NetName=GND_NTC Sense47|NetColor=clGreen
-Net102=NetName=GND_NTC Sense48|NetColor=clGreen
-Net103=NetName=GND_NTC Sense5|NetColor=clGreen
-Net104=NetName=GND_NTC Sense6|NetColor=clGreen
-Net105=NetName=GND_NTC Sense7|NetColor=clGreen
-Net106=NetName=GND_NTC Sense8|NetColor=clGreen
-Net107=NetName=GND_NTC Sense9|NetColor=clGreen
-Net108=NetName=GND_U_Cell Monitor1|NetColor=clGreen
-Net109=NetName=GND_U_Cell Monitor2|NetColor=clGreen
-Net110=NetName=GND_U_Temperature Sensing1|NetColor=clGreen
-Net111=NetName=GND_U_Temperature Sensing2|NetColor=clGreen
-Net112=NetName=GND_U_Temperature Sensing3|NetColor=clGreen
-Net113=NetName=N00000|NetColor=clGreen
-Net114=NetName=NetR3_1|NetColor=clGreen
-Net115=NetName=NetR3_Balance Circuit1_1|NetColor=clGreen
-Net116=NetName=NTC Sense1_GND|NetColor=clGreen
-Net117=NetName=NTC Sense10_GND|NetColor=clGreen
-Net118=NetName=NTC Sense11_GND|NetColor=clGreen
-Net119=NetName=NTC Sense12_GND|NetColor=clGreen
-Net120=NetName=NTC Sense13_GND|NetColor=clGreen
-Net121=NetName=NTC Sense14_GND|NetColor=clGreen
-Net122=NetName=NTC Sense15_GND|NetColor=clGreen
-Net123=NetName=NTC Sense16_GND|NetColor=clGreen
-Net124=NetName=NTC Sense17_GND|NetColor=clGreen
-Net125=NetName=NTC Sense18_GND|NetColor=clGreen
-Net126=NetName=NTC Sense19_GND|NetColor=clGreen
-Net127=NetName=NTC Sense2_GND|NetColor=clGreen
-Net128=NetName=NTC Sense20_GND|NetColor=clGreen
-Net129=NetName=NTC Sense21_GND|NetColor=clGreen
-Net130=NetName=NTC Sense22_GND|NetColor=clGreen
-Net131=NetName=NTC Sense23_GND|NetColor=clGreen
-Net132=NetName=NTC Sense24_GND|NetColor=clGreen
-Net133=NetName=NTC Sense25_GND|NetColor=clGreen
-Net134=NetName=NTC Sense26_GND|NetColor=clGreen
-Net135=NetName=NTC Sense27_GND|NetColor=clGreen
-Net136=NetName=NTC Sense28_GND|NetColor=clGreen
-Net137=NetName=NTC Sense29_GND|NetColor=clGreen
-Net138=NetName=NTC Sense3_GND|NetColor=clGreen
-Net139=NetName=NTC Sense30_GND|NetColor=clGreen
-Net140=NetName=NTC Sense31_GND|NetColor=clGreen
-Net141=NetName=NTC Sense32_GND|NetColor=clGreen
-Net142=NetName=NTC Sense33_GND|NetColor=clGreen
-Net143=NetName=NTC Sense34_GND|NetColor=clGreen
-Net144=NetName=NTC Sense35_GND|NetColor=clGreen
-Net145=NetName=NTC Sense36_GND|NetColor=clGreen
-Net146=NetName=NTC Sense37_GND|NetColor=clGreen
-Net147=NetName=NTC Sense38_GND|NetColor=clGreen
-Net148=NetName=NTC Sense39_GND|NetColor=clGreen
-Net149=NetName=NTC Sense4_GND|NetColor=clGreen
-Net150=NetName=NTC Sense40_GND|NetColor=clGreen
-Net151=NetName=NTC Sense41_GND|NetColor=clGreen
-Net152=NetName=NTC Sense42_GND|NetColor=clGreen
-Net153=NetName=NTC Sense43_GND|NetColor=clGreen
-Net154=NetName=NTC Sense44_GND|NetColor=clGreen
-Net155=NetName=NTC Sense45_GND|NetColor=clGreen
-Net156=NetName=NTC Sense46_GND|NetColor=clGreen
-Net157=NetName=NTC Sense47_GND|NetColor=clGreen
-Net158=NetName=NTC Sense48_GND|NetColor=clGreen
-Net159=NetName=NTC Sense5_GND|NetColor=clGreen
-Net160=NetName=NTC Sense6_GND|NetColor=clGreen
-Net161=NetName=NTC Sense7_GND|NetColor=clGreen
-Net162=NetName=NTC Sense8_GND|NetColor=clGreen
-Net163=NetName=NTC Sense9_GND|NetColor=clGreen
-Net164=NetName=U_Temperature Sensing1_5V0|NetColor=clRed
-Net165=NetName=U_Temperature Sensing1_GND|NetColor=clGreen
-Net166=NetName=U_Temperature Sensing2_5V0|NetColor=clRed
-Net167=NetName=U_Temperature Sensing2_GND|NetColor=clGreen
-Net168=NetName=U_Temperature Sensing3_5V0|NetColor=clRed
-Net169=NetName=U_Temperature Sensing3_GND|NetColor=clGreen
-Net170=NetName=VBat|NetColor=$00000066
-Net171=NetName=VBat_12|NetColor=$00000066
-Net172=NetName=VBat_8L|NetColor=$00000098
-Net173=NetName=VBat12_12|NetColor=$00000098
-Net174=NetName=VBat8L|NetColor=$00000098
-Net175=NetName=VBat8R|NetColor=$00000098
-Net176=NetName=Vreg|NetColor=$000000CC
+Net3=NetName=5V0_12_1|NetColor=clRed
+Net4=NetName=5V0_12S|NetColor=clRed
+Net5=NetName=5V0_8L|NetColor=clRed
+Net6=NetName=5V0_8L_1|NetColor=clRed
+Net7=NetName=5V0_8R|NetColor=clRed
+Net8=NetName=5V0_8R_1|NetColor=clRed
+Net9=NetName=5V0_8S|NetColor=$000000CC
+Net10=NetName=5V0_8S_U_Cell Monitor1|NetColor=$000000CC
+Net11=NetName=5V0_8S_U_Cell Monitor2|NetColor=$000000CC
+Net12=NetName=5V0_8SL|NetColor=clRed
+Net13=NetName=5V0_8SR|NetColor=clRed
+Net14=NetName=5V0_Temperature Sensing 12S|NetColor=clRed
+Net15=NetName=5V0_Temperature Sensing 8S LHS|NetColor=clRed
+Net16=NetName=5V0_Temperature Sensing 8S RHS|NetColor=clRed
+Net17=NetName=5V0_U_Temperature Sensing1|NetColor=clRed
+Net18=NetName=5V0_U_Temperature Sensing2|NetColor=$000000CC
+Net19=NetName=5V0_U_Temperature Sensing3|NetColor=clRed
+Net20=NetName=B1|NetColor=clGreen
+Net21=NetName=Balance Circuit1_GND|NetColor=clGreen
+Net22=NetName=Balance Circuit10_GND|NetColor=clGreen
+Net23=NetName=Balance Circuit12_GND|NetColor=clGreen
+Net24=NetName=Balance Circuit13_GND|NetColor=clGreen
+Net25=NetName=Balance Circuit15_GND|NetColor=clGreen
+Net26=NetName=Balance Circuit16_GND|NetColor=clGreen
+Net27=NetName=Balance Circuit18_GND|NetColor=clGreen
+Net28=NetName=Balance Circuit19_GND|NetColor=clGreen
+Net29=NetName=Balance Circuit21_GND|NetColor=clGreen
+Net30=NetName=Balance Circuit22_GND|NetColor=clGreen
+Net31=NetName=Balance Circuit24_GND|NetColor=clGreen
+Net32=NetName=Balance Circuit25_GND|NetColor=clGreen
+Net33=NetName=Balance Circuit27_GND|NetColor=clGreen
+Net34=NetName=Balance Circuit28_GND|NetColor=clGreen
+Net35=NetName=Balance Circuit3_GND|NetColor=clGreen
+Net36=NetName=Balance Circuit30_GND|NetColor=clGreen
+Net37=NetName=Balance Circuit31_GND|NetColor=clGreen
+Net38=NetName=Balance Circuit33_GND|NetColor=clGreen
+Net39=NetName=Balance Circuit34_GND|NetColor=clGreen
+Net40=NetName=Balance Circuit36_GND|NetColor=clGreen
+Net41=NetName=Balance Circuit4_GND|NetColor=clGreen
+Net42=NetName=Balance Circuit6_GND|NetColor=clGreen
+Net43=NetName=Balance Circuit7_GND|NetColor=clGreen
+Net44=NetName=Balance Circuit9_GND|NetColor=clGreen
+Net45=NetName=GND|NetColor=clGreen
+Net46=NetName=GND_12|NetColor=clGreen
+Net47=NetName=GND_12_1|NetColor=clGreen
+Net48=NetName=GND_12S|NetColor=clGreen
+Net49=NetName=GND_8L|NetColor=clGreen
+Net50=NetName=GND_8L_1|NetColor=clGreen
+Net51=NetName=GND_8R|NetColor=clGreen
+Net52=NetName=GND_8R_1|NetColor=clGreen
+Net53=NetName=GND_8S|NetColor=clGreen
+Net54=NetName=GND_8S_U_Cell Monitor1|NetColor=clGreen
+Net55=NetName=GND_8S_U_Cell Monitor2|NetColor=clGreen
+Net56=NetName=GND_8SR|NetColor=clGreen
+Net57=NetName=GND_Balance Circuit 121|NetColor=clGreen
+Net58=NetName=GND_Balance Circuit 1210|NetColor=clGreen
+Net59=NetName=GND_Balance Circuit 1211|NetColor=clGreen
+Net60=NetName=GND_Balance Circuit 1212|NetColor=clGreen
+Net61=NetName=GND_Balance Circuit 122|NetColor=clGreen
+Net62=NetName=GND_Balance Circuit 123|NetColor=clGreen
+Net63=NetName=GND_Balance Circuit 124|NetColor=clGreen
+Net64=NetName=GND_Balance Circuit 125|NetColor=clGreen
+Net65=NetName=GND_Balance Circuit 126|NetColor=clGreen
+Net66=NetName=GND_Balance Circuit 127|NetColor=clGreen
+Net67=NetName=GND_Balance Circuit 128|NetColor=clGreen
+Net68=NetName=GND_Balance Circuit 129|NetColor=clGreen
+Net69=NetName=GND_Balance Circuit 8L1|NetColor=clGreen
+Net70=NetName=GND_Balance Circuit 8L2|NetColor=clGreen
+Net71=NetName=GND_Balance Circuit 8L3|NetColor=clGreen
+Net72=NetName=GND_Balance Circuit 8L4|NetColor=clGreen
+Net73=NetName=GND_Balance Circuit 8L5|NetColor=clGreen
+Net74=NetName=GND_Balance Circuit 8L6|NetColor=clGreen
+Net75=NetName=GND_Balance Circuit 8L7|NetColor=clGreen
+Net76=NetName=GND_Balance Circuit 8L8|NetColor=clGreen
+Net77=NetName=GND_Balance Circuit 8R1|NetColor=clGreen
+Net78=NetName=GND_Balance Circuit 8R2|NetColor=clGreen
+Net79=NetName=GND_Balance Circuit 8R3|NetColor=clGreen
+Net80=NetName=GND_Balance Circuit 8R4|NetColor=clGreen
+Net81=NetName=GND_Balance Circuit 8R5|NetColor=clGreen
+Net82=NetName=GND_Balance Circuit 8R6|NetColor=clGreen
+Net83=NetName=GND_Balance Circuit 8R7|NetColor=clGreen
+Net84=NetName=GND_Balance Circuit 8R8|NetColor=clGreen
+Net85=NetName=GND_Balance Circuit1|NetColor=clGreen
+Net86=NetName=GND_Balance Circuit10|NetColor=clGreen
+Net87=NetName=GND_Balance Circuit13|NetColor=clGreen
+Net88=NetName=GND_Balance Circuit16|NetColor=clGreen
+Net89=NetName=GND_Balance Circuit19|NetColor=clGreen
+Net90=NetName=GND_Balance Circuit22|NetColor=clGreen
+Net91=NetName=GND_Balance Circuit25|NetColor=clGreen
+Net92=NetName=GND_Balance Circuit28|NetColor=clGreen
+Net93=NetName=GND_Balance Circuit31|NetColor=clGreen
+Net94=NetName=GND_Balance Circuit34|NetColor=clGreen
+Net95=NetName=GND_Balance Circuit4|NetColor=clGreen
+Net96=NetName=GND_Balance Circuit7|NetColor=clGreen
+Net97=NetName=GND_NTC Sense1|NetColor=clGreen
+Net98=NetName=GND_NTC Sense10|NetColor=clGreen
+Net99=NetName=GND_NTC Sense11|NetColor=clGreen
+Net100=NetName=GND_NTC Sense12|NetColor=clGreen
+Net101=NetName=GND_NTC Sense13|NetColor=clGreen
+Net102=NetName=GND_NTC Sense14|NetColor=clGreen
+Net103=NetName=GND_NTC Sense15|NetColor=clGreen
+Net104=NetName=GND_NTC Sense16|NetColor=clGreen
+Net105=NetName=GND_NTC Sense17|NetColor=clGreen
+Net106=NetName=GND_NTC Sense18|NetColor=clGreen
+Net107=NetName=GND_NTC Sense19|NetColor=clGreen
+Net108=NetName=GND_NTC Sense2|NetColor=clGreen
+Net109=NetName=GND_NTC Sense20|NetColor=clGreen
+Net110=NetName=GND_NTC Sense21|NetColor=clGreen
+Net111=NetName=GND_NTC Sense22|NetColor=clGreen
+Net112=NetName=GND_NTC Sense23|NetColor=clGreen
+Net113=NetName=GND_NTC Sense24|NetColor=clGreen
+Net114=NetName=GND_NTC Sense25|NetColor=clGreen
+Net115=NetName=GND_NTC Sense26|NetColor=clGreen
+Net116=NetName=GND_NTC Sense27|NetColor=clGreen
+Net117=NetName=GND_NTC Sense28|NetColor=clGreen
+Net118=NetName=GND_NTC Sense29|NetColor=clGreen
+Net119=NetName=GND_NTC Sense3|NetColor=clGreen
+Net120=NetName=GND_NTC Sense30|NetColor=clGreen
+Net121=NetName=GND_NTC Sense31|NetColor=clGreen
+Net122=NetName=GND_NTC Sense32|NetColor=clGreen
+Net123=NetName=GND_NTC Sense33|NetColor=clGreen
+Net124=NetName=GND_NTC Sense34|NetColor=clGreen
+Net125=NetName=GND_NTC Sense35|NetColor=clGreen
+Net126=NetName=GND_NTC Sense36|NetColor=clGreen
+Net127=NetName=GND_NTC Sense37|NetColor=clGreen
+Net128=NetName=GND_NTC Sense38|NetColor=clGreen
+Net129=NetName=GND_NTC Sense39|NetColor=clGreen
+Net130=NetName=GND_NTC Sense4|NetColor=clGreen
+Net131=NetName=GND_NTC Sense40|NetColor=clGreen
+Net132=NetName=GND_NTC Sense41|NetColor=clGreen
+Net133=NetName=GND_NTC Sense42|NetColor=clGreen
+Net134=NetName=GND_NTC Sense43|NetColor=clGreen
+Net135=NetName=GND_NTC Sense44|NetColor=clGreen
+Net136=NetName=GND_NTC Sense45|NetColor=clGreen
+Net137=NetName=GND_NTC Sense46|NetColor=clGreen
+Net138=NetName=GND_NTC Sense47|NetColor=clGreen
+Net139=NetName=GND_NTC Sense48|NetColor=clGreen
+Net140=NetName=GND_NTC Sense5|NetColor=clGreen
+Net141=NetName=GND_NTC Sense6|NetColor=clGreen
+Net142=NetName=GND_NTC Sense7|NetColor=clGreen
+Net143=NetName=GND_NTC Sense8|NetColor=clGreen
+Net144=NetName=GND_NTC Sense9|NetColor=clGreen
+Net145=NetName=GND_Temperature Sensing 12S|NetColor=clGreen
+Net146=NetName=GND_Temperature Sensing 8S LHS|NetColor=clGreen
+Net147=NetName=GND_Temperature Sensing 8S RHS|NetColor=clGreen
+Net148=NetName=GND_U_Cell Monitor1|NetColor=clGreen
+Net149=NetName=GND_U_Cell Monitor2|NetColor=clGreen
+Net150=NetName=GND_U_Temperature Sensing1|NetColor=clGreen
+Net151=NetName=GND_U_Temperature Sensing2|NetColor=clGreen
+Net152=NetName=GND_U_Temperature Sensing3|NetColor=clGreen
+Net153=NetName=N00000|NetColor=clGreen
+Net154=NetName=NetR3_1|NetColor=clGreen
+Net155=NetName=NetR3_Balance Circuit1_1|NetColor=clGreen
+Net156=NetName=NTC Sense1_GND|NetColor=clGreen
+Net157=NetName=NTC Sense10_GND|NetColor=clGreen
+Net158=NetName=NTC Sense11_GND|NetColor=clGreen
+Net159=NetName=NTC Sense12_GND|NetColor=clGreen
+Net160=NetName=NTC Sense13_GND|NetColor=clGreen
+Net161=NetName=NTC Sense14_GND|NetColor=clGreen
+Net162=NetName=NTC Sense15_GND|NetColor=clGreen
+Net163=NetName=NTC Sense16_GND|NetColor=clGreen
+Net164=NetName=NTC Sense17_GND|NetColor=clGreen
+Net165=NetName=NTC Sense18_GND|NetColor=clGreen
+Net166=NetName=NTC Sense19_GND|NetColor=clGreen
+Net167=NetName=NTC Sense2_GND|NetColor=clGreen
+Net168=NetName=NTC Sense20_GND|NetColor=clGreen
+Net169=NetName=NTC Sense21_GND|NetColor=clGreen
+Net170=NetName=NTC Sense22_GND|NetColor=clGreen
+Net171=NetName=NTC Sense23_GND|NetColor=clGreen
+Net172=NetName=NTC Sense24_GND|NetColor=clGreen
+Net173=NetName=NTC Sense25_GND|NetColor=clGreen
+Net174=NetName=NTC Sense26_GND|NetColor=clGreen
+Net175=NetName=NTC Sense27_GND|NetColor=clGreen
+Net176=NetName=NTC Sense28_GND|NetColor=clGreen
+Net177=NetName=NTC Sense29_GND|NetColor=clGreen
+Net178=NetName=NTC Sense3_GND|NetColor=clGreen
+Net179=NetName=NTC Sense30_GND|NetColor=clGreen
+Net180=NetName=NTC Sense31_GND|NetColor=clGreen
+Net181=NetName=NTC Sense32_GND|NetColor=clGreen
+Net182=NetName=NTC Sense33_GND|NetColor=clGreen
+Net183=NetName=NTC Sense34_GND|NetColor=clGreen
+Net184=NetName=NTC Sense35_GND|NetColor=clGreen
+Net185=NetName=NTC Sense36_GND|NetColor=clGreen
+Net186=NetName=NTC Sense37_GND|NetColor=clGreen
+Net187=NetName=NTC Sense38_GND|NetColor=clGreen
+Net188=NetName=NTC Sense39_GND|NetColor=clGreen
+Net189=NetName=NTC Sense4_GND|NetColor=clGreen
+Net190=NetName=NTC Sense40_GND|NetColor=clGreen
+Net191=NetName=NTC Sense41_GND|NetColor=clGreen
+Net192=NetName=NTC Sense42_GND|NetColor=clGreen
+Net193=NetName=NTC Sense43_GND|NetColor=clGreen
+Net194=NetName=NTC Sense44_GND|NetColor=clGreen
+Net195=NetName=NTC Sense45_GND|NetColor=clGreen
+Net196=NetName=NTC Sense46_GND|NetColor=clGreen
+Net197=NetName=NTC Sense47_GND|NetColor=clGreen
+Net198=NetName=NTC Sense48_GND|NetColor=clGreen
+Net199=NetName=NTC Sense5_GND|NetColor=clGreen
+Net200=NetName=NTC Sense6_GND|NetColor=clGreen
+Net201=NetName=NTC Sense7_GND|NetColor=clGreen
+Net202=NetName=NTC Sense8_GND|NetColor=clGreen
+Net203=NetName=NTC Sense9_GND|NetColor=clGreen
+Net204=NetName=U_Temperature Sensing1_5V0|NetColor=clRed
+Net205=NetName=U_Temperature Sensing1_GND|NetColor=clGreen
+Net206=NetName=U_Temperature Sensing2_5V0|NetColor=clRed
+Net207=NetName=U_Temperature Sensing2_GND|NetColor=clGreen
+Net208=NetName=U_Temperature Sensing3_5V0|NetColor=clRed
+Net209=NetName=U_Temperature Sensing3_GND|NetColor=clGreen
+Net210=NetName=VBat|NetColor=$00000066
+Net211=NetName=VBat_12|NetColor=$00000066
+Net212=NetName=VBat_8L|NetColor=$00000098
+Net213=NetName=VBat12_12|NetColor=$00000098
+Net214=NetName=VBat8L|NetColor=$00000098
+Net215=NetName=VBat8R|NetColor=$00000098
+Net216=NetName=Vreg|NetColor=$000000CC
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
