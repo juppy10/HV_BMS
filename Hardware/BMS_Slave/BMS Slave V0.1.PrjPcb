@@ -180,7 +180,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WVWVVLDU
+DocumentUniqueId=WLKEWDOW
 
 [Document9]
 DocumentPath=IsoSPI V0.1.SchDoc
@@ -424,13 +424,17 @@ DocumentUniqueId=
 DocumentPath=Project Outputs for BMS Slave V0.1\Mechanical Outputs\BMS Slave V0.1.step
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=Project Outputs for BMS Slave V0.1\Design Rule Check - BMS Slave V0.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Version
 Value=V0.1
 
 [Parameter2]
 Name=ProjectTitle
-Value=HV BMS Slave 12S
+Value=HV BMS Slave
 
 [Parameter3]
 Name=ProAuthor
