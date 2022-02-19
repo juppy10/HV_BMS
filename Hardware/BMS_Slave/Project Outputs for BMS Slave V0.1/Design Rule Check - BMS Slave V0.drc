@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\BMS Slave V0.1.PcbDoc
 Date     : 19/02/2022
-Time     : 12:31:56 PM
+Time     : 12:58:18 PM
 
 Processing Rule : Clearance Constraint (Gap=0mm) (HasFootprint('NetTie')),(All)
 Rule Violations :0
@@ -165,7 +165,7 @@ Rule Violations :0
 Processing Rule : Room NTC Sense 12S6 (Bounding Region = (414.575mm, 535.825mm, 418.325mm, 538.575mm) (InComponentClass('NTC Sense 12S6'))
 Rule Violations :0
 
-Processing Rule : Room BMS Slave V0.1 (Bounding Region = (432.425mm, 556.85mm, 463.35mm, 624.125mm) (InComponentClass('BMS Slave V0.1'))
+Processing Rule : Room BMS Slave V0.1 (Bounding Region = (433mm, 552mm, 464mm, 625mm) (InComponentClass('BMS Slave V0.1'))
 Rule Violations :0
 
 Processing Rule : Room NTC Sense 12S7 (Bounding Region = (490.425mm, 534.25mm, 494.175mm, 537mm) (InComponentClass('NTC Sense 12S7'))
@@ -306,4 +306,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:05
