@@ -420,6 +420,58 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document23]
+DocumentPath=BMS Slave V0.1.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[ProjectVariant1]
+UniqueID=7B6E0843-A052-40FE-A91E-1FD67316F46A
+Description=Manufacture
+AllowFabrication=0
+ParameterCount=0
+VariationCount=27
+Variation1=Designator=R6|UniqueId=\MLEQUHRW\HPRKKKNB|Kind=1|AlternatePart= 
+Variation2=Designator=R10|UniqueId=\MLEQUHRW\KHAYWMXO|Kind=1|AlternatePart= 
+Variation3=Designator=R11|UniqueId=\MLEQUHRW\SZXBYYVU|Kind=1|AlternatePart= 
+Variation4=Designator=R12|UniqueId=\MLEQUHRW\IRZDHQBY|Kind=1|AlternatePart= 
+Variation5=Designator=R13|UniqueId=\MLEQUHRW\ETSDLZEU|Kind=1|AlternatePart= 
+Variation6=Designator=R17|UniqueId=\MLEQUHRW\RDZBCBXH|Kind=1|AlternatePart= 
+Variation7=Designator=R16|UniqueId=\MLEQUHRW\BFZEWNHZ|Kind=1|AlternatePart= 
+Variation8=Designator=R15|UniqueId=\MLEQUHRW\RPFNRNFX|Kind=1|AlternatePart= 
+Variation9=Designator=R14|UniqueId=\MLEQUHRW\UUONBXKJ|Kind=1|AlternatePart= 
+Variation10=Designator=R32|UniqueId=\ZIAAGUSO\LJJNNTNZ|Kind=1|AlternatePart= 
+Variation11=Designator=R36|UniqueId=\ZIAAGUSO\NYSFPXJN|Kind=1|AlternatePart= 
+Variation12=Designator=R37|UniqueId=\ZIAAGUSO\FEGJGQQO|Kind=1|AlternatePart= 
+Variation13=Designator=R38|UniqueId=\ZIAAGUSO\RRCOARNE|Kind=1|AlternatePart= 
+Variation14=Designator=R39|UniqueId=\ZIAAGUSO\BWNPAYJW|Kind=1|AlternatePart= 
+Variation15=Designator=R43|UniqueId=\ZIAAGUSO\SFUXKHPK|Kind=1|AlternatePart= 
+Variation16=Designator=R42|UniqueId=\ZIAAGUSO\ZKRIRNCH|Kind=1|AlternatePart= 
+Variation17=Designator=R41|UniqueId=\ZIAAGUSO\KAKELNGV|Kind=1|AlternatePart= 
+Variation18=Designator=R40|UniqueId=\ZIAAGUSO\ODFWOOMB|Kind=1|AlternatePart= 
+Variation19=Designator=R50|UniqueId=\MYFLNLLP\WXLQYNIE|Kind=1|AlternatePart= 
+Variation20=Designator=R54|UniqueId=\MYFLNLLP\IPIYKVHA|Kind=1|AlternatePart= 
+Variation21=Designator=R55|UniqueId=\MYFLNLLP\BPENLVAS|Kind=1|AlternatePart= 
+Variation22=Designator=R56|UniqueId=\MYFLNLLP\HTTXZZOC|Kind=1|AlternatePart= 
+Variation23=Designator=R57|UniqueId=\MYFLNLLP\AXQIXVGL|Kind=1|AlternatePart= 
+Variation24=Designator=R61|UniqueId=\MYFLNLLP\XOPHPBBF|Kind=1|AlternatePart= 
+Variation25=Designator=R60|UniqueId=\MYFLNLLP\QIROIGYF|Kind=1|AlternatePart= 
+Variation26=Designator=R59|UniqueId=\MYFLNLLP\MLZMXETL|Kind=1|AlternatePart= 
+Variation27=Designator=R58|UniqueId=\MYFLNLLP\IZCNXNDW|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for BMS Slave V0.1\Mechanical Outputs\BMS Slave V0.1.step
 DItemRevisionGUID=
@@ -429,16 +481,16 @@ DocumentPath=Project Outputs for BMS Slave V0.1\Design Rule Check - BMS Slave V0
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Version
-Value=V0.1
+Name=ProAuthor
+Value=William J
 
 [Parameter2]
 Name=ProjectTitle
 Value=HV BMS Slave
 
 [Parameter3]
-Name=ProAuthor
-Value=William J
+Name=Version
+Value=V0.1
 
 [Configuration1]
 Name=Sources
@@ -1401,6 +1453,102 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=LEDLib.IntLib
+ComponentDesignItemID0=150060BS55040
+ComponentSymbolReference0=150060BS55040
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=LEDLib.IntLib
+ComponentDesignItemID1=150060SS55040
+ComponentSymbolReference1=150060SS55040
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=Miscellaneous Devices.IntLib
+ComponentDesignItemID2=Fuse 2
+ComponentSymbolReference2=Fuse 2
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=Passives.IntLib
+ComponentDesignItemID3=Capacitor
+ComponentSymbolReference3=Capacitor
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=Passives.IntLib
+ComponentDesignItemID4=Resistor
+ComponentSymbolReference4=Resistor
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=SchematicLib.SchLib
+ComponentDesignItemID5=CD74HC4067M96
+ComponentSymbolReference5=CD74HC4067M96
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=SchematicLib.SchLib
+ComponentDesignItemID6=LTC6811-2
+ComponentSymbolReference6=LTC6811-2
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=SchematicLib.SchLib
+ComponentDesignItemID7=NetTie
+ComponentSymbolReference7=NetTie
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=SchematicLib.SchLib
+ComponentDesignItemID8=NX2301PVL
+ComponentSymbolReference8=NX2301PVL
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=SchematicLib.SchLib
+ComponentDesignItemID9=PHPT60603NYX
+ComponentSymbolReference9=PHPT60603NYX
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=SchematicLib.SchLib
+ComponentDesignItemID10=SM91502ALE
+ComponentSymbolReference10=SM91502ALE
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=SchematicLib.SchLib
+ComponentDesignItemID11=Test Point
+ComponentSymbolReference11=Test Point
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=SchematicLib.SchLib
+ComponentDesignItemID12=Tractive voltage symbol
+ComponentSymbolReference12=Tractive voltage symbol
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=SnapEDA_Library.IntLib
+ComponentDesignItemID13=2-1445057-2
+ComponentSymbolReference13=2-1445057-2
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=TE_Con.IntLib
+ComponentDesignItemID14=84953-7
+ComponentSymbolReference14=84953-7
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=TE_Con.IntLib
+ComponentDesignItemID15=84953-9
+ComponentSymbolReference15=84953-9
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
 
 [NetInfos]
 Net1=NetName=5V0|NetColor=clRed
@@ -1555,122 +1703,126 @@ Net149=NetName=GND_U_Cell Monitor2|NetColor=clGreen
 Net150=NetName=GND_U_Temperature Sensing1|NetColor=clGreen
 Net151=NetName=GND_U_Temperature Sensing2|NetColor=clGreen
 Net152=NetName=GND_U_Temperature Sensing3|NetColor=clGreen
-Net153=NetName=N00000|NetColor=$006666E0
-Net154=NetName=NetR25_2|NetColor=$006666E0
-Net155=NetName=NetR25_NTC Sense1_2|NetColor=$006666E0
-Net156=NetName=NetR25_NTC Sense10_2|NetColor=$006666E0
-Net157=NetName=NetR25_NTC Sense11_2|NetColor=$006666E0
-Net158=NetName=NetR25_NTC Sense12_2|NetColor=$006666E0
-Net159=NetName=NetR25_NTC Sense13_2|NetColor=$006666E0
-Net160=NetName=NetR25_NTC Sense14_2|NetColor=$006666E0
-Net161=NetName=NetR25_NTC Sense15_2|NetColor=$006666E0
-Net162=NetName=NetR25_NTC Sense16_2|NetColor=$006666E0
-Net163=NetName=NetR25_NTC Sense17_2|NetColor=$006666E0
-Net164=NetName=NetR25_NTC Sense18_2|NetColor=$006666E0
-Net165=NetName=NetR25_NTC Sense19_2|NetColor=$006666E0
-Net166=NetName=NetR25_NTC Sense2_2|NetColor=$006666E0
-Net167=NetName=NetR25_NTC Sense20_2|NetColor=$006666E0
-Net168=NetName=NetR25_NTC Sense21_2|NetColor=$006666E0
-Net169=NetName=NetR25_NTC Sense22_2|NetColor=$006666E0
-Net170=NetName=NetR25_NTC Sense23_2|NetColor=$006666E0
-Net171=NetName=NetR25_NTC Sense24_2|NetColor=$006666E0
-Net172=NetName=NetR25_NTC Sense25_2|NetColor=$006666E0
-Net173=NetName=NetR25_NTC Sense26_2|NetColor=$006666E0
-Net174=NetName=NetR25_NTC Sense27_2|NetColor=$006666E0
-Net175=NetName=NetR25_NTC Sense28_2|NetColor=$006666E0
-Net176=NetName=NetR25_NTC Sense29_2|NetColor=$006666E0
-Net177=NetName=NetR25_NTC Sense3_2|NetColor=$006666E0
-Net178=NetName=NetR25_NTC Sense30_2|NetColor=$006666E0
-Net179=NetName=NetR25_NTC Sense31_2|NetColor=$006666E0
-Net180=NetName=NetR25_NTC Sense32_2|NetColor=$006666E0
-Net181=NetName=NetR25_NTC Sense33_2|NetColor=$006666E0
-Net182=NetName=NetR25_NTC Sense34_2|NetColor=$006666E0
-Net183=NetName=NetR25_NTC Sense35_2|NetColor=$006666E0
-Net184=NetName=NetR25_NTC Sense36_2|NetColor=$006666E0
-Net185=NetName=NetR25_NTC Sense37_2|NetColor=$006666E0
-Net186=NetName=NetR25_NTC Sense38_2|NetColor=$006666E0
-Net187=NetName=NetR25_NTC Sense39_2|NetColor=$006666E0
-Net188=NetName=NetR25_NTC Sense4_2|NetColor=$006666E0
-Net189=NetName=NetR25_NTC Sense40_2|NetColor=$006666E0
-Net190=NetName=NetR25_NTC Sense41_2|NetColor=$006666E0
-Net191=NetName=NetR25_NTC Sense42_2|NetColor=$006666E0
-Net192=NetName=NetR25_NTC Sense43_2|NetColor=$006666E0
-Net193=NetName=NetR25_NTC Sense44_2|NetColor=$006666E0
-Net194=NetName=NetR25_NTC Sense45_2|NetColor=$006666E0
-Net195=NetName=NetR25_NTC Sense46_2|NetColor=$006666E0
-Net196=NetName=NetR25_NTC Sense47_2|NetColor=$006666E0
-Net197=NetName=NetR25_NTC Sense48_2|NetColor=$006666E0
-Net198=NetName=NetR25_NTC Sense5_2|NetColor=$006666E0
-Net199=NetName=NetR25_NTC Sense6_2|NetColor=$006666E0
-Net200=NetName=NetR25_NTC Sense7_2|NetColor=$006666E0
-Net201=NetName=NetR25_NTC Sense8_2|NetColor=$006666E0
-Net202=NetName=NetR25_NTC Sense9_2|NetColor=$006666E0
-Net203=NetName=NetR3_1|NetColor=$00000098
-Net204=NetName=NetR3_Balance Circuit1_1|NetColor=clGreen
-Net205=NetName=NTC Sense1_GND|NetColor=clGreen
-Net206=NetName=NTC Sense10_GND|NetColor=clGreen
-Net207=NetName=NTC Sense11_GND|NetColor=clGreen
-Net208=NetName=NTC Sense12_GND|NetColor=clGreen
-Net209=NetName=NTC Sense13_GND|NetColor=clGreen
-Net210=NetName=NTC Sense14_GND|NetColor=clGreen
-Net211=NetName=NTC Sense15_GND|NetColor=clGreen
-Net212=NetName=NTC Sense16_GND|NetColor=clGreen
-Net213=NetName=NTC Sense17_GND|NetColor=clGreen
-Net214=NetName=NTC Sense18_GND|NetColor=clGreen
-Net215=NetName=NTC Sense19_GND|NetColor=clGreen
-Net216=NetName=NTC Sense2_GND|NetColor=clGreen
-Net217=NetName=NTC Sense20_GND|NetColor=clGreen
-Net218=NetName=NTC Sense21_GND|NetColor=clGreen
-Net219=NetName=NTC Sense22_GND|NetColor=clGreen
-Net220=NetName=NTC Sense23_GND|NetColor=clGreen
-Net221=NetName=NTC Sense24_GND|NetColor=clGreen
-Net222=NetName=NTC Sense25_GND|NetColor=clGreen
-Net223=NetName=NTC Sense26_GND|NetColor=clGreen
-Net224=NetName=NTC Sense27_GND|NetColor=clGreen
-Net225=NetName=NTC Sense28_GND|NetColor=clGreen
-Net226=NetName=NTC Sense29_GND|NetColor=clGreen
-Net227=NetName=NTC Sense3_GND|NetColor=clGreen
-Net228=NetName=NTC Sense30_GND|NetColor=clGreen
-Net229=NetName=NTC Sense31_GND|NetColor=clGreen
-Net230=NetName=NTC Sense32_GND|NetColor=clGreen
-Net231=NetName=NTC Sense33_GND|NetColor=clGreen
-Net232=NetName=NTC Sense34_GND|NetColor=clGreen
-Net233=NetName=NTC Sense35_GND|NetColor=clGreen
-Net234=NetName=NTC Sense36_GND|NetColor=clGreen
-Net235=NetName=NTC Sense37_GND|NetColor=clGreen
-Net236=NetName=NTC Sense38_GND|NetColor=clGreen
-Net237=NetName=NTC Sense39_GND|NetColor=clGreen
-Net238=NetName=NTC Sense4_GND|NetColor=clGreen
-Net239=NetName=NTC Sense40_GND|NetColor=clGreen
-Net240=NetName=NTC Sense41_GND|NetColor=clGreen
-Net241=NetName=NTC Sense42_GND|NetColor=clGreen
-Net242=NetName=NTC Sense43_GND|NetColor=clGreen
-Net243=NetName=NTC Sense44_GND|NetColor=clGreen
-Net244=NetName=NTC Sense45_GND|NetColor=clGreen
-Net245=NetName=NTC Sense46_GND|NetColor=clGreen
-Net246=NetName=NTC Sense47_GND|NetColor=clGreen
-Net247=NetName=NTC Sense48_GND|NetColor=clGreen
-Net248=NetName=NTC Sense5_GND|NetColor=clGreen
-Net249=NetName=NTC Sense6_GND|NetColor=clGreen
-Net250=NetName=NTC Sense7_GND|NetColor=clGreen
-Net251=NetName=NTC Sense8_GND|NetColor=clGreen
-Net252=NetName=NTC Sense9_GND|NetColor=clGreen
-Net253=NetName=U_Temperature Sensing1_5V0|NetColor=clRed
-Net254=NetName=U_Temperature Sensing1_GND|NetColor=clGreen
-Net255=NetName=U_Temperature Sensing2_5V0|NetColor=clRed
-Net256=NetName=U_Temperature Sensing2_GND|NetColor=clGreen
-Net257=NetName=U_Temperature Sensing3_5V0|NetColor=clRed
-Net258=NetName=U_Temperature Sensing3_GND|NetColor=clGreen
-Net259=NetName=VBat|NetColor=$00000066
-Net260=NetName=VBat_12|NetColor=$00000066
-Net261=NetName=VBat_8L|NetColor=$00000098
-Net262=NetName=VBat12_12|NetColor=$00000098
-Net263=NetName=VBat8L|NetColor=$00000098
-Net264=NetName=VBat8R|NetColor=$00000098
-Net265=NetName=VREF12_2|NetColor=$006666E0
-Net266=NetName=VREF8L_2|NetColor=$006666E0
-Net267=NetName=VREF8R_2|NetColor=$006666E0
-Net268=NetName=Vreg|NetColor=$000000CC
+Net153=NetName=ISOGND|NetColor=$00063306
+Net154=NetName=ISOGND_IsoSPI 12S|NetColor=$00063306
+Net155=NetName=ISOGND_IsoSPI 8S LHS|NetColor=$00063306
+Net156=NetName=ISOGND_IsoSPI 8S RHS|NetColor=$00063306
+Net157=NetName=N00000|NetColor=$006666E0
+Net158=NetName=NetR25_2|NetColor=$006666E0
+Net159=NetName=NetR25_NTC Sense1_2|NetColor=$006666E0
+Net160=NetName=NetR25_NTC Sense10_2|NetColor=$006666E0
+Net161=NetName=NetR25_NTC Sense11_2|NetColor=$006666E0
+Net162=NetName=NetR25_NTC Sense12_2|NetColor=$006666E0
+Net163=NetName=NetR25_NTC Sense13_2|NetColor=$006666E0
+Net164=NetName=NetR25_NTC Sense14_2|NetColor=$006666E0
+Net165=NetName=NetR25_NTC Sense15_2|NetColor=$006666E0
+Net166=NetName=NetR25_NTC Sense16_2|NetColor=$006666E0
+Net167=NetName=NetR25_NTC Sense17_2|NetColor=$006666E0
+Net168=NetName=NetR25_NTC Sense18_2|NetColor=$006666E0
+Net169=NetName=NetR25_NTC Sense19_2|NetColor=$006666E0
+Net170=NetName=NetR25_NTC Sense2_2|NetColor=$006666E0
+Net171=NetName=NetR25_NTC Sense20_2|NetColor=$006666E0
+Net172=NetName=NetR25_NTC Sense21_2|NetColor=$006666E0
+Net173=NetName=NetR25_NTC Sense22_2|NetColor=$006666E0
+Net174=NetName=NetR25_NTC Sense23_2|NetColor=$006666E0
+Net175=NetName=NetR25_NTC Sense24_2|NetColor=$006666E0
+Net176=NetName=NetR25_NTC Sense25_2|NetColor=$006666E0
+Net177=NetName=NetR25_NTC Sense26_2|NetColor=$006666E0
+Net178=NetName=NetR25_NTC Sense27_2|NetColor=$006666E0
+Net179=NetName=NetR25_NTC Sense28_2|NetColor=$006666E0
+Net180=NetName=NetR25_NTC Sense29_2|NetColor=$006666E0
+Net181=NetName=NetR25_NTC Sense3_2|NetColor=$006666E0
+Net182=NetName=NetR25_NTC Sense30_2|NetColor=$006666E0
+Net183=NetName=NetR25_NTC Sense31_2|NetColor=$006666E0
+Net184=NetName=NetR25_NTC Sense32_2|NetColor=$006666E0
+Net185=NetName=NetR25_NTC Sense33_2|NetColor=$006666E0
+Net186=NetName=NetR25_NTC Sense34_2|NetColor=$006666E0
+Net187=NetName=NetR25_NTC Sense35_2|NetColor=$006666E0
+Net188=NetName=NetR25_NTC Sense36_2|NetColor=$006666E0
+Net189=NetName=NetR25_NTC Sense37_2|NetColor=$006666E0
+Net190=NetName=NetR25_NTC Sense38_2|NetColor=$006666E0
+Net191=NetName=NetR25_NTC Sense39_2|NetColor=$006666E0
+Net192=NetName=NetR25_NTC Sense4_2|NetColor=$006666E0
+Net193=NetName=NetR25_NTC Sense40_2|NetColor=$006666E0
+Net194=NetName=NetR25_NTC Sense41_2|NetColor=$006666E0
+Net195=NetName=NetR25_NTC Sense42_2|NetColor=$006666E0
+Net196=NetName=NetR25_NTC Sense43_2|NetColor=$006666E0
+Net197=NetName=NetR25_NTC Sense44_2|NetColor=$006666E0
+Net198=NetName=NetR25_NTC Sense45_2|NetColor=$006666E0
+Net199=NetName=NetR25_NTC Sense46_2|NetColor=$006666E0
+Net200=NetName=NetR25_NTC Sense47_2|NetColor=$006666E0
+Net201=NetName=NetR25_NTC Sense48_2|NetColor=$006666E0
+Net202=NetName=NetR25_NTC Sense5_2|NetColor=$006666E0
+Net203=NetName=NetR25_NTC Sense6_2|NetColor=$006666E0
+Net204=NetName=NetR25_NTC Sense7_2|NetColor=$006666E0
+Net205=NetName=NetR25_NTC Sense8_2|NetColor=$006666E0
+Net206=NetName=NetR25_NTC Sense9_2|NetColor=$006666E0
+Net207=NetName=NetR3_1|NetColor=$00000098
+Net208=NetName=NetR3_Balance Circuit1_1|NetColor=clGreen
+Net209=NetName=NTC Sense1_GND|NetColor=clGreen
+Net210=NetName=NTC Sense10_GND|NetColor=clGreen
+Net211=NetName=NTC Sense11_GND|NetColor=clGreen
+Net212=NetName=NTC Sense12_GND|NetColor=clGreen
+Net213=NetName=NTC Sense13_GND|NetColor=clGreen
+Net214=NetName=NTC Sense14_GND|NetColor=clGreen
+Net215=NetName=NTC Sense15_GND|NetColor=clGreen
+Net216=NetName=NTC Sense16_GND|NetColor=clGreen
+Net217=NetName=NTC Sense17_GND|NetColor=clGreen
+Net218=NetName=NTC Sense18_GND|NetColor=clGreen
+Net219=NetName=NTC Sense19_GND|NetColor=clGreen
+Net220=NetName=NTC Sense2_GND|NetColor=clGreen
+Net221=NetName=NTC Sense20_GND|NetColor=clGreen
+Net222=NetName=NTC Sense21_GND|NetColor=clGreen
+Net223=NetName=NTC Sense22_GND|NetColor=clGreen
+Net224=NetName=NTC Sense23_GND|NetColor=clGreen
+Net225=NetName=NTC Sense24_GND|NetColor=clGreen
+Net226=NetName=NTC Sense25_GND|NetColor=clGreen
+Net227=NetName=NTC Sense26_GND|NetColor=clGreen
+Net228=NetName=NTC Sense27_GND|NetColor=clGreen
+Net229=NetName=NTC Sense28_GND|NetColor=clGreen
+Net230=NetName=NTC Sense29_GND|NetColor=clGreen
+Net231=NetName=NTC Sense3_GND|NetColor=clGreen
+Net232=NetName=NTC Sense30_GND|NetColor=clGreen
+Net233=NetName=NTC Sense31_GND|NetColor=clGreen
+Net234=NetName=NTC Sense32_GND|NetColor=clGreen
+Net235=NetName=NTC Sense33_GND|NetColor=clGreen
+Net236=NetName=NTC Sense34_GND|NetColor=clGreen
+Net237=NetName=NTC Sense35_GND|NetColor=clGreen
+Net238=NetName=NTC Sense36_GND|NetColor=clGreen
+Net239=NetName=NTC Sense37_GND|NetColor=clGreen
+Net240=NetName=NTC Sense38_GND|NetColor=clGreen
+Net241=NetName=NTC Sense39_GND|NetColor=clGreen
+Net242=NetName=NTC Sense4_GND|NetColor=clGreen
+Net243=NetName=NTC Sense40_GND|NetColor=clGreen
+Net244=NetName=NTC Sense41_GND|NetColor=clGreen
+Net245=NetName=NTC Sense42_GND|NetColor=clGreen
+Net246=NetName=NTC Sense43_GND|NetColor=clGreen
+Net247=NetName=NTC Sense44_GND|NetColor=clGreen
+Net248=NetName=NTC Sense45_GND|NetColor=clGreen
+Net249=NetName=NTC Sense46_GND|NetColor=clGreen
+Net250=NetName=NTC Sense47_GND|NetColor=clGreen
+Net251=NetName=NTC Sense48_GND|NetColor=clGreen
+Net252=NetName=NTC Sense5_GND|NetColor=clGreen
+Net253=NetName=NTC Sense6_GND|NetColor=clGreen
+Net254=NetName=NTC Sense7_GND|NetColor=clGreen
+Net255=NetName=NTC Sense8_GND|NetColor=clGreen
+Net256=NetName=NTC Sense9_GND|NetColor=clGreen
+Net257=NetName=U_Temperature Sensing1_5V0|NetColor=clRed
+Net258=NetName=U_Temperature Sensing1_GND|NetColor=clGreen
+Net259=NetName=U_Temperature Sensing2_5V0|NetColor=clRed
+Net260=NetName=U_Temperature Sensing2_GND|NetColor=clGreen
+Net261=NetName=U_Temperature Sensing3_5V0|NetColor=clRed
+Net262=NetName=U_Temperature Sensing3_GND|NetColor=clGreen
+Net263=NetName=VBat|NetColor=$00000066
+Net264=NetName=VBat_12|NetColor=$00000066
+Net265=NetName=VBat_8L|NetColor=$00000098
+Net266=NetName=VBat12_12|NetColor=$00000098
+Net267=NetName=VBat8L|NetColor=$00000098
+Net268=NetName=VBat8R|NetColor=$00000098
+Net269=NetName=VREF12_2|NetColor=$006666E0
+Net270=NetName=VREF8L_2|NetColor=$006666E0
+Net271=NetName=VREF8R_2|NetColor=$006666E0
+Net272=NetName=Vreg|NetColor=$000000CC
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
