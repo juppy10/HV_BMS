@@ -442,7 +442,7 @@ UniqueID=7B6E0843-A052-40FE-A91E-1FD67316F46A
 Description=Manufacture
 AllowFabrication=0
 ParameterCount=0
-VariationCount=27
+VariationCount=36
 Variation1=Designator=R6|UniqueId=\MLEQUHRW\HPRKKKNB|Kind=1|AlternatePart= 
 Variation2=Designator=R10|UniqueId=\MLEQUHRW\KHAYWMXO|Kind=1|AlternatePart= 
 Variation3=Designator=R11|UniqueId=\MLEQUHRW\SZXBYYVU|Kind=1|AlternatePart= 
@@ -470,6 +470,15 @@ Variation24=Designator=R61|UniqueId=\MYFLNLLP\XOPHPBBF|Kind=1|AlternatePart=
 Variation25=Designator=R60|UniqueId=\MYFLNLLP\QIROIGYF|Kind=1|AlternatePart= 
 Variation26=Designator=R59|UniqueId=\MYFLNLLP\MLZMXETL|Kind=1|AlternatePart= 
 Variation27=Designator=R58|UniqueId=\MYFLNLLP\IZCNXNDW|Kind=1|AlternatePart= 
+Variation28=Designator=R23_IsoSPI 8S LHS|UniqueId=\YWGSIBYZ\FMCYNJCV|Kind=1|AlternatePart= 
+Variation29=Designator=R24_IsoSPI 8S LHS|UniqueId=\YWGSIBYZ\IIVXJJBQ|Kind=1|AlternatePart= 
+Variation30=Designator=C9_IsoSPI 8S LHS|UniqueId=\YWGSIBYZ\VXFRJUJR|Kind=1|AlternatePart= 
+Variation31=Designator=R23_IsoSPI 8S RHS|UniqueId=\WEAQJWVM\FMCYNJCV|Kind=1|AlternatePart= 
+Variation32=Designator=R24_IsoSPI 8S RHS|UniqueId=\WEAQJWVM\IIVXJJBQ|Kind=1|AlternatePart= 
+Variation33=Designator=C9_IsoSPI 8S RHS|UniqueId=\WEAQJWVM\VXFRJUJR|Kind=1|AlternatePart= 
+Variation34=Designator=R23_IsoSPI 12S|UniqueId=\QTZHXPRZ\FMCYNJCV|Kind=1|AlternatePart= 
+Variation35=Designator=R24_IsoSPI 12S|UniqueId=\QTZHXPRZ\IIVXJJBQ|Kind=1|AlternatePart= 
+Variation36=Designator=C9_IsoSPI 12S|UniqueId=\QTZHXPRZ\VXFRJUJR|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
