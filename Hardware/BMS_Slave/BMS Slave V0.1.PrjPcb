@@ -442,7 +442,7 @@ UniqueID=7B6E0843-A052-40FE-A91E-1FD67316F46A
 Description=Manufacture
 AllowFabrication=0
 ParameterCount=0
-VariationCount=36
+VariationCount=42
 Variation1=Designator=R6|UniqueId=\MLEQUHRW\HPRKKKNB|Kind=1|AlternatePart= 
 Variation2=Designator=R10|UniqueId=\MLEQUHRW\KHAYWMXO|Kind=1|AlternatePart= 
 Variation3=Designator=R11|UniqueId=\MLEQUHRW\SZXBYYVU|Kind=1|AlternatePart= 
@@ -479,13 +479,143 @@ Variation33=Designator=C9_IsoSPI 8S RHS|UniqueId=\WEAQJWVM\VXFRJUJR|Kind=1|Alter
 Variation34=Designator=R23_IsoSPI 12S|UniqueId=\QTZHXPRZ\FMCYNJCV|Kind=1|AlternatePart= 
 Variation35=Designator=R24_IsoSPI 12S|UniqueId=\QTZHXPRZ\IIVXJJBQ|Kind=1|AlternatePart= 
 Variation36=Designator=C9_IsoSPI 12S|UniqueId=\QTZHXPRZ\VXFRJUJR|Kind=1|AlternatePart= 
+Variation37=Designator=C24|UniqueId=\MYFLNLLP\RXTWKJVR|Kind=1|AlternatePart= 
+Variation38=Designator=C23|UniqueId=\MYFLNLLP\WBFJFQOW|Kind=1|AlternatePart= 
+Variation39=Designator=C17|UniqueId=\ZIAAGUSO\JXSAFYAW|Kind=1|AlternatePart= 
+Variation40=Designator=C16|UniqueId=\ZIAAGUSO\BRGSRQYT|Kind=1|AlternatePart= 
+Variation41=Designator=C4|UniqueId=\MLEQUHRW\AZAFELPE|Kind=1|AlternatePart= 
+Variation42=Designator=C3|UniqueId=\MLEQUHRW\BZIDYPUU|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for BMS Slave V0.1\Mechanical Outputs\BMS Slave V0.1.step
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\NC Drill\BMS Slave V0.1.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument2]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM3
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM4
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM6
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM7
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM11
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM24
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GM30
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\NC Drill\BMS Slave V0.1.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.REP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\Gerber\BMS Slave V0.1.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for BMS Slave V0.1\Mechanical Outputs\BMS Slave V0.1.step
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for BMS Slave V0.1\Fabrication\NC Drill\BMS Slave V0.1.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument33]
 DocumentPath=Project Outputs for BMS Slave V0.1\Design Rule Check - BMS Slave V0.html
 DItemRevisionGUID=
 
