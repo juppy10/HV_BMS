@@ -1,21 +1,21 @@
 Protel Design System Design Rule Check
 PCB File : D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\BMS Slave V0.1.PcbDoc
-Date     : 6/03/2022
-Time     : 1:20:23 PM
+Date     : 15/03/2022
+Time     : 10:07:56 PM
 
-Processing Rule : Clearance Constraint (Gap=0mil) (HasFootprint('NetTie')),(All)
+Processing Rule : Clearance Constraint (Gap=0.152mm) (InDifferentialPairClass('isoSPI')),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Processing Rule : Clearance Constraint (Gap=0mm) (HasFootprint('NetTie')),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=6mil) (InDifferentialPairClass('isoSPI')),(All)
+Processing Rule : Clearance Constraint (Gap=0mm) (OnLayer('Keep-Out Layer')),(HasFootprint('M3 MH'))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=6mil) (InNet('GND_8R_1') or InNet('GND_12_1') or InNet('GND_8L_1')),(InNet('GND_8R_1') or InNet('GND_12_1') or InNet('GND_8L_1'))
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0mil) (OnLayer('Keep-Out Layer')),(HasFootprint('M3 MH'))
+Processing Rule : Clearance Constraint (Gap=0.152mm) (InNet('GND_8R_1') or InNet('GND_12_1') or InNet('GND_8L_1')),(InNet('GND_8R_1') or InNet('GND_12_1') or InNet('GND_8L_1'))
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -30,286 +30,286 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=8mil) (Max=100mil) (Preferred=8mil) (All)
+Processing Rule : Width Constraint (Min=0.203mm) (Max=2.54mm) (Preferred=0.203mm) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=5.906mil) (All)
+Processing Rule : Minimum Annular Ring (Minimum=0.15mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=393.701mil) (All)
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=10mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=11.811mil) (All),(All)
+Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+Processing Rule : Silk To Solder Mask (Clearance=0.152mm) (IsPad),(All)
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
-Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
 Rule Violations :0
 
-Processing Rule : Board Clearance Constraint (Gap=0mil) (OnLayer('Top Overlay') or OnLayer('Bottom Overlay'))
+Processing Rule : Board Clearance Constraint (Gap=0mm) (OnLayer('Top Overlay') or OnLayer('Bottom Overlay'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R6 (Bounding Region = (19029.528mil, 23332.677mil, 19429.134mil, 23668.307mil) (InComponentClass('Balance Circuit 8R6'))
+Processing Rule : Room Balance Circuit 8R6 (Bounding Region = (483.35mm, 592.65mm, 493.5mm, 601.175mm) (InComponentClass('Balance Circuit 8R6'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R7 (Bounding Region = (19029.528mil, 23000.984mil, 19429.134mil, 23340.551mil) (InComponentClass('Balance Circuit 8R7'))
+Processing Rule : Room Balance Circuit 8R7 (Bounding Region = (483.35mm, 584.225mm, 493.5mm, 592.85mm) (InComponentClass('Balance Circuit 8R7'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R5 (Bounding Region = (19029.528mil, 23672.244mil, 19429.134mil, 24011.811mil) (InComponentClass('Balance Circuit 8R5'))
+Processing Rule : Room Balance Circuit 8R5 (Bounding Region = (483.35mm, 601.275mm, 493.5mm, 609.9mm) (InComponentClass('Balance Circuit 8R5'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R4 (Bounding Region = (19029.528mil, 24007.874mil, 19429.134mil, 24347.441mil) (InComponentClass('Balance Circuit 8R4'))
+Processing Rule : Room Balance Circuit 8R4 (Bounding Region = (483.35mm, 609.8mm, 493.5mm, 618.425mm) (InComponentClass('Balance Circuit 8R4'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S17 (Bounding Region = (19308.059mil, 22453.777mil, 19455.697mil, 22562.045mil) (InComponentClass('NTC Sense 8S17'))
+Processing Rule : Room NTC Sense 8S17 (Bounding Region = (490.425mm, 570.326mm, 494.175mm, 573.076mm) (InComponentClass('NTC Sense 8S17'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S18 (Bounding Region = (19160.421mil, 22399.643mil, 19308.059mil, 22507.911mil) (InComponentClass('NTC Sense 8S18'))
+Processing Rule : Room NTC Sense 8S18 (Bounding Region = (486.675mm, 568.951mm, 490.425mm, 571.701mm) (InComponentClass('NTC Sense 8S18'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S19 (Bounding Region = (19308.059mil, 22345.509mil, 19455.697mil, 22453.777mil) (InComponentClass('NTC Sense 8S19'))
+Processing Rule : Room NTC Sense 8S19 (Bounding Region = (490.425mm, 567.576mm, 494.175mm, 570.326mm) (InComponentClass('NTC Sense 8S19'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R1 (Bounding Region = (19029.528mil, 25014.763mil, 19429.134mil, 25354.33mil) (InComponentClass('Balance Circuit 8R1'))
+Processing Rule : Room Balance Circuit 8R1 (Bounding Region = (483.35mm, 635.375mm, 493.5mm, 644mm) (InComponentClass('Balance Circuit 8R1'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R2 (Bounding Region = (19029.528mil, 24679.133mil, 19429.134mil, 25018.7mil) (InComponentClass('Balance Circuit 8R2'))
+Processing Rule : Room Balance Circuit 8R2 (Bounding Region = (483.35mm, 626.85mm, 493.5mm, 635.475mm) (InComponentClass('Balance Circuit 8R2'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R3 (Bounding Region = (19029.528mil, 24343.503mil, 19429.134mil, 24683.07mil) (InComponentClass('Balance Circuit 8R3'))
+Processing Rule : Room Balance Circuit 8R3 (Bounding Region = (483.35mm, 618.325mm, 493.5mm, 626.95mm) (InComponentClass('Balance Circuit 8R3'))
 Rule Violations :0
 
-Processing Rule : Room IsoSPI 8S RHS (Bounding Region = (18031.496mil, 23031.496mil, 18838.583mil, 23897.638mil) (InComponentClass('IsoSPI 8S RHS'))
+Processing Rule : Room IsoSPI 8S RHS (Bounding Region = (458mm, 585mm, 478.5mm, 607mm) (InComponentClass('IsoSPI 8S RHS'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L5 (Bounding Region = (16194.882mil, 24095.867mil, 16600.394mil, 24431.497mil) (InComponentClass('Balance Circuit 8L5'))
+Processing Rule : Room Balance Circuit 8L5 (Bounding Region = (411.35mm, 612.035mm, 421.65mm, 620.56mm) (InComponentClass('Balance Circuit 8L5'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L4 (Bounding Region = (16194.882mil, 23760.237mil, 16600.394mil, 24095.867mil) (InComponentClass('Balance Circuit 8L4'))
+Processing Rule : Room Balance Circuit 8L4 (Bounding Region = (411.35mm, 603.51mm, 421.65mm, 612.035mm) (InComponentClass('Balance Circuit 8L4'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L6 (Bounding Region = (16194.882mil, 24431.497mil, 16600.394mil, 24767.127mil) (InComponentClass('Balance Circuit 8L6'))
+Processing Rule : Room Balance Circuit 8L6 (Bounding Region = (411.35mm, 620.56mm, 421.65mm, 629.085mm) (InComponentClass('Balance Circuit 8L6'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L8 (Bounding Region = (16194.882mil, 25102.757mil, 16600.394mil, 25438.387mil) (InComponentClass('Balance Circuit 8L8'))
+Processing Rule : Room Balance Circuit 8L8 (Bounding Region = (411.35mm, 637.61mm, 421.65mm, 646.135mm) (InComponentClass('Balance Circuit 8L8'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L7 (Bounding Region = (16194.882mil, 24767.127mil, 16600.394mil, 25102.757mil) (InComponentClass('Balance Circuit 8L7'))
+Processing Rule : Room Balance Circuit 8L7 (Bounding Region = (411.35mm, 629.085mm, 421.65mm, 637.61mm) (InComponentClass('Balance Circuit 8L7'))
 Rule Violations :0
 
-Processing Rule : Room IsoSPI 8S LHS (Bounding Region = (16820.866mil, 23031.496mil, 17549.213mil, 24330.709mil) (InComponentClass('IsoSPI 8S LHS'))
+Processing Rule : Room IsoSPI 8S LHS (Bounding Region = (427.25mm, 585mm, 445.75mm, 618mm) (InComponentClass('IsoSPI 8S LHS'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8R8 (Bounding Region = (19029.528mil, 22665.354mil, 19429.134mil, 23004.921mil) (InComponentClass('Balance Circuit 8R8'))
+Processing Rule : Room Balance Circuit 8R8 (Bounding Region = (483.35mm, 575.7mm, 493.5mm, 584.325mm) (InComponentClass('Balance Circuit 8R8'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L1 (Bounding Region = (16194.882mil, 22753.347mil, 16600.394mil, 23088.977mil) (InComponentClass('Balance Circuit 8L1'))
+Processing Rule : Room Balance Circuit 8L1 (Bounding Region = (411.35mm, 577.935mm, 421.65mm, 586.46mm) (InComponentClass('Balance Circuit 8L1'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L3 (Bounding Region = (16194.882mil, 23424.607mil, 16600.394mil, 23760.237mil) (InComponentClass('Balance Circuit 8L3'))
+Processing Rule : Room Balance Circuit 8L3 (Bounding Region = (411.35mm, 594.985mm, 421.65mm, 603.51mm) (InComponentClass('Balance Circuit 8L3'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 8L2 (Bounding Region = (16194.882mil, 23088.977mil, 16600.394mil, 23424.607mil) (InComponentClass('Balance Circuit 8L2'))
+Processing Rule : Room Balance Circuit 8L2 (Bounding Region = (411.35mm, 586.46mm, 421.65mm, 594.985mm) (InComponentClass('Balance Circuit 8L2'))
 Rule Violations :0
 
-Processing Rule : Room IsoSPI 12S (Bounding Region = (16895.669mil, 20587.598mil, 17407.48mil, 21693.898mil) (InComponentClass('IsoSPI 12S'))
+Processing Rule : Room IsoSPI 12S (Bounding Region = (429.15mm, 522.925mm, 442.15mm, 551.025mm) (InComponentClass('IsoSPI 12S'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 1211 (Bounding Region = (16143.701mil, 19903.543mil, 16479.331mil, 20309.055mil) (InComponentClass('Balance Circuit 1211'))
+Processing Rule : Room Balance Circuit 1211 (Bounding Region = (410.05mm, 505.55mm, 418.575mm, 515.85mm) (InComponentClass('Balance Circuit 1211'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 128 (Bounding Region = (17150.59mil, 19903.543mil, 17486.22mil, 20309.055mil) (InComponentClass('Balance Circuit 128'))
+Processing Rule : Room Balance Circuit 128 (Bounding Region = (435.625mm, 505.55mm, 444.15mm, 515.85mm) (InComponentClass('Balance Circuit 128'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S2 (Bounding Region = (16321.851mil, 20878.937mil, 16469.488mil, 20987.205mil) (InComponentClass('NTC Sense 12S2'))
+Processing Rule : Room NTC Sense 12S2 (Bounding Region = (414.575mm, 530.325mm, 418.325mm, 533.075mm) (InComponentClass('NTC Sense 12S2'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S5 (Bounding Region = (16174.213mil, 21041.339mil, 16321.851mil, 21149.606mil) (InComponentClass('NTC Sense 12S5'))
+Processing Rule : Room NTC Sense 12S5 (Bounding Region = (410.825mm, 534.45mm, 414.575mm, 537.2mm) (InComponentClass('NTC Sense 12S5'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S4 (Bounding Region = (16321.851mil, 20987.205mil, 16469.488mil, 21095.472mil) (InComponentClass('NTC Sense 12S4'))
+Processing Rule : Room NTC Sense 12S4 (Bounding Region = (414.575mm, 533.075mm, 418.325mm, 535.825mm) (InComponentClass('NTC Sense 12S4'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S6 (Bounding Region = (16321.851mil, 21095.472mil, 16469.488mil, 21203.74mil) (InComponentClass('NTC Sense 12S6'))
+Processing Rule : Room NTC Sense 12S6 (Bounding Region = (414.575mm, 535.825mm, 418.325mm, 538.575mm) (InComponentClass('NTC Sense 12S6'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 129 (Bounding Region = (16814.96mil, 19903.543mil, 17150.59mil, 20309.055mil) (InComponentClass('Balance Circuit 129'))
+Processing Rule : Room Balance Circuit 129 (Bounding Region = (427.1mm, 505.55mm, 435.625mm, 515.85mm) (InComponentClass('Balance Circuit 129'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 125 (Bounding Region = (18157.48mil, 19903.543mil, 18493.11mil, 20309.055mil) (InComponentClass('Balance Circuit 125'))
+Processing Rule : Room Balance Circuit 125 (Bounding Region = (461.2mm, 505.55mm, 469.725mm, 515.85mm) (InComponentClass('Balance Circuit 125'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 124 (Bounding Region = (18493.11mil, 19903.543mil, 18828.74mil, 20309.055mil) (InComponentClass('Balance Circuit 124'))
+Processing Rule : Room Balance Circuit 124 (Bounding Region = (469.725mm, 505.55mm, 478.25mm, 515.85mm) (InComponentClass('Balance Circuit 124'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 123 (Bounding Region = (18828.74mil, 19903.543mil, 19164.37mil, 20309.055mil) (InComponentClass('Balance Circuit 123'))
+Processing Rule : Room Balance Circuit 123 (Bounding Region = (478.25mm, 505.55mm, 486.775mm, 515.85mm) (InComponentClass('Balance Circuit 123'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 126 (Bounding Region = (17821.85mil, 19903.543mil, 18157.48mil, 20309.055mil) (InComponentClass('Balance Circuit 126'))
+Processing Rule : Room Balance Circuit 126 (Bounding Region = (452.675mm, 505.55mm, 461.2mm, 515.85mm) (InComponentClass('Balance Circuit 126'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 1210 (Bounding Region = (16479.33mil, 19903.543mil, 16814.96mil, 20309.055mil) (InComponentClass('Balance Circuit 1210'))
+Processing Rule : Room Balance Circuit 1210 (Bounding Region = (418.575mm, 505.55mm, 427.1mm, 515.85mm) (InComponentClass('Balance Circuit 1210'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 121 (Bounding Region = (19500mil, 19903.543mil, 19835.63mil, 20309.055mil) (InComponentClass('Balance Circuit 121'))
+Processing Rule : Room Balance Circuit 121 (Bounding Region = (495.3mm, 505.55mm, 503.825mm, 515.85mm) (InComponentClass('Balance Circuit 121'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 127 (Bounding Region = (17486.22mil, 19903.543mil, 17821.85mil, 20309.055mil) (InComponentClass('Balance Circuit 127'))
+Processing Rule : Room Balance Circuit 127 (Bounding Region = (444.15mm, 505.55mm, 452.675mm, 515.85mm) (InComponentClass('Balance Circuit 127'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S3 (Bounding Region = (16174.213mil, 20933.071mil, 16321.851mil, 21041.339mil) (InComponentClass('NTC Sense 12S3'))
+Processing Rule : Room NTC Sense 12S3 (Bounding Region = (410.825mm, 531.7mm, 414.575mm, 534.45mm) (InComponentClass('NTC Sense 12S3'))
 Rule Violations :0
 
-Processing Rule : Room Temperature Sensing 8S RHS (Bounding Region = (18602.362mil, 21299.213mil, 19940.945mil, 22736.22mil) (InComponentClass('Temperature Sensing 8S RHS'))
+Processing Rule : Room Temperature Sensing 8S LHS (Bounding Region = (398.5mm, 541mm, 432.5mm, 577.5mm) (InComponentClass('Temperature Sensing 8S LHS'))
 Rule Violations :0
 
-Processing Rule : Room Temperature Sensing 12S RHS (Bounding Region = (15689.961mil, 20693.898mil, 19939.961mil, 21435.039mil) (InComponentClass('Temperature Sensing 12S RHS'))
+Processing Rule : Room Temperature Sensing 12S RHS (Bounding Region = (398.525mm, 525.625mm, 506.475mm, 544.45mm) (InComponentClass('Temperature Sensing 12S RHS'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 1212 (Bounding Region = (15808.071mil, 19903.543mil, 16143.701mil, 20309.055mil) (InComponentClass('Balance Circuit 1212'))
+Processing Rule : Room Balance Circuit 1212 (Bounding Region = (401.525mm, 505.55mm, 410.05mm, 515.85mm) (InComponentClass('Balance Circuit 1212'))
 Rule Violations :0
 
-Processing Rule : Room Temperature Sensing 8S LHS (Bounding Region = (15688.976mil, 21299.213mil, 17027.559mil, 22736.22mil) (InComponentClass('Temperature Sensing 8S LHS'))
+Processing Rule : Room Cell Monitor 12S (Bounding Region = (400.5mm, 493.5mm, 505mm, 536mm) (InComponentClass('Cell Monitor 12S'))
 Rule Violations :0
 
-Processing Rule : Room Cell Monitor 8S LHS (Bounding Region = (15688.976mil, 22637.795mil, 17322.835mil, 25472.441mil) (InComponentClass('Cell Monitor 8S LHS'))
+Processing Rule : Room Temperature Sensing 8S RHS (Bounding Region = (472.65mm, 540.55mm, 506.475mm, 576.7mm) (InComponentClass('Temperature Sensing 8S RHS'))
 Rule Violations :0
 
-Processing Rule : Room Cell Monitor 8S RHS (Bounding Region = (18287.402mil, 22637.795mil, 19940.945mil, 25472.441mil) (InComponentClass('Cell Monitor 8S RHS'))
+Processing Rule : Room Cell Monitor 8S LHS (Bounding Region = (398.5mm, 575mm, 440mm, 647mm) (InComponentClass('Cell Monitor 8S LHS'))
 Rule Violations :0
 
-Processing Rule : Room Cell Monitor 12S (Bounding Region = (15767.717mil, 19429.134mil, 19881.89mil, 21102.362mil) (InComponentClass('Cell Monitor 12S'))
+Processing Rule : Room Cell Monitor 8S RHS (Bounding Region = (464.5mm, 575mm, 506.5mm, 647mm) (InComponentClass('Cell Monitor 8S RHS'))
 Rule Violations :0
 
-Processing Rule : Room BMS Slave V0.1 (Bounding Region = (16000.984mil, 20560.039mil, 19604.331mil, 25817.913mil) (InComponentClass('BMS Slave V0.1'))
+Processing Rule : Room BMS Slave V0.1 (Bounding Region = (406.425mm, 522.225mm, 497.95mm, 655.775mm) (InComponentClass('BMS Slave V0.1'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S8 (Bounding Region = (19160.433mil, 20979.331mil, 19308.071mil, 21087.599mil) (InComponentClass('NTC Sense 12S8'))
+Processing Rule : Room NTC Sense 12S8 (Bounding Region = (486.675mm, 532.875mm, 490.425mm, 535.625mm) (InComponentClass('NTC Sense 12S8'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S12 (Bounding Region = (19160.421mil, 20762.832mil, 19308.059mil, 20871.1mil) (InComponentClass('NTC Sense 12S12'))
+Processing Rule : Room NTC Sense 12S12 (Bounding Region = (486.675mm, 527.376mm, 490.425mm, 530.126mm) (InComponentClass('NTC Sense 12S12'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S1 (Bounding Region = (16174.213mil, 20824.803mil, 16321.851mil, 20933.071mil) (InComponentClass('NTC Sense 12S1'))
+Processing Rule : Room NTC Sense 12S1 (Bounding Region = (410.825mm, 528.95mm, 414.575mm, 531.7mm) (InComponentClass('NTC Sense 12S1'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S10 (Bounding Region = (19160.421mil, 20871.1mil, 19308.059mil, 20979.368mil) (InComponentClass('NTC Sense 12S10'))
+Processing Rule : Room NTC Sense 12S10 (Bounding Region = (486.675mm, 530.126mm, 490.425mm, 532.876mm) (InComponentClass('NTC Sense 12S10'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S7 (Bounding Region = (19308.071mil, 21033.465mil, 19455.709mil, 21141.733mil) (InComponentClass('NTC Sense 12S7'))
+Processing Rule : Room NTC Sense 12S7 (Bounding Region = (490.425mm, 534.25mm, 494.175mm, 537mm) (InComponentClass('NTC Sense 12S7'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S9 (Bounding Region = (19308.059mil, 20925.234mil, 19455.697mil, 21033.502mil) (InComponentClass('NTC Sense 12S9'))
+Processing Rule : Room NTC Sense 12S9 (Bounding Region = (490.425mm, 531.501mm, 494.175mm, 534.251mm) (InComponentClass('NTC Sense 12S9'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 12S11 (Bounding Region = (19308.059mil, 20816.966mil, 19455.697mil, 20925.234mil) (InComponentClass('NTC Sense 12S11'))
+Processing Rule : Room NTC Sense 12S11 (Bounding Region = (490.425mm, 528.751mm, 494.175mm, 531.501mm) (InComponentClass('NTC Sense 12S11'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S30 (Bounding Region = (19160.421mil, 21750.036mil, 19308.059mil, 21858.304mil) (InComponentClass('NTC Sense 8S30'))
+Processing Rule : Room NTC Sense 8S30 (Bounding Region = (486.675mm, 552.451mm, 490.425mm, 555.201mm) (InComponentClass('NTC Sense 8S30'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S31 (Bounding Region = (19308.059mil, 21695.903mil, 19455.697mil, 21804.17mil) (InComponentClass('NTC Sense 8S31'))
+Processing Rule : Room NTC Sense 8S31 (Bounding Region = (490.425mm, 551.076mm, 494.175mm, 553.826mm) (InComponentClass('NTC Sense 8S31'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S28 (Bounding Region = (19160.421mil, 21858.304mil, 19308.059mil, 21966.572mil) (InComponentClass('NTC Sense 8S28'))
+Processing Rule : Room NTC Sense 8S28 (Bounding Region = (486.675mm, 555.201mm, 490.425mm, 557.951mm) (InComponentClass('NTC Sense 8S28'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S29 (Bounding Region = (19308.059mil, 21804.17mil, 19455.697mil, 21912.438mil) (InComponentClass('NTC Sense 8S29'))
+Processing Rule : Room NTC Sense 8S29 (Bounding Region = (490.425mm, 553.826mm, 494.175mm, 556.576mm) (InComponentClass('NTC Sense 8S29'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S11 (Bounding Region = (16174.225mil, 22225.358mil, 16321.862mil, 22333.625mil) (InComponentClass('NTC Sense 8S11'))
+Processing Rule : Room NTC Sense 8S11 (Bounding Region = (410.825mm, 564.524mm, 414.575mm, 567.274mm) (InComponentClass('NTC Sense 8S11'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S9 (Bounding Region = (16174.225mil, 22117.09mil, 16321.862mil, 22225.358mil) (InComponentClass('NTC Sense 8S9'))
+Processing Rule : Room NTC Sense 8S9 (Bounding Region = (410.825mm, 561.774mm, 414.575mm, 564.524mm) (InComponentClass('NTC Sense 8S9'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S32 (Bounding Region = (19160.421mil, 21641.769mil, 19308.059mil, 21750.036mil) (InComponentClass('NTC Sense 8S32'))
+Processing Rule : Room NTC Sense 8S32 (Bounding Region = (486.675mm, 549.701mm, 490.425mm, 552.451mm) (InComponentClass('NTC Sense 8S32'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S5 (Bounding Region = (16174.225mil, 21900.554mil, 16321.862mil, 22008.822mil) (InComponentClass('NTC Sense 8S5'))
+Processing Rule : Room NTC Sense 8S5 (Bounding Region = (410.825mm, 556.274mm, 414.575mm, 559.024mm) (InComponentClass('NTC Sense 8S5'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S22 (Bounding Region = (19160.421mil, 22183.108mil, 19308.059mil, 22291.375mil) (InComponentClass('NTC Sense 8S22'))
+Processing Rule : Room NTC Sense 8S22 (Bounding Region = (486.675mm, 563.451mm, 490.425mm, 566.201mm) (InComponentClass('NTC Sense 8S22'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S23 (Bounding Region = (19308.059mil, 22128.974mil, 19455.697mil, 22237.242mil) (InComponentClass('NTC Sense 8S23'))
+Processing Rule : Room NTC Sense 8S23 (Bounding Region = (490.425mm, 562.076mm, 494.175mm, 564.826mm) (InComponentClass('NTC Sense 8S23'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S20 (Bounding Region = (19160.421mil, 22291.375mil, 19308.059mil, 22399.643mil) (InComponentClass('NTC Sense 8S20'))
+Processing Rule : Room NTC Sense 8S20 (Bounding Region = (486.675mm, 566.201mm, 490.425mm, 568.951mm) (InComponentClass('NTC Sense 8S20'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S21 (Bounding Region = (19308.059mil, 22237.242mil, 19455.697mil, 22345.509mil) (InComponentClass('NTC Sense 8S21'))
+Processing Rule : Room NTC Sense 8S21 (Bounding Region = (490.425mm, 564.826mm, 494.175mm, 567.576mm) (InComponentClass('NTC Sense 8S21'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S26 (Bounding Region = (19160.421mil, 21966.572mil, 19308.059mil, 22074.84mil) (InComponentClass('NTC Sense 8S26'))
+Processing Rule : Room NTC Sense 8S26 (Bounding Region = (486.675mm, 557.951mm, 490.425mm, 560.701mm) (InComponentClass('NTC Sense 8S26'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S27 (Bounding Region = (19308.059mil, 21912.438mil, 19455.697mil, 22020.706mil) (InComponentClass('NTC Sense 8S27'))
+Processing Rule : Room NTC Sense 8S27 (Bounding Region = (490.425mm, 556.576mm, 494.175mm, 559.326mm) (InComponentClass('NTC Sense 8S27'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S24 (Bounding Region = (19160.421mil, 22074.84mil, 19308.059mil, 22183.108mil) (InComponentClass('NTC Sense 8S24'))
+Processing Rule : Room NTC Sense 8S24 (Bounding Region = (486.675mm, 560.701mm, 490.425mm, 563.451mm) (InComponentClass('NTC Sense 8S24'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S25 (Bounding Region = (19308.059mil, 22020.706mil, 19455.697mil, 22128.974mil) (InComponentClass('NTC Sense 8S25'))
+Processing Rule : Room NTC Sense 8S25 (Bounding Region = (490.425mm, 559.326mm, 494.175mm, 562.076mm) (InComponentClass('NTC Sense 8S25'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S13 (Bounding Region = (16174.225mil, 22333.625mil, 16321.862mil, 22441.893mil) (InComponentClass('NTC Sense 8S13'))
+Processing Rule : Room NTC Sense 8S13 (Bounding Region = (410.825mm, 567.274mm, 414.575mm, 570.024mm) (InComponentClass('NTC Sense 8S13'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S12 (Bounding Region = (16321.862mil, 22279.492mil, 16469.5mil, 22387.759mil) (InComponentClass('NTC Sense 8S12'))
+Processing Rule : Room NTC Sense 8S12 (Bounding Region = (414.575mm, 565.899mm, 418.325mm, 568.649mm) (InComponentClass('NTC Sense 8S12'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S14 (Bounding Region = (16321.862mil, 22387.759mil, 16469.5mil, 22496.027mil) (InComponentClass('NTC Sense 8S14'))
+Processing Rule : Room NTC Sense 8S14 (Bounding Region = (414.575mm, 568.649mm, 418.325mm, 571.399mm) (InComponentClass('NTC Sense 8S14'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S8 (Bounding Region = (16321.862mil, 22062.956mil, 16469.5mil, 22171.224mil) (InComponentClass('NTC Sense 8S8'))
+Processing Rule : Room NTC Sense 8S8 (Bounding Region = (414.575mm, 560.399mm, 418.325mm, 563.149mm) (InComponentClass('NTC Sense 8S8'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S16 (Bounding Region = (16321.862mil, 22496.027mil, 16469.5mil, 22604.295mil) (InComponentClass('NTC Sense 8S16'))
+Processing Rule : Room NTC Sense 8S16 (Bounding Region = (414.575mm, 571.399mm, 418.325mm, 574.149mm) (InComponentClass('NTC Sense 8S16'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S2 (Bounding Region = (16321.862mil, 21738.153mil, 16469.5mil, 21846.42mil) (InComponentClass('NTC Sense 8S2'))
+Processing Rule : Room NTC Sense 8S2 (Bounding Region = (414.575mm, 552.149mm, 418.325mm, 554.899mm) (InComponentClass('NTC Sense 8S2'))
 Rule Violations :0
 
-Processing Rule : Room Balance Circuit 122 (Bounding Region = (19164.37mil, 19903.543mil, 19500mil, 20309.055mil) (InComponentClass('Balance Circuit 122'))
+Processing Rule : Room Balance Circuit 122 (Bounding Region = (486.775mm, 505.55mm, 495.3mm, 515.85mm) (InComponentClass('Balance Circuit 122'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S3 (Bounding Region = (16174.225mil, 21792.286mil, 16321.862mil, 21900.554mil) (InComponentClass('NTC Sense 8S3'))
+Processing Rule : Room NTC Sense 8S3 (Bounding Region = (410.825mm, 553.524mm, 414.575mm, 556.274mm) (InComponentClass('NTC Sense 8S3'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S1 (Bounding Region = (16174.225mil, 21684.019mil, 16321.862mil, 21792.286mil) (InComponentClass('NTC Sense 8S1'))
+Processing Rule : Room NTC Sense 8S1 (Bounding Region = (410.825mm, 550.774mm, 414.575mm, 553.524mm) (InComponentClass('NTC Sense 8S1'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S7 (Bounding Region = (16174.225mil, 22008.822mil, 16321.862mil, 22117.09mil) (InComponentClass('NTC Sense 8S7'))
+Processing Rule : Room NTC Sense 8S7 (Bounding Region = (410.825mm, 559.024mm, 414.575mm, 561.774mm) (InComponentClass('NTC Sense 8S7'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S15 (Bounding Region = (16174.225mil, 22441.893mil, 16321.862mil, 22550.161mil) (InComponentClass('NTC Sense 8S15'))
+Processing Rule : Room NTC Sense 8S15 (Bounding Region = (410.825mm, 570.024mm, 414.575mm, 572.774mm) (InComponentClass('NTC Sense 8S15'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S6 (Bounding Region = (16321.862mil, 21954.688mil, 16469.5mil, 22062.956mil) (InComponentClass('NTC Sense 8S6'))
+Processing Rule : Room NTC Sense 8S6 (Bounding Region = (414.575mm, 557.649mm, 418.325mm, 560.399mm) (InComponentClass('NTC Sense 8S6'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S10 (Bounding Region = (16321.862mil, 22171.224mil, 16469.5mil, 22279.492mil) (InComponentClass('NTC Sense 8S10'))
+Processing Rule : Room NTC Sense 8S10 (Bounding Region = (414.575mm, 563.149mm, 418.325mm, 565.899mm) (InComponentClass('NTC Sense 8S10'))
 Rule Violations :0
 
-Processing Rule : Room NTC Sense 8S4 (Bounding Region = (16321.862mil, 21846.42mil, 16469.5mil, 21954.688mil) (InComponentClass('NTC Sense 8S4'))
+Processing Rule : Room NTC Sense 8S4 (Bounding Region = (414.575mm, 554.899mm, 418.325mm, 557.649mm) (InComponentClass('NTC Sense 8S4'))
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 

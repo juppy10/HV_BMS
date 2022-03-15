@@ -1,12 +1,8 @@
-Output: NC Drill Files
-Type  : NC Drill
+Output: Design Rules Check
+Type  : DRC
 From  : PCB Document [BMS Slave V0.1.PcbDoc]
-   Generated File[BMS Slave V0.1.TXT]
-   Generated File[BMS Slave V0.1.LDP]
-   Generated File[BMS Slave V0.1.DRR]
 
-
-Files Generated   : 3
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 1:13:05 PM On 6/03/2022
+Finished Output Generation At 10:08:22 PM On 15/03/2022

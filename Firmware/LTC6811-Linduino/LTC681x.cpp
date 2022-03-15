@@ -190,7 +190,7 @@ uint16_t pec15_calc(uint8_t len, //Number of bytes that will be used to calculat
 	for (uint8_t i = 0; i<len; i++) // loops for each byte in data array
 	{
 		addr = ((remainder>>7)^data[i])&0xff;//calculate PEC table address
-		remainder = (remainder<<8)^crc15Table[addr];		
+		remainder = (remainder<<8)^crc15Table[addr];
 	}
 	
 	return(remainder*2);//The CRC15 has a 0 in the LSB so the remainder must be multiplied by 2
@@ -2112,7 +2112,7 @@ void LTC681x_set_cfgr(uint8_t nIC, // Current IC
 }
 
 /* Helper function to set the REFON bit */
-void LTC681x_set_cfgr_refon(uint8_t nIC, cell_asic *ic, bool refon)
+void LTC681x_set_cfgr_refon(uint8_t nIC, LTC681x_rdcv *ic, bool refon)
 {
 	if (refon) ic[nIC].config.tx_data[0] = ic[nIC].config.tx_data[0]|0x04;
 	else ic[nIC].config.tx_data[0] = ic[nIC].config.tx_data[0]&0xFB;
