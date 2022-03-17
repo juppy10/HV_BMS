@@ -1,8 +1,10 @@
 Output: Design Rules Check
 Type  : DRC
 From  : PCB Document [BMS Slave V0.1.PcbDoc]
+   Generated File[BMS Slave V0.1.html]
+
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 10:08:22 PM On 15/03/2022
+Finished Output Generation At 6:31:33 PM On 17/03/2022

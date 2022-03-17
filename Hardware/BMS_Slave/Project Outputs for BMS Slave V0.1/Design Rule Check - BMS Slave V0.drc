@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\BMS Slave V0.1.PcbDoc
-Date     : 15/03/2022
-Time     : 10:07:56 PM
+Date     : 17/03/2022
+Time     : 6:22:45 PM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (InDifferentialPairClass('isoSPI')),(All)
 Rule Violations :0
