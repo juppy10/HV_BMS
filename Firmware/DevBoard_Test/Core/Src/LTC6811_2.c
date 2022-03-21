@@ -363,9 +363,22 @@ void updateSegmentVoltages(segmaSlave *segma){
 
 void TEST_dischargeCell(LTC6811_2_IC *ic){
 	wakeup_idle();
-	if(ic->CFGR[4] != 0x01){
+	if(ic->CFGR[4] != 0x01){			//toggle discharge
 		ic->CFGR[4] = 0x01;
 	} else ic->CFGR[4] = 0x00;
+	//uint8_t cmd[2]={((ic.address << 3) | 0x80), 0x01};		FOR USE WITH ADDRESSABLE ICS
+
+	uint8_t cmd[2]={0x00,0x01};		//write configA
+	write_68(cmd, ic->CFGR);
+}
+
+void TEST_dischargeCell2(LTC6811_2_IC *ic){
+	wakeup_idle();
+	if(ic->CFGR[4] == 0x01){			//toggle discharge
+		ic->CFGR[4] = 0x02;
+	} else if(ic->CFGR[4] == 0x02){
+		ic->CFGR[4] = 0x01;
+	}
 	//uint8_t cmd[2]={((ic.address << 3) | 0x80), 0x01};		FOR USE WITH ADDRESSABLE ICS
 
 	uint8_t cmd[2]={0x00,0x01};		//write configA

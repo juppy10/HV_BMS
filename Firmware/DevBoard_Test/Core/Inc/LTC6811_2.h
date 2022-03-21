@@ -118,6 +118,8 @@ void updateSegmentVoltages(segmaSlave *segma);
 
 void TEST_dischargeCell(LTC6811_2_IC *ic);
 
+void TEST_dischargeCell2(LTC6811_2_IC *ic);
+
 uint8_t check_UV_OV_flags(LTC6811_2_IC *ic);
 
 #endif /* INC_LTC6811_2_H_ */

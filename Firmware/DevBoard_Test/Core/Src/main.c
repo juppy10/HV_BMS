@@ -134,6 +134,8 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim13);
 	HAL_TIM_Base_Start_IT(&htim14);
 
+	TEST_dischargeCell(&ic);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -408,9 +410,9 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//1 second timer
-		//TEST_dischargeCell(&ic);
+		TEST_dischargeCell2(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		__HAL_TIM_SET_COUNTER(&htim13,0);
+		//__HAL_TIM_SET_COUNTER(&htim13,0);
 
 		updateSegmentVoltages(&segma);
 		if(check_UV_OV_flags(&ic)){
@@ -420,12 +422,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 		print_Cell_Voltages(segma.cell_V);
 
-		int x = __HAL_TIM_GET_COUNTER(&htim13);
+		/*int x = __HAL_TIM_GET_COUNTER(&htim13);
 		char cellV[18];
 		int str_len;
 		str_len = snprintf(cellV, 20, "t = %d\r\n",x);
 
-		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
+		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
 	}
 }
 
