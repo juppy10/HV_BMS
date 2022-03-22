@@ -67,7 +67,6 @@ static void MX_TIM11_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 LTC6811_2_IC ic;
-segmaSlave segma;
 /* USER CODE END 0 */
 
 /**
@@ -128,7 +127,7 @@ int main(void)
 
 	uart_buf_len = sprintf(uart_buf, "BMS Voltages:\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
-	LTC6811_startup(&ic, &segma);
+	LTC6811_startup(&ic);
 
 
 	HAL_TIM_Base_Start_IT(&htim13);
@@ -410,17 +409,15 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//1 second timer
-		TEST_dischargeCell2(&ic);
+		TEST_dischargeCell(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		//__HAL_TIM_SET_COUNTER(&htim13,0);
-
-		updateSegmentVoltages(&segma);
-		if(check_UV_OV_flags(&ic)){
+		updateSegmentVoltages(&ic);	//update segment structure cell voltages
+		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
 			//do something?????
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 0);
 		}else HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
 
-		print_Cell_Voltages(segma.cell_V);
+		print_Cell_Voltages(ic.cell_V);			//print over serial
 
 		/*int x = __HAL_TIM_GET_COUNTER(&htim13);
 		char cellV[18];

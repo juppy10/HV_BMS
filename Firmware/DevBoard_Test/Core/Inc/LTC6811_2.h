@@ -5,53 +5,16 @@
  *      Author: Will
  */
 
-#ifndef INC_LTC6811_2_H_
-#define INC_LTC6811_2_H_
+#ifndef LTC6811_2_H_
+#define LTC6811_2_H_
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include "stm32f4xx_hal.h"
 #include "main.h"
+#include "LTC_Structs.h"
 #include "BMS.h"
-
-//physical constants
-#define NUM_RX_BYT 	    8   //8
-#define NUM_CV_REG 	    4 	//number of cell voltage registers per IC
-#define TOTAL_IC	    3  	//number of ICs in the accumulator (currently set to 3 for testing purposes)
-#define SEG_IC		    3 	//number of ICs per segment
-#define TOTAL_SEG_CELLS	28	//number of cells in a segment
-#define TOTAL_CELLS 	144	//number of cells in an accumulator
-
-//cell limits
-#define CELL_UV         30000    //under cell voltage limit (E-4 V)
-#define CELL_OV         42100    //over cell voltage limit (E-4 V)
-
-//register constants
-#define BYTES_IN_REG        6      //number of bytes in register groups
-#define CMD_LEN             12     //number of bytes in an single read/write command
-
-#define CFGR0_DEFAULT   0b11111100
-#define CFGR4_DEFAULT   0x00
-#define CFGR5_DEFAULT   0x00
-
-/*! Segment variable structure */
-typedef struct{
-	uint8_t segmaID;		//from 0 to 4
-	uint16_t cell_V[15];	//cell voltages
-} segmaSlave;
-
-/*! IC variable structure */
-typedef struct{
-    uint8_t core_state;               	//variable indicates IC state 0 - sleep, 1 - standby, 2 - refup, 3 - measure, 4 - extended balancing
-    uint8_t address;                  	//address of IC
-    uint8_t CFGR[BYTES_IN_REG];        	//configuration register group data
-    uint8_t CFGRB[BYTES_IN_REG];
-    uint8_t STAR[BYTES_IN_REG];        	//status register A group data
-    uint8_t STBR[BYTES_IN_REG];       	//status register B group data
-    uint8_t AUXD[BYTES_IN_REG];			//AUX register D group data
-} LTC6811_2_IC;
-
 
 
 
@@ -95,7 +58,7 @@ Inputs---
     segmaSlave - Array of the parsed cell codes
 */
 //CURRENTLY READS ONE SEGMENTS VOLTAGE
-void LTC6811_rdcv(segmaSlave *segma);
+void LTC6811_rdcv(LTC6811_2_IC *ic);
 
 /* Writes the command and reads the raw cell voltage register data
 Inputs---
@@ -112,14 +75,4 @@ Inputs ----
 */
 uint16_t LTC6811_pec15_calc(uint8_t len, uint8_t *data);
 
-void LTC6811_startup(LTC6811_2_IC *ic, segmaSlave *segma);
-
-void updateSegmentVoltages(segmaSlave *segma);
-
-void TEST_dischargeCell(LTC6811_2_IC *ic);
-
-void TEST_dischargeCell2(LTC6811_2_IC *ic);
-
-uint8_t check_UV_OV_flags(LTC6811_2_IC *ic);
-
-#endif /* INC_LTC6811_2_H_ */
+#endif /* LTC6811_2_H_ */
