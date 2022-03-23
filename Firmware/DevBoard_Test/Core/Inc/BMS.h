@@ -25,5 +25,7 @@ void print_Cell_Voltages(uint16_t *cell_V);
 
 void balance(LTC6811_2_IC *ic);
 
+void insertion_sort(uint16_t cellArry[15][2], uint8_t numCells);
+
 #endif /* INC_BMS_H_ */
 

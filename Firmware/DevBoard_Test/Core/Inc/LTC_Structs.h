@@ -35,6 +35,7 @@
 /*! IC variable structure */
 typedef struct{
 	uint16_t cell_V[15];				//cell voltages
+	uint8_t num_Cells;
 	uint8_t core_state;               	//variable indicates IC state 0 - sleep, 1 - standby, 2 - refup, 3 - measure, 4 - extended balancing
     uint8_t address;                  	//address of IC
     uint8_t CFGR[BYTES_IN_REG];        	//configuration register group data

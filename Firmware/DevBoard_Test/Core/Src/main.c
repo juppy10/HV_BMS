@@ -127,6 +127,7 @@ int main(void)
 
 	uart_buf_len = sprintf(uart_buf, "BMS Voltages:\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
+	ic.num_Cells = 15;
 	LTC6811_startup(&ic);
 
 
@@ -410,6 +411,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//1 second timer
 		TEST_dischargeCell(&ic);
+		balance(&ic);
 	}else if(htim == &htim14){			//100ms timer
 		updateSegmentVoltages(&ic);	//update segment structure cell voltages
 		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions

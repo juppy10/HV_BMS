@@ -110,7 +110,27 @@ void print_Cell_Voltages(uint16_t *cell_V){
 }
 
 void balance(LTC6811_2_IC *ic){
-	//assume that at least one cell voltage is greater than STRT_BALANCE_THRES
+	uint16_t cellArry[ic->num_Cells][2];
+	for (uint8_t i =0; i < ic->num_Cells; i++){
+		cellArry[i][0] = ic->cell_V[i];
+		cellArry[i][1] = i;
+	}
+	insertion_sort(cellArry,ic->num_Cells);
+
+	/*TESTING CODE
+	 * int str_len;
+	char cellV[18];
+	for(int i=0; i<15;i++){
+		str_len = snprintf(cellV, 10, "%d %i ",cellArry[i][0],cellArry[i][1]);
+
+		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
+	}
+	str_len = sprintf(cellV, "\r\n");
+	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
+	 */
+
+
+	/*//assume that at least one cell voltage is greater than STRT_BALANCE_THRES
 
 	uint16_t minCellVoltage = 0xFFFF;
 	for(uint8_t i=0; i < TOTAL_SEG_CELLS; i++){			//loop through all cells to determine if minimum cell voltage
@@ -124,7 +144,21 @@ void balance(LTC6811_2_IC *ic){
 
 			}
 		}
-	}
+	}*/
 }
 
+void insertion_sort(uint16_t cellArry[15][2], uint8_t numCells){		//fix to dynamically allocate mrmy
+	for(uint8_t ii = 1; ii < numCells; ii++) {
+		uint16_t temp = cellArry[ii][0];
+		uint8_t temp_cell = cellArry[ii][1];
+		int8_t jj = ii - 1;
+		while(jj >= 0 && temp <= cellArry[jj][0]) {
+			cellArry[jj + 1][0] = cellArry[jj][0];
+			cellArry[jj + 1][1] = cellArry[jj][1];
+			jj--;
+		}
+		cellArry[jj + 1][0] = temp;
+		cellArry[jj + 1][1] = temp_cell;
+	}
 
+}
