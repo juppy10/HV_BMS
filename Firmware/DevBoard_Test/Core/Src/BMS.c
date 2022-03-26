@@ -109,14 +109,57 @@ void print_Cell_Voltages(uint16_t *cell_V){
 	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 }
 
-void balance(LTC6811_2_IC *ic){
+/*
+returns 1 if cells are in balance
+returns 0 if cells are balacing
+*/
+uint8_t balance(LTC6811_2_IC *ic){
 	uint16_t cellArry[ic->num_Cells][2];
+	int8_t cellThresPOS = -1;
+	uint8_t num_balanced_cells=0;
+
+	LTC6811_RDCFGA(ic);
+	LTC6811_RDCFGB(ic);
+	ic->CFGR[4] = 0x00;
+	ic->CFGR[5] = 0x00;
+	ic->CFGRB[0] &= (0b10001111);						//clear discharge resistors
+
 	for (uint8_t i =0; i < ic->num_Cells; i++){
 		cellArry[i][0] = ic->cell_V[i];
 		cellArry[i][1] = i;
 	}
-	insertion_sort(cellArry,ic->num_Cells);
+	insertion_sort(cellArry,ic->num_Cells);		//sort from lowest to highest
 
+	for (uint8_t j = 0; j < ic->num_Cells; j++){	//find lowest cell voltage that is above delta cell voltage balance threshold
+		if(cellArry[j][0] - cellArry[0][0] > 100){
+			cellThresPOS = cellArry[j][1];
+			break;
+		}
+	}
+	if(cellThresPOS == -1) return 1;				//if within balance threshold no balacing to be done
+
+	for(uint8_t ii = cellThresPOS; ii < ic->num_Cells; ii++){
+		if(cellArry[ii][1] < 8){					//for register things - specific to LTC6812-1
+			ic->CFGR[4] += (0x01 << cellArry[ii][1]);
+			num_balanced_cells++;
+		}else if(cellArry[ii][1] > 7 && cellArry[ii][1] < 12){
+			ic->CFGR[5] += (0x01 << (cellArry[ii][1]-8));
+			num_balanced_cells++;
+		}else{
+			ic->CFGRB[0] += (0x01 << (cellArry[ii][1]-12+4));
+			num_balanced_cells++;
+		}
+	}
+
+	LTC6811_WRCFGA(*ic);
+	LTC6811_WRCFGB(*ic);
+	delay_s(5);							//find alternative to blocking timer - maybe start timer here and use interupt function!
+	ic->CFGR[4] = 0x00;
+	ic->CFGR[5] = 0x00;
+	ic->CFGRB[0] &= (0b10001111);
+	LTC6811_WRCFGA(*ic);
+	LTC6811_WRCFGB(*ic);
+	delay_s(5);
 	/*TESTING CODE
 	 * int str_len;
 	char cellV[18];
@@ -128,8 +171,13 @@ void balance(LTC6811_2_IC *ic){
 	str_len = sprintf(cellV, "\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 	 */
+	/*print_Cell_Voltages(ic->cell_V);
+	int str_len;
+	char cellV[18];
+	str_len = snprintf(cellV, 20, "Pos: %i\r\n",cellThresPOS);
+	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
 
-
+	return 0;
 	/*//assume that at least one cell voltage is greater than STRT_BALANCE_THRES
 
 	uint16_t minCellVoltage = 0xFFFF;

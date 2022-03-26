@@ -60,6 +60,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 void delay_us(uint16_t us);
+void delay_s(uint16_t s);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

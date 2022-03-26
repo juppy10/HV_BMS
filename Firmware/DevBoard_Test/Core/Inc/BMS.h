@@ -23,7 +23,7 @@ uint8_t check_UV_OV_flags(LTC6811_2_IC *ic);
 
 void print_Cell_Voltages(uint16_t *cell_V);
 
-void balance(LTC6811_2_IC *ic);
+uint8_t balance(LTC6811_2_IC *ic);
 
 void insertion_sort(uint16_t cellArry[15][2], uint8_t numCells);
 

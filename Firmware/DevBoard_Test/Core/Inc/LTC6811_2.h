@@ -43,14 +43,13 @@ void LTC6811_Open_Wire_ADC_start(uint8_t MD, uint8_t PUP, uint8_t DCP, uint8_t C
 
 /* Writes the configuration register group*/
 void LTC6811_WRCFGA(LTC6811_2_IC ic);
+void LTC6811_WRCFGB(LTC6811_2_IC ic);
 
 /* Reads the configuration register group*/
 int8_t LTC6811_RDCFGA(LTC6811_2_IC *ic);
-
+int8_t LTC6811_RDCFGB(LTC6811_2_IC *ic);
 int8_t LTC6811_RDSTATA(LTC6811_2_IC *ic);
-
 int8_t LTC6811_RDSTATB(LTC6811_2_IC *ic);
-
 int8_t LTC6811_RDAUXD(LTC6811_2_IC *ic);
 
 /*Reads and parses the LTC6811 cell voltage registers.

@@ -43,6 +43,7 @@
 SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim11;
+TIM_HandleTypeDef htim12;
 TIM_HandleTypeDef htim13;
 TIM_HandleTypeDef htim14;
 
@@ -60,6 +61,7 @@ static void MX_TIM13_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM14_Init(void);
 static void MX_TIM11_Init(void);
+static void MX_TIM12_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -106,8 +108,10 @@ int main(void)
   MX_SPI1_Init();
   MX_TIM14_Init();
   MX_TIM11_Init();
+  MX_TIM12_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim11);
+  HAL_TIM_Base_Start(&htim12);
 
   HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 1);
   HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
@@ -134,7 +138,7 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim13);
 	HAL_TIM_Base_Start_IT(&htim14);
 
-	TEST_dischargeCell(&ic);
+	//TEST_dischargeCell(&ic);
 
   /* USER CODE END 2 */
 
@@ -266,6 +270,44 @@ static void MX_TIM11_Init(void)
   /* USER CODE BEGIN TIM11_Init 2 */
 
   /* USER CODE END TIM11_Init 2 */
+
+}
+
+/**
+  * @brief TIM12 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM12_Init(void)
+{
+
+  /* USER CODE BEGIN TIM12_Init 0 */
+
+  /* USER CODE END TIM12_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+
+  /* USER CODE BEGIN TIM12_Init 1 */
+
+  /* USER CODE END TIM12_Init 1 */
+  htim12.Instance = TIM12;
+  htim12.Init.Prescaler = 33600-1;
+  htim12.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim12.Init.Period = 65535;
+  htim12.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim12.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim12) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim12, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM12_Init 2 */
+
+  /* USER CODE END TIM12_Init 2 */
 
 }
 
@@ -410,7 +452,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//1 second timer
-		TEST_dischargeCell(&ic);
+		//TEST_dischargeCell(&ic);
 		balance(&ic);
 	}else if(htim == &htim14){			//100ms timer
 		updateSegmentVoltages(&ic);	//update segment structure cell voltages
@@ -433,6 +475,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 void delay_us(uint16_t us){
 	__HAL_TIM_SET_COUNTER(&htim11,0);  // set the counter value a 0
 	while (__HAL_TIM_GET_COUNTER(&htim11) < us);
+}
+
+void delay_s(uint16_t s){			//max 26seconds
+	__HAL_TIM_SET_COUNTER(&htim12,0);  // set the counter value a 0
+	while (__HAL_TIM_GET_COUNTER(&htim12) < s*2500);
 }
 
 /* USER CODE END 4 */
