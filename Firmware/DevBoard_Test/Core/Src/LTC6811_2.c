@@ -69,6 +69,8 @@ void write_68(uint8_t tx_cmd[2], uint8_t data[BYTES_IN_REG]){
 	cmd[cmd_index] = (uint8_t)(data_pec >> 8);
 	cmd[cmd_index + 1] = (uint8_t)data_pec;
 	cmd_index = cmd_index + 2;
+
+	wakeup_idle();
 	
 	SPI_Transmit(&hspi1, cmd, CMD_LEN);
 	
@@ -89,6 +91,8 @@ int8_t read_68(uint8_t tx_cmd[2], uint8_t *rx_data){
 	cmd[2] = (uint8_t)(cmd_pec >> 8);
 	cmd[3] = (uint8_t)(cmd_pec);
 	
+	wakeup_idle();
+
 	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
 
 	for (uint8_t current_byte = 0; current_byte < BYTES_IN_REG+2; current_byte++){

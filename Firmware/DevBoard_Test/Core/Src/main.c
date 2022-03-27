@@ -111,7 +111,7 @@ int main(void)
   MX_TIM12_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim11);
-  HAL_TIM_Base_Start(&htim12);
+  //HAL_TIM_Base_Start(&htim12);
 
   HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 1);
   HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
@@ -139,6 +139,10 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim14);
 
 	//TEST_dischargeCell(&ic);
+
+	//if (chargePin == 1){
+	chargeMODE(&ic);
+	//}
 
   /* USER CODE END 2 */
 
@@ -293,7 +297,7 @@ static void MX_TIM12_Init(void)
   htim12.Instance = TIM12;
   htim12.Init.Prescaler = 33600-1;
   htim12.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim12.Init.Period = 65535;
+  htim12.Init.Period = 12500-1;
   htim12.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim12.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim12) != HAL_OK)
@@ -453,7 +457,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//1 second timer
 		//TEST_dischargeCell(&ic);
-		balance(&ic);
+		//balance(&ic);
 	}else if(htim == &htim14){			//100ms timer
 		updateSegmentVoltages(&ic);	//update segment structure cell voltages
 		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
@@ -469,6 +473,19 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		str_len = snprintf(cellV, 20, "t = %d\r\n",x);
 
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
+	}
+	else if(htim == &htim12){
+		if(ic.num_balanced_cells != -1){	//if balance timer has triggered and we are balancing cells, disable balance
+			ic.CFGR[4] = 0x00;
+			ic.CFGR[5] = 0x00;
+			ic.CFGRB[0] &= (0b10001111);
+			LTC6811_WRCFGA(ic);
+			LTC6811_WRCFGB(ic);
+			ic.num_balanced_cells = -1;		//-1 indicates that we are resting between discharges
+		}else{
+			ic.num_balanced_cells = 0;
+			HAL_TIM_Base_Stop_IT(&htim12);
+		}
 	}
 }
 

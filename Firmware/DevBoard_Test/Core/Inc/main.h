@@ -45,6 +45,7 @@ extern "C" {
 /* USER CODE BEGIN EC */
 SPI_HandleTypeDef hspi1;
 
+TIM_HandleTypeDef htim12;
 TIM_HandleTypeDef htim13;
 
 UART_HandleTypeDef huart2;
