@@ -52,6 +52,9 @@ int8_t LTC6811_RDSTATA(LTC6811_2_IC *ic);
 int8_t LTC6811_RDSTATB(LTC6811_2_IC *ic);
 int8_t LTC6811_RDAUXD(LTC6811_2_IC *ic);
 
+//clears status registers
+void LTC6811_CLRSTAT(void);
+
 /*Reads and parses the LTC6811 cell voltage registers.
 Inputs---
     segmaSlave - Array of the parsed cell codes

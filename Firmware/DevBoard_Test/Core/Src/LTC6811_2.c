@@ -242,6 +242,15 @@ int8_t LTC6811_RDAUXD(LTC6811_2_IC *ic){
 	return 0;
 }
 
+//Clear Status register groups
+void LTC6811_CLRSTAT(void){
+	uint8_t cmd[2];
+	cmd[0] = 0b00000111;			//CONFIGRES TO ONLY READ TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[1] = 0b00010011;
+
+	cmd_68(cmd);
+}
+
 /*Reads and parses the LTC6811 cell voltage registers.
 Inputs---
 	segmaSlave - Array of the parsed cell codes

@@ -85,11 +85,6 @@ uint8_t check_UV_OV_flags(LTC6811_2_IC *ic){
 	LTC6811_RDAUXD(ic);		//read aux D register
 	LTC6811_RDSTATB(ic);	//read status B register
 
-	/*if((ic->STBR[2] & 0x01)==0x01){
-		return 1;
-	}
-	else return 0;*/
-
 	//check for either UV or OV
 	if(ic->STBR[2] | ic->STBR[3] | ic->STBR[4]){			//this is all that is needed for the ltc6811-2!
 		return 1;			//an overvoltage or undervoltage flag has been set by the BMS
@@ -119,40 +114,31 @@ uint8_t balanceThres(LTC6811_2_IC *ic){
 }
 
 void chargeMODE(LTC6811_2_IC *ic){
-	while(1){		//infinite loop
-		//if(balanceThres(ic)){		//determine if pack voltage is high enough for balancing
-		if(ic->num_balanced_cells == 0){		//cells aren't being balanced or resting
-			if(need_balance(ic)){				//determine if pack is in balance
-				LTC6811_WRCFGA(*ic);			//write reg configs to IC - this starts balancing
-				LTC6811_WRCFGB(*ic);
-				HAL_TIM_Base_Start_IT(&htim12);		//start discharge timer
-				/*delay_s(5);							//find alternative to blocking timer - maybe start timer here and use interrupt function!
-				ic->CFGR[4] = 0x00;
-				ic->CFGR[5] = 0x00;
-				ic->CFGRB[0] &= (0b10001111);
-				LTC6811_WRCFGA(*ic);
-				LTC6811_WRCFGB(*ic);
-				delay_s(5);*/
+	//if(balanceThres(ic)){		//determine if pack voltage is high enough for balancing
+	if(ic->num_balanced_cells == 0){		//cells aren't being balanced or resting
+		if(need_balance(ic)){				//determine if pack is in balance
+			LTC6811_WRCFGA(*ic);			//write reg configs to IC - this starts balancing
+			LTC6811_WRCFGB(*ic);
+			HAL_TIM_Base_Start_IT(&htim12);		//start discharge timer
 
 
-				/*TESTING CODE
-				 * int str_len;
-				char cellV[18];
-				for(int i=0; i<15;i++){
-					str_len = snprintf(cellV, 10, "%d %i ",cellArry[i][0],cellArry[i][1]);
+			/*TESTING CODE
+			 * int str_len;
+			char cellV[18];
+			for(int i=0; i<15;i++){
+				str_len = snprintf(cellV, 10, "%d %i ",cellArry[i][0],cellArry[i][1]);
 
-					HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
-				}
-				str_len = sprintf(cellV, "\r\n");
 				HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
-				 */
-				/*print_Cell_Voltages(ic->cell_V);
-				int str_len;
-				char cellV[18];
-				str_len = snprintf(cellV, 20, "Pos: %i\r\n",cellThresPOS);
-				HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
-
 			}
+			str_len = sprintf(cellV, "\r\n");
+			HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
+			 */
+			/*print_Cell_Voltages(ic->cell_V);
+			int str_len;
+			char cellV[18];
+			str_len = snprintf(cellV, 20, "Pos: %i\r\n",cellThresPOS);
+			HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
+
 		}
 	}
 }
@@ -164,7 +150,7 @@ returns 1 if cells require balancing
 uint8_t need_balance(LTC6811_2_IC *ic){
 	uint16_t cellArry[ic->num_Cells][2];
 	int8_t cellThresPOS = -1;
-	updateSegmentVoltages(ic);
+	//updateSegmentVoltages(ic);
 	LTC6811_RDCFGA(ic);
 	LTC6811_RDCFGB(ic);
 	ic->CFGR[4] = 0x00;
@@ -178,7 +164,8 @@ uint8_t need_balance(LTC6811_2_IC *ic){
 	}
 	insertion_sort(cellArry,ic->num_Cells);		//sort from lowest to highest
 
-	for (uint8_t j = 0; j < ic->num_Cells; j++){	//find lowest cell voltage that is above delta cell voltage balance threshold
+
+	for (uint8_t j = 1; j < ic->num_Cells; j++){	//find lowest cell voltage that is above delta cell voltage balance threshold
 		if(cellArry[j][0] - cellArry[0][0] > dV_BAL_THRES){
 			cellThresPOS = j;
 			break;

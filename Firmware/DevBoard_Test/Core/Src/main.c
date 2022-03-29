@@ -141,7 +141,8 @@ int main(void)
 	//TEST_dischargeCell(&ic);
 
 	//if (chargePin == 1){
-	chargeMODE(&ic);
+		HAL_TIM_Base_Start_IT(&htim13);
+	//
 	//}
 
   /* USER CODE END 2 */
@@ -152,10 +153,6 @@ int main(void)
   while (1)
   {
 
-
-	  //HAL_GPIO_TogglePin(CS2_GPIO_Port, CS2_Pin);
-	  /*HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	  HAL_Delay(100);*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -297,7 +294,7 @@ static void MX_TIM12_Init(void)
   htim12.Instance = TIM12;
   htim12.Init.Prescaler = 33600-1;
   htim12.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim12.Init.Period = 12500-1;
+  htim12.Init.Period = 25000-1;
   htim12.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim12.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim12) != HAL_OK)
@@ -333,7 +330,7 @@ static void MX_TIM13_Init(void)
   htim13.Instance = TIM13;
   htim13.Init.Prescaler = 8400-1;
   htim13.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim13.Init.Period = 10000-1;
+  htim13.Init.Period = 5000-1;
   htim13.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim13.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim13) != HAL_OK)
@@ -426,10 +423,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, SPI2_CS_Pin|CS2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, SPI2_CS_Pin|CS2_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -455,24 +452,37 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	if(htim == &htim13){				//1 second timer
-		//TEST_dischargeCell(&ic);
-		//balance(&ic);
+	if(htim == &htim13){				//0.5 second timer
+		chargeMODE(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		updateSegmentVoltages(&ic);	//update segment structure cell voltages
+		updateSegmentVoltages(&ic);		//update segment structure cell voltages
 		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
 			//do something?????
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 0);
+
+			/*uint16_t cell_undervoltage, cell_overvoltage;
+			ic.CFGR[0] = CFGR0_DEFAULT;
+			ic.num_balanced_cells=0;
+			//set UV & OV limits
+			cell_undervoltage = (CELL_UV/(16))-1;
+			cell_overvoltage = (CELL_OV/(16));
+			ic.CFGR[1] = (uint8_t)cell_undervoltage;
+			ic.CFGR[2] = (uint8_t)((cell_undervoltage>>8) | (cell_overvoltage << 4));
+			ic.CFGR[3] = (uint8_t)(cell_overvoltage>>4);
+
+			ic.CFGR[4] = CFGR4_DEFAULT;
+			ic.CFGR[5] = CFGR5_DEFAULT;
+
+			uint8_t cmd[]={0x00,0x01};
+
+			wakeup_sleep();
+			write_68(cmd, ic.CFGR);			//broadcast configuration to all ICs on bus*/
+
+
+
 		}else HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
 
 		print_Cell_Voltages(ic.cell_V);			//print over serial
-
-		/*int x = __HAL_TIM_GET_COUNTER(&htim13);
-		char cellV[18];
-		int str_len;
-		str_len = snprintf(cellV, 20, "t = %d\r\n",x);
-
-		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);*/
 	}
 	else if(htim == &htim12){
 		if(ic.num_balanced_cells != -1){	//if balance timer has triggered and we are balancing cells, disable balance

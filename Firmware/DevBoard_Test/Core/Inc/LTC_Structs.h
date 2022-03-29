@@ -20,7 +20,7 @@
 #define CELL_UV         30000    //under cell voltage limit (E-4 V)
 #define CELL_OV         42100    //over cell voltage limit (E-4 V)
 
-#define dV_BAL_THRES 			100		//maximum allowed delta voltage, 10mV
+#define dV_BAL_THRES 			50		//maximum allowed delta voltage, 10mV
 #define STRT_BALANCE_THRES		40000	//voltage threshold (lower) for balancing
 #define END_BALANCE_THRES		42000	//voltage threshold (upper) for balancing
 
