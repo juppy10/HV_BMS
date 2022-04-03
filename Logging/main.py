@@ -24,10 +24,7 @@ while 1:
         #num1 = aaaa[0]
 
         for i in range(19):
-            if i == 16:
-                rawData = serialPort.read(4)
-            else:
-                rawData = serialPort.read(5)
+            rawData = serialPort.read(5)
             cells[i] = rawData.decode('Ascii')
 
         endBits1 = serialPort.read(2)
