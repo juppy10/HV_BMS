@@ -140,8 +140,8 @@ int main(void)
 
 	//TEST_dischargeCell(&ic);
 
-	//if (chargePin == 1){
-		HAL_TIM_Base_Start_IT(&htim13);
+	//if (chargePin == 1){						//Balance charging enable
+		//HAL_TIM_Base_Start_IT(&htim13);
 	//
 	//}
 
@@ -453,9 +453,10 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//0.5 second timer
-		chargeMODE(&ic);
+		//chargeMODE(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		updateSegmentVoltages(&ic);		//update segment structure cell voltages
+		//updateSegmentVoltages(&ic);		//update segment structure cell voltages
+		updateSegmentVoltages_And_Temp(&ic);
 		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
 			//do something?????
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 0);
@@ -480,11 +481,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 
 
-		}else HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
+		}else //HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
 
-		print_Cell_Voltages(ic.cell_V);			//print over serial
+		print_Cell_Voltages(&ic);			//print over serial
 	}
-	else if(htim == &htim12){
+	else if(htim == &htim12){				//CHECK THAT THIS IS THE CORRECT TIMER
 		if(ic.num_balanced_cells != -1){	//if balance timer has triggered and we are balancing cells, disable balance
 			ic.CFGR[4] = 0x00;
 			ic.CFGR[5] = 0x00;

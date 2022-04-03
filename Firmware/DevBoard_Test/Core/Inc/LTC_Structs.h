@@ -34,7 +34,8 @@
 
 /*! IC variable structure */
 typedef struct{
-	uint16_t cell_V[15];				//cell voltages
+	uint16_t cell_V[15];				//cell voltages (raw)
+	uint16_t cell_temp[4];				//thermistor measurements (raw)
 	uint8_t num_Cells;
 	int8_t num_balanced_cells;
 	uint8_t core_state;               	//variable indicates IC state 0 - sleep, 1 - standby, 2 - refup, 3 - measure, 4 - extended balancing

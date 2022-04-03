@@ -38,6 +38,8 @@ void refup_state(LTC6811_2_IC *ic);
 /* Start cell voltage ADC Conversion for ALL devices */
 void LTC6811_ADC_start(uint8_t MD, uint8_t DCP, uint8_t CH);
 
+void LTC6811_ADAX_start(uint8_t MD, uint8_t CHG);
+
 /* Start open wire detection ADC Conversion for ALL devices */
 void LTC6811_Open_Wire_ADC_start(uint8_t MD, uint8_t PUP, uint8_t DCP, uint8_t CH);
 
@@ -69,6 +71,8 @@ Inputs---
     data - Array of unpared cell voltages
 */
 void LTC6811_rdcllV(uint8_t reg, uint8_t *data);
+
+void LTC6811_rdADC(LTC6811_2_IC *ic);
 
 /*Calculates  and returns the CRC15
 Inputs ----

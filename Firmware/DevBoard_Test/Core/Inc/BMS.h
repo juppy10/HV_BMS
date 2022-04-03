@@ -15,13 +15,15 @@ void LTC6811_startup(LTC6811_2_IC *ica);
 
 void updateSegmentVoltages(LTC6811_2_IC *ic);
 
+void updateSegmentVoltages_And_Temp(LTC6811_2_IC *ic);
+
 void TEST_dischargeCell(LTC6811_2_IC *ic);
 
 void TEST_dischargeCell2(LTC6811_2_IC *ic);
 
 uint8_t check_UV_OV_flags(LTC6811_2_IC *ic);
 
-void print_Cell_Voltages(uint16_t *cell_V);
+void print_Cell_Voltages(LTC6811_2_IC *ic);
 
 uint8_t balanceThres(LTC6811_2_IC *ic);
 

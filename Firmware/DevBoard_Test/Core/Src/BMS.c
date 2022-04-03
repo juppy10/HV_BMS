@@ -38,7 +38,7 @@ void LTC6811_startup(LTC6811_2_IC *ic){
 	wakeup_sleep();
 	write_68(cmd, ic->CFGR);			//broadcast configuration to all ICs on bus
 
-	uint8_t MD=0x10, DCP=0x00, CH=0x00;
+	uint8_t MD=0x02, DCP=0x00, CH=0x00;
 
 	LTC6811_ADC_start(MD, DCP, CH);
 	delay_us(3000);						//allow ADC to finish conversion
@@ -47,7 +47,7 @@ void LTC6811_startup(LTC6811_2_IC *ic){
 
 void updateSegmentVoltages(LTC6811_2_IC *ic){
 	//uint8_t MD=0x10, DCP=0x01, CH=0x00;	//ADC mode, discharge permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
-	uint8_t MD=0x10, DCP=0x00, CH=0x00;	//ADC mode, discharge NOT permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
+	uint8_t MD=0x02, DCP=0x00, CH=0x00;		//ADC mode, discharge NOT permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
 
 	wakeup_idle();						//wakeup the isoSPI interface
 	LTC6811_ADC_start(MD, DCP, CH);		//start the ADC conversion for all cells - CHANGE THIS FUNCTION TO UPDATE ENTIRE ACCUMULATOR CELL VOLTAGE
@@ -55,6 +55,18 @@ void updateSegmentVoltages(LTC6811_2_IC *ic){
 	delay_us(3000);						//allow 3ms to pass for ADC conversion to finish
 	LTC6811_rdcv(ic);				//read the cell voltages from registers and update the segment structure
 
+}
+
+void updateSegmentVoltages_And_Temp(LTC6811_2_IC *ic){
+	updateSegmentVoltages(ic);
+
+	uint8_t MD=0x02, CHG=0x00;			//ADC mode, and ADC selection	-CHANGE LATER TO VARIABLE OR DEFINE
+
+	wakeup_idle();						//wakeup the isoSPI interface
+	LTC6811_ADAX_start(MD, CHG);		//start the ADC conversion for all cells - CHANGE THIS FUNCTION TO UPDATE ENTIRE ACCUMULATOR CELL VOLTAGE
+
+	delay_us(4000);						//allow 4ms to pass for ADC conversion to finish
+	LTC6811_rdADC(ic);					//read the cell voltages from registers and update the segment structure
 }
 
 void TEST_dischargeCell(LTC6811_2_IC *ic){
@@ -94,14 +106,19 @@ uint8_t check_UV_OV_flags(LTC6811_2_IC *ic){
 
 }
 
-void print_Cell_Voltages(uint16_t *cell_V){
+void print_Cell_Voltages(LTC6811_2_IC *ic){
 	int str_len;
 	char cellV[18];
+	char cellT[18];
 	for(int i=0; i<15;i++){
-		str_len = snprintf(cellV, 6, "%d",cell_V[i]);
-
+		str_len = snprintf(cellV, 6, "%d",ic->cell_V[i]);
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 	}
+	for(int i=0; i<4;i++){
+		str_len = snprintf(cellT, 6, "%d",ic->cell_temp[i]);
+		HAL_UART_Transmit(&huart2, (uint8_t *)cellT, str_len, 100);
+	}
+
 	str_len = sprintf(cellV, "\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 }

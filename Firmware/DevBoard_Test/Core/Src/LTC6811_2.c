@@ -149,6 +149,19 @@ void LTC6811_ADC_start(uint8_t MD, uint8_t DCP, uint8_t CH){
 	cmd_68(cmd);
 }
 
+/* Start cell voltage ADC Conversion for ALL devices */
+void LTC6811_ADAX_start(uint8_t MD, uint8_t CHG){
+	uint8_t cmd[2];
+	uint8_t md_bits;
+
+	md_bits = (MD & 0x02) >> 1;
+	cmd[0] = md_bits + 0x04;
+	md_bits = (MD & 0x01) << 7;
+	cmd[1] =  md_bits + 0x60 + CHG;
+
+	cmd_68(cmd);
+}
+
 /* Start open wire detection ADC Conversion for ALL devices */
 void LTC6811_Open_Wire_ADC_start(uint8_t MD, uint8_t PUP, uint8_t DCP, uint8_t CH){
 	uint8_t cmd[4];
@@ -319,6 +332,33 @@ void LTC6811_rdcllV(uint8_t reg, uint8_t *data){
 	cmd[2] = (uint8_t)(cmd_pec >> 8);
 	cmd[3] = (uint8_t)(cmd_pec);
 	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
+}
+
+void LTC6811_rdADC(LTC6811_2_IC *ic){
+	uint8_t cmd[4];
+	uint16_t cmd_pec;
+	uint8_t data[8];
+
+	cmd[0] = 0x00;					//changed to 0x00 from address for testing
+
+	//read GPIO ADC 1,2
+	cmd[1] = 0x0C;					//RDAUXA
+	cmd_pec = LTC6811_pec15_calc(2, cmd);
+	cmd[2] = (uint8_t)(cmd_pec >> 8);
+	cmd[3] = (uint8_t)(cmd_pec);
+	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
+	ic->cell_temp[0] = (data[1] << 8) | data[0];
+	ic->cell_temp[1] = (data[3] << 8) | data[2];
+
+	//read GPIO ADC 6,7
+	cmd[1] = 0x0D;		//RDAUXC
+	cmd_pec = LTC6811_pec15_calc(2, cmd);
+	cmd[2] = (uint8_t)(cmd_pec >> 8);
+	cmd[3] = (uint8_t)(cmd_pec);
+	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
+	ic->cell_temp[2] = (data[1] << 8) | data[0];
+	ic->cell_temp[3] = (data[3] << 8) | data[2];
+
 }
 
 /*Calculates  and returns the CRC15 
