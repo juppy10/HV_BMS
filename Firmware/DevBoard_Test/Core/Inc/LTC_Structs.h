@@ -14,11 +14,15 @@
 #define TOTAL_IC	    3  	//number of ICs in the accumulator (currently set to 3 for testing purposes)
 #define SEG_IC		    3 	//number of ICs per segment
 #define TOTAL_SEG_CELLS	15	//number of cells in a segment ------------------ CHANGE THIS BACK!
-#define TOTAL_CELLS 	144	//number of cells in an accumulator
+#define TOTAL_CELLS 	140	//number of cells in an accumulator
+
+//timing constanst
+#define SOC_UPDATE_TIME 36000	//100ms as an hour
 
 //cell limits
 #define CELL_UV         30000    //under cell voltage limit (E-4 V)
 #define CELL_OV         42100    //over cell voltage limit (E-4 V)
+#define PACK_CAPACITY_mAh	3000 //pack capacity in mAh
 
 #define dV_BAL_THRES 			50		//maximum allowed delta voltage, 10mV
 #define STRT_BALANCE_THRES		40000	//voltage threshold (lower) for balancing
@@ -46,5 +50,11 @@ typedef struct{
     uint8_t STBR[BYTES_IN_REG];       	//status register B group data
     uint8_t AUXD[BYTES_IN_REG];			//AUX register D group data
 } LTC6811_2_IC;
+
+typedef struct{
+	uint16_t pack_SoC;
+	uint16_t pack_V;
+	float coulomb_count_mAh;
+} ACCUMULATOR;
 
 #endif /* INC_LTC_STRUCTS_H_ */

@@ -69,6 +69,7 @@ static void MX_TIM12_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 LTC6811_2_IC ic;
+ACCUMULATOR acc;
 /* USER CODE END 0 */
 
 /**
@@ -77,63 +78,57 @@ LTC6811_2_IC ic;
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+	/* USER CODE BEGIN 1 */
 
 	char uart_buf[50];
 	int uart_buf_len;
 
 
-  /* USER CODE END 1 */
+	/* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+	/* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+	HAL_Init();
 
-  /* USER CODE BEGIN Init */
+	/* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+	/* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+	/* Configure the system clock */
+	SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+	/* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+	/* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_USART2_UART_Init();
-  MX_TIM13_Init();
-  MX_SPI1_Init();
-  MX_TIM14_Init();
-  MX_TIM11_Init();
-  MX_TIM12_Init();
-  /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start(&htim11);
-  //HAL_TIM_Base_Start(&htim12);
+	/* Initialize all configured peripherals */
+	MX_GPIO_Init();
+	MX_USART2_UART_Init();
+	MX_TIM13_Init();
+	MX_SPI1_Init();
+	MX_TIM14_Init();
+	MX_TIM11_Init();
+	MX_TIM12_Init();
+	/* USER CODE BEGIN 2 */
+	HAL_TIM_Base_Start(&htim11);
+	//HAL_TIM_Base_Start(&htim12);
 
-  HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 1);
-  HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
-  /*uart_buf_len = sprintf(uart_buf, "Timer test\r\n");
-  HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
-
-  uart_buf2[0] = 0x41;
-  uart_buf2[1] = 0x42;
-  uart_buf2[2] = 0x43;
-  uart_buf2[3] = 0x0D;
-  uart_buf2[4] = 0x0A;
-
-  HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf2, 5, 100);*/
-
-	uart_buf_len = sprintf(uart_buf, "BMS Starting...\r\n");
+	HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 1);
+	HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
+	/*uart_buf_len = sprintf(uart_buf, "Timer test\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
 
-	uart_buf_len = sprintf(uart_buf, "BMS Voltages:\r\n");
-	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
-	ic.num_Cells = 15;
+	uart_buf2[0] = 0x41;
+	uart_buf2[1] = 0x42;
+	uart_buf2[2] = 0x43;
+	uart_buf2[3] = 0x0D;
+	uart_buf2[4] = 0x0A;
+
+	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf2, 5, 100);*/
+
 	LTC6811_startup(&ic);
-
+	get_init_SoC(&acc);
 
 	HAL_TIM_Base_Start_IT(&htim13);
 	HAL_TIM_Base_Start_IT(&htim14);

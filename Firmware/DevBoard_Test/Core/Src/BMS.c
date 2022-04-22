@@ -1,5 +1,7 @@
 #include <BMS.h>
 
+const uint16_t piecewise_SoC_OCV[][];
+
 HAL_StatusTypeDef SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *data, uint16_t size){
 	HAL_StatusTypeDef status;
 	HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 0);
@@ -21,6 +23,7 @@ HAL_StatusTypeDef SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *tx_buf, uint16_t
 
 void LTC6811_startup(LTC6811_2_IC *ic){
 	uint16_t cell_undervoltage, cell_overvoltage;
+	ic.num_Cells = 15;
 	ic->CFGR[0] = CFGR0_DEFAULT;
 	ic->num_balanced_cells=0;
 	//set UV & OV limits
@@ -43,6 +46,26 @@ void LTC6811_startup(LTC6811_2_IC *ic){
 	LTC6811_ADC_start(MD, DCP, CH);
 	delay_us(3000);						//allow ADC to finish conversion
 	LTC6811_rdcv(ic);
+}
+
+void get_init_SoC(ACCUMULATOR *acc){
+	//find the region in piecewise linear model
+	uint16_t avg_Cell_V = (acc->pack_V)/TOTAL_CELLS;
+	if(avg_Cell_V >= 40000){															//greater than 4V
+		acc->pack_SoC = avg_Cell_V*piecewise_SoC_OCV[0][0]*piecewise_SoC_OCV[0][1];
+	}else if(avg_Cell_V < 40000 && avg_Cell_V >= 37000 ){								//between 4V and 3.7V
+		acc->pack_SoC = avg_Cell_V*piecewise_SoC_OCV[1][0]*piecewise_SoC_OCV[1][1];
+	}else if(avg_Cell_V < 37000 && avg_Cell_V >= 35000 ){								//between 3.7V and 3.5V
+		acc->pack_SoC = avg_Cell_V*piecewise_SoC_OCV[2][0]*piecewise_SoC_OCV[2][1];
+	}else if(avg_Cell_V < 35000){														//less than 3.5V
+		acc->pack_SoC = avg_Cell_V*piecewise_SoC_OCV[3][0]*piecewise_SoC_OCV[3][1];
+	}
+}
+
+void SoC_Update(ACCUMULATOR *acc){		//call me once every 100ms!
+	float current = get_current();		//get the pack current (in mA)
+	acc->coulomb_count_mAh -= current/SOC_UPDATE_TIME;
+	acc->pack_SoC = (coulomb_count / PACK_CAPACITY_mAh)*100;	//SoC as %
 }
 
 void updateSegmentVoltages(LTC6811_2_IC *ic){
@@ -110,12 +133,16 @@ void print_Cell_Voltages(LTC6811_2_IC *ic){
 	int str_len;
 	char cellV[18];
 	char cellT[18];
+	char *charBuf = "0";
 	for(int i=0; i<15;i++){
 		str_len = snprintf(cellV, 6, "%d",ic->cell_V[i]);
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 	}
 	for(int i=0; i<4;i++){
 		str_len = snprintf(cellT, 6, "%d",ic->cell_temp[i]);
+		for(uint8_t ii = str_len; ii<5 ; ii++){
+			HAL_UART_Transmit(&huart2, (uint8_t *)charBuf, 1, 100);
+		}
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellT, str_len, 100);
 	}
 
@@ -136,6 +163,7 @@ void chargeMODE(LTC6811_2_IC *ic){
 		if(need_balance(ic)){				//determine if pack is in balance
 			LTC6811_WRCFGA(*ic);			//write reg configs to IC - this starts balancing
 			LTC6811_WRCFGB(*ic);
+
 			HAL_TIM_Base_Start_IT(&htim12);		//start discharge timer
 
 

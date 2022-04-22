@@ -5,6 +5,7 @@
 #include "main.h"
 #include "LTC_Structs.h"
 #include "stm32f4xx_hal.h"
+#include "current_sense_ADC.h"
 
 
 HAL_StatusTypeDef SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *data, uint16_t size);
@@ -12,6 +13,10 @@ HAL_StatusTypeDef SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *data, uint16_t 
 HAL_StatusTypeDef SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *tx_buf, uint16_t tx_size, uint8_t *rx_buf, uint16_t rx_size);
 
 void LTC6811_startup(LTC6811_2_IC *ica);
+
+void get_init_SoC(ACCUMULATOR *acc);
+
+void SoC_Update(ACCUMULATOR *acc);
 
 void updateSegmentVoltages(LTC6811_2_IC *ic);
 

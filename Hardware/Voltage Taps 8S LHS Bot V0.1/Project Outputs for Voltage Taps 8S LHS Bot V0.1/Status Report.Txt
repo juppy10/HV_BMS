@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 3:43:55 PM On 12/04/2022
+
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [Manufacture] of PCB Document [VT 8S LHS Bot V0.1.PcbDoc]
+   Generated File[VT 8S LHS Bot V0.1(Manufacture).step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:43:58 PM On 12/04/2022

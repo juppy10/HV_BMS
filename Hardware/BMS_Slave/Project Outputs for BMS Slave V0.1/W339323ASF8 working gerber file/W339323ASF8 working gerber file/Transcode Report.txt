@@ -1,0 +1,298 @@
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\bl' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\bs' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D103
+D11   --> D104
+D12   --> D105
+D13   --> D106
+D14   --> D107
+D15   --> D108
+D16   --> D109
+D17   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\drl' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D111
+D11   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\ko' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D113
+D11   --> D114
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\l2' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D115
+D11   --> D116
+D12   --> D117
+D13   --> D118
+D14   --> D119
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\l3' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D120
+D11   --> D121
+D12   --> D122
+D13   --> D123
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\tl' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D124
+D11   --> D125
+D12   --> D126
+D13   --> D127
+D14   --> D128
+D15   --> D129
+D16   --> D130
+D17   --> D131
+D18   --> D132
+D19   --> D133
+D20   --> D134
+D21   --> D135
+D22   --> D136
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\to' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D137
+D11   --> D138
+D12   --> D139
+D13   --> D140
+D14   --> D141
+D15   --> D142
+D16   --> D143
+D17   --> D144
+D18   --> D145
+D19   --> D146
+D20   --> D147
+D21   --> D148
+D22   --> D149
+D23   --> D150
+D24   --> D151
+D25   --> D152
+D26   --> D153
+D27   --> D154
+D28   --> D155
+D29   --> D156
+D30   --> D157
+D31   --> D158
+D32   --> D159
+D33   --> D160
+D34   --> D161
+D35   --> D162
+D36   --> D163
+D37   --> D164
+D38   --> D165
+D39   --> D166
+D40   --> D167
+D41   --> D168
+D42   --> D169
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\ts' ----   Thu Apr  7 17:14:59 2022
+
+D10   --> D170
+D11   --> D171
+D12   --> D172
+D13   --> D173
+D14   --> D174
+D15   --> D175
+D16   --> D176
+D17   --> D177
+D18   --> D178
+D19   --> D179
+D20   --> D180
+D21   --> D181
+D22   --> D182
+D23   --> D183
+D24   --> D184
+D25   --> D185
+D26   --> D186
+D27   --> D187
+D28   --> D188
+D29   --> D189
+D30   --> D190
+D31   --> D191
+D32   --> D192
+D33   --> D193
+D34   --> D194
+D35   --> D195
+D36   --> D196
+D37   --> D197
+D38   --> D198
+D39   --> D199
+D40   --> D200
+D41   --> D201
+D42   --> D202
+D43   --> D203
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\bl' ----   Sat Apr 16 15:22:32 2022
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\bs' ----   Sat Apr 16 15:22:32 2022
+
+D10   --> D103
+D11   --> D104
+D12   --> D105
+D13   --> D106
+D14   --> D107
+D15   --> D108
+D16   --> D109
+D17   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\drl' ----   Sat Apr 16 15:22:32 2022
+
+D10   --> D111
+D11   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\ko' ----   Sat Apr 16 15:22:32 2022
+
+D10   --> D113
+D11   --> D114
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\l2' ----   Sat Apr 16 15:22:32 2022
+
+D10   --> D115
+D11   --> D116
+D12   --> D117
+D13   --> D118
+D14   --> D119
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\l3' ----   Sat Apr 16 15:22:33 2022
+
+D10   --> D120
+D11   --> D121
+D12   --> D122
+D13   --> D123
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\tl' ----   Sat Apr 16 15:22:33 2022
+
+D10   --> D124
+D11   --> D125
+D12   --> D126
+D13   --> D127
+D14   --> D128
+D15   --> D129
+D16   --> D130
+D17   --> D131
+D18   --> D132
+D19   --> D133
+D20   --> D134
+D21   --> D135
+D22   --> D136
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\to' ----   Sat Apr 16 15:22:33 2022
+
+D10   --> D137
+D11   --> D138
+D12   --> D139
+D13   --> D140
+D14   --> D141
+D15   --> D142
+D16   --> D143
+D17   --> D144
+D18   --> D145
+D19   --> D146
+D20   --> D147
+D21   --> D148
+D22   --> D149
+D23   --> D150
+D24   --> D151
+D25   --> D152
+D26   --> D153
+D27   --> D154
+D28   --> D155
+D29   --> D156
+D30   --> D157
+D31   --> D158
+D32   --> D159
+D33   --> D160
+D34   --> D161
+D35   --> D162
+D36   --> D163
+D37   --> D164
+D38   --> D165
+D39   --> D166
+D40   --> D167
+D41   --> D168
+D42   --> D169
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'D:\Will\Documents\GitHub\HV_BMS\Hardware\BMS_Slave\Project Outputs for BMS Slave V0.1\W339323ASF8 working gerber file\W339323ASF8 working gerber file\ts' ----   Sat Apr 16 15:22:33 2022
+
+D10   --> D170
+D11   --> D171
+D12   --> D172
+D13   --> D173
+D14   --> D174
+D15   --> D175
+D16   --> D176
+D17   --> D177
+D18   --> D178
+D19   --> D179
+D20   --> D180
+D21   --> D181
+D22   --> D182
+D23   --> D183
+D24   --> D184
+D25   --> D185
+D26   --> D186
+D27   --> D187
+D28   --> D188
+D29   --> D189
+D30   --> D190
+D31   --> D191
+D32   --> D192
+D33   --> D193
+D34   --> D194
+D35   --> D195
+D36   --> D196
+D37   --> D197
+D38   --> D198
+D39   --> D199
+D40   --> D200
+D41   --> D201
+D42   --> D202
+D43   --> D203
+-----------------------------------------------------------------
