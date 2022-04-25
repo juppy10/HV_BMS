@@ -34,6 +34,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "BMS.h"
 #include "LTC6811_2.h"
+#include "current_sense_ADC.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

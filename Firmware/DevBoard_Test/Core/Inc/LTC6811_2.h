@@ -63,6 +63,8 @@ Inputs---
 */
 //CURRENTLY READS ONE SEGMENTS VOLTAGE
 void LTC6811_rdcv(LTC6811_2_IC *ic);
+void LTC6811_rdcv_new(LTC6811_2_IC *ic);
+
 
 /* Writes the command and reads the raw cell voltage register data
 Inputs---
@@ -71,6 +73,8 @@ Inputs---
     data - Array of unpared cell voltages
 */
 void LTC6811_rdcllV(uint8_t reg, uint8_t *data);
+void LTC6811_rdcllV_new(uint8_t reg, uint8_t *data, uint8_t address);
+
 
 void LTC6811_rdADC(LTC6811_2_IC *ic);
 

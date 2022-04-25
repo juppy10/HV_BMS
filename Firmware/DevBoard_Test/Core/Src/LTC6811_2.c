@@ -188,7 +188,7 @@ void LTC6811_WRCFGA(LTC6811_2_IC ic){
 //Config_B
 void LTC6811_WRCFGB(LTC6811_2_IC ic){		//NOT REQUIRED FOR THE LTC6811
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY WRITE TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = 0x00;			//BROADCASTS CONFIG!!
 	cmd[1] = 0b00100100;
 
 	write_68(cmd, ic.CFGRB);
@@ -198,7 +198,7 @@ void LTC6811_WRCFGB(LTC6811_2_IC ic){		//NOT REQUIRED FOR THE LTC6811
 //Config_A
 int8_t LTC6811_RDCFGA(LTC6811_2_IC *ic){
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY READ TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = ic->address;
 	cmd[1] = 0X02;
 
 	if(read_68(cmd, ic->CFGR) == -1){
@@ -210,7 +210,7 @@ int8_t LTC6811_RDCFGA(LTC6811_2_IC *ic){
 //Config_B
 int8_t LTC6811_RDCFGB(LTC6811_2_IC *ic){		//NOT REQUIRED FOR THE LTC6811
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY READ TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = ic->address;			//CONFIGRES TO ONLY READ TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
 	cmd[1] = 0b00100110;
 
 	if(read_68(cmd, ic->CFGRB) == -1){
@@ -222,7 +222,7 @@ int8_t LTC6811_RDCFGB(LTC6811_2_IC *ic){		//NOT REQUIRED FOR THE LTC6811
 //Status_A
 int8_t LTC6811_RDSTATA(LTC6811_2_IC *ic){
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY WRITE TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = ic->address;
 	cmd[1] = 0X10;
 
 	if(read_68(cmd, ic->STAR) == -1){
@@ -234,7 +234,7 @@ int8_t LTC6811_RDSTATA(LTC6811_2_IC *ic){
 //Status_B
 int8_t LTC6811_RDSTATB(LTC6811_2_IC *ic){
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY WRITE TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = ic->address;
 	cmd[1] = 0b00010010;
 
 	if(read_68(cmd, ic->STBR) == -1){
@@ -246,7 +246,7 @@ int8_t LTC6811_RDSTATB(LTC6811_2_IC *ic){
 //Aux_D
 int8_t LTC6811_RDAUXD(LTC6811_2_IC *ic){
 	uint8_t cmd[2];
-	cmd[0] = 0x00;			//CONFIGRES TO ONLY WRITE TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = ic->address;
 	cmd[1] = 0x0F;
 
 	if(read_68(cmd, ic->AUXD) == -1){
@@ -258,7 +258,7 @@ int8_t LTC6811_RDAUXD(LTC6811_2_IC *ic){
 //Clear Status register groups
 void LTC6811_CLRSTAT(void){
 	uint8_t cmd[2];
-	cmd[0] = 0b00000111;			//CONFIGRES TO ONLY READ TO SPECIFIC ADDRESS -- CHECK BEFORE USE!!
+	cmd[0] = 0b00000111;			//BROADCASTS CLEAR
 	cmd[1] = 0b00010011;
 
 	cmd_68(cmd);
@@ -301,6 +301,48 @@ void LTC6811_rdcv(LTC6811_2_IC *ic){
 	free(cell_data);
 }
 
+/*Reads and parses the LTC6811 cell voltage registers.
+Inputs---
+	segmaSlave - Array of the parsed cell codes
+*/
+//CURRENTLY READS ONE SEGMENTS VOLTAGE
+void LTC6811_rdcv_new(LTC6811_2_IC *ic){
+	uint8_t *cell_data;
+	cell_data = (uint8_t *) malloc(15*sizeof(uint8_t));		//2 bytes per cell (max 12 cells)
+
+	//for(uint8_t i=0; i<3; i++){				//loop through each IC within a segment (required for address)
+	for (uint8_t cell_reg = 0; cell_reg < NUM_CV_REG; cell_reg++){	//loop through all cell regs
+		LTC6811_rdcllV_new(cell_reg, cell_data,ic->address);	//read cell voltages
+
+		for(int j = 0; j < 3; j++){
+			ic->cell_V[j+(3*cell_reg)] =  (((uint16_t)(cell_data[2*j+1]))<<8) | (cell_data[2*j]);
+
+		}
+
+			/*if(i==0){			//8R cells
+				for(int j = 0; j < 8; j++){
+					segma->cell_V[j] =  (((uint16_t)(cell_data[j+1]))<<8) | (cell_data[j]);
+				}
+			}
+			else if(i==1){		//12 cells
+				for(int j = 8; j < 20; j += 2){
+					segma->cell_V[j] =  (((uint16_t)(cell_data[j+1]))<<8) | (cell_data[j]);
+				}
+			}
+			else if(i==2){		//8L cells
+				for(int j = 20; j < 28; j += 2){
+					segma->cell_V[j] =  (((uint16_t)(cell_data[j+1]))<<8) | (cell_data[j]);
+				}
+			}*/
+	}
+	for(int jj=0;jj<4;jj++){						//adjust for only 8 cells
+			ic->cell_V[4+jj]=ic->cell_V[6+jj];
+	}
+	ic->cell_V[8]=0; ic->cell_V[9]=0;
+	//LTC6811_check_pec(total_ic,CELL,ic);			//WORRY ABOUT PEC LATER
+	free(cell_data);
+}
+
 /* Writes the command and reads the raw cell voltage register data 
 Inputs---
 	reg  - which cell voltage reg to read
@@ -334,12 +376,46 @@ void LTC6811_rdcllV(uint8_t reg, uint8_t *data){
 	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
 }
 
+/* Writes the command and reads the raw cell voltage register data
+Inputs---
+	reg  - which cell voltage reg to read
+	ic   - address of the IC to be read
+	data - Array of unpared cell voltages
+*/
+void LTC6811_rdcllV_new(uint8_t reg, uint8_t *data, uint8_t address){
+	uint8_t cmd[4];
+	uint16_t cmd_pec;
+	//cmd[0] = 0x00;					//changed to 0x00 from address for testing
+	cmd[0] = address;				//address of IC on segment PCB
+
+	if(reg==0){			//1: RDCVA
+		cmd[1] = 0x04;
+	}
+	else if(reg==1){ 	//2: RDCVB
+		cmd[1] = 0x06;
+	}
+	else if(reg==2){ 	//3: RDCVC
+		cmd[1] = 0x08;
+	}
+	else if(reg==3){ 	//4: RDCVD
+		cmd[1] = 0x0A;
+	}
+	else if(reg==4){ 	//4: RDCVE
+		cmd[1] = 0x09;
+	}
+
+	cmd_pec = LTC6811_pec15_calc(2, cmd);
+	cmd[2] = (uint8_t)(cmd_pec >> 8);
+	cmd[3] = (uint8_t)(cmd_pec);
+	SPI_Receive(&hspi1, cmd, 4, data, BYTES_IN_REG+2);
+}
+
 void LTC6811_rdADC(LTC6811_2_IC *ic){
 	uint8_t cmd[4];
 	uint16_t cmd_pec;
 	uint8_t data[8];
 
-	cmd[0] = 0x00;					//changed to 0x00 from address for testing
+	cmd[0] = 0b11010000;					//changed to 0b11010000 from address for testing
 
 	//read GPIO ADC 1,2
 	cmd[1] = 0x0C;					//RDAUXA

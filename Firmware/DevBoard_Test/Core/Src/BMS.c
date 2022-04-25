@@ -1,6 +1,6 @@
 #include <BMS.h>
 
-const uint16_t piecewise_SoC_OCV[][];
+//const uint16_t piecewise_SoC_OCV[][];
 
 HAL_StatusTypeDef SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *data, uint16_t size){
 	HAL_StatusTypeDef status;
@@ -23,7 +23,7 @@ HAL_StatusTypeDef SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *tx_buf, uint16_t
 
 void LTC6811_startup(LTC6811_2_IC *ic){
 	uint16_t cell_undervoltage, cell_overvoltage;
-	ic.num_Cells = 15;
+	ic->num_Cells = 15;
 	ic->CFGR[0] = CFGR0_DEFAULT;
 	ic->num_balanced_cells=0;
 	//set UV & OV limits
@@ -48,7 +48,34 @@ void LTC6811_startup(LTC6811_2_IC *ic){
 	LTC6811_rdcv(ic);
 }
 
-void get_init_SoC(ACCUMULATOR *acc){
+void LTC6811_startup_new(LTC6811_2_IC *ic){
+	uint16_t cell_undervoltage, cell_overvoltage;
+	ic->num_Cells = 8;
+	ic->CFGR[0] = CFGR0_SINGLEADC;
+	ic->num_balanced_cells=0;
+	//set UV & OV limits
+	cell_undervoltage = (CELL_UV/(16))-1;
+	cell_overvoltage = (CELL_OV/(16));
+	ic->CFGR[1] = (uint8_t)cell_undervoltage;
+	ic->CFGR[2] = (uint8_t)((cell_undervoltage>>8) | (cell_overvoltage << 4));
+	ic->CFGR[3] = (uint8_t)(cell_overvoltage>>4);
+
+	ic->CFGR[4] = CFGR4_DEFAULT;
+	ic->CFGR[5] = CFGR5_DEFAULT;
+
+	uint8_t cmd[]={0x00,0x01};
+
+	wakeup_sleep();
+	write_68(cmd, ic->CFGR);			//broadcast configuration to all ICs on bus
+
+	uint8_t MD=0x02, DCP=0x00, CH=0x00;
+
+	LTC6811_ADC_start(MD, DCP, CH);
+	delay_us(3000);						//allow ADC to finish conversion
+	LTC6811_rdcv_new(ic);
+}
+
+/*void get_init_SoC(ACCUMULATOR *acc){
 	//find the region in piecewise linear model
 	uint16_t avg_Cell_V = (acc->pack_V)/TOTAL_CELLS;
 	if(avg_Cell_V >= 40000){															//greater than 4V
@@ -60,13 +87,13 @@ void get_init_SoC(ACCUMULATOR *acc){
 	}else if(avg_Cell_V < 35000){														//less than 3.5V
 		acc->pack_SoC = avg_Cell_V*piecewise_SoC_OCV[3][0]*piecewise_SoC_OCV[3][1];
 	}
-}
+}*/
 
-void SoC_Update(ACCUMULATOR *acc){		//call me once every 100ms!
+/*void SoC_Update(ACCUMULATOR *acc){		//call me once every 100ms!
 	float current = get_current();		//get the pack current (in mA)
 	acc->coulomb_count_mAh -= current/SOC_UPDATE_TIME;
 	acc->pack_SoC = (coulomb_count / PACK_CAPACITY_mAh)*100;	//SoC as %
-}
+}*/
 
 void updateSegmentVoltages(LTC6811_2_IC *ic){
 	//uint8_t MD=0x10, DCP=0x01, CH=0x00;	//ADC mode, discharge permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
@@ -80,8 +107,20 @@ void updateSegmentVoltages(LTC6811_2_IC *ic){
 
 }
 
+void updateSegmentVoltages_new(LTC6811_2_IC *ic){
+	//uint8_t MD=0x10, DCP=0x01, CH=0x00;	//ADC mode, discharge permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
+	uint8_t MD=0x02, DCP=0x00, CH=0x00;		//ADC mode, discharge NOT permit and cell selection	-CHANGE LATER TO VARIABLE OR DEFINE
+
+	wakeup_idle();						//wakeup the isoSPI interface
+	LTC6811_ADC_start(MD, DCP, CH);		//start the ADC conversion for all cells - CHANGE THIS FUNCTION TO UPDATE ENTIRE ACCUMULATOR CELL VOLTAGE
+
+	delay_us(3000);						//allow 3ms to pass for ADC conversion to finish
+	LTC6811_rdcv_new(ic);				//read the cell voltages from registers and update the segment structure
+
+}
+
 void updateSegmentVoltages_And_Temp(LTC6811_2_IC *ic){
-	updateSegmentVoltages(ic);
+	updateSegmentVoltages_new(ic);
 
 	uint8_t MD=0x02, CHG=0x00;			//ADC mode, and ADC selection	-CHANGE LATER TO VARIABLE OR DEFINE
 
@@ -99,7 +138,7 @@ void TEST_dischargeCell(LTC6811_2_IC *ic){
 	} else ic->CFGR[4] = 0x00;
 	//uint8_t cmd[2]={((ic.address << 3) | 0x80), 0x01};		FOR USE WITH ADDRESSABLE ICS
 
-	uint8_t cmd[2]={0x00,0x01};		//write configA
+	uint8_t cmd[2]={0b11010000,0x01};		//write configA
 	write_68(cmd, ic->CFGR);
 }
 
@@ -129,22 +168,43 @@ uint8_t check_UV_OV_flags(LTC6811_2_IC *ic){
 
 }
 
+uint8_t check_UV_OV_flags_new(LTC6811_2_IC *ic){
+	LTC6811_RDSTATB(ic);	//read status B register
+
+	//check for either UV or OV
+	if(ic->num_Cells == 8){
+		if(ic->STBR[2] | (ic->STBR[3] & 0b11110000) | (ic->STBR[4] & 0b00001111)){
+			return 1;			//an overvoltage or undervoltage flag has been set by the BMS
+		} else if (ic->AUXD[4] & 0b00111111){
+			return 1;
+		} else return 0;
+	}else{
+		if(ic->STBR[2] | ic->STBR[3] | ic->STBR[4]){
+			return 1;			//an overvoltage or undervoltage flag has been set by the BMS
+		} else if (ic->AUXD[4] & 0b00111111){
+			return 1;
+		} else return 0;
+	}
+}
+
 void print_Cell_Voltages(LTC6811_2_IC *ic){
 	int str_len;
 	char cellV[18];
-	char cellT[18];
-	char *charBuf = "0";
-	for(int i=0; i<15;i++){
+	//char cellT[18];
+	//char *charBuf = "0";
+	for(int i=0; i<ic->num_Cells;i++){
 		str_len = snprintf(cellV, 6, "%d",ic->cell_V[i]);
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
 	}
-	for(int i=0; i<4;i++){
+	str_len = snprintf(cellV, 4, "%d",ic->UV_OV_Flag);
+	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);
+	/*for(int i=0; i<4;i++){
 		str_len = snprintf(cellT, 6, "%d",ic->cell_temp[i]);
 		for(uint8_t ii = str_len; ii<5 ; ii++){
 			HAL_UART_Transmit(&huart2, (uint8_t *)charBuf, 1, 100);
 		}
 		HAL_UART_Transmit(&huart2, (uint8_t *)cellT, str_len, 100);
-	}
+	}*/
 
 	str_len = sprintf(cellV, "\r\n");
 	HAL_UART_Transmit(&huart2, (uint8_t *)cellV, str_len, 100);

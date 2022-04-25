@@ -40,6 +40,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim11;
@@ -62,6 +64,7 @@ static void MX_SPI1_Init(void);
 static void MX_TIM14_Init(void);
 static void MX_TIM11_Init(void);
 static void MX_TIM12_Init(void);
+static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -78,39 +81,36 @@ ACCUMULATOR acc;
   */
 int main(void)
 {
-	/* USER CODE BEGIN 1 */
+  /* USER CODE BEGIN 1 */
 
-	char uart_buf[50];
-	int uart_buf_len;
+  /* USER CODE END 1 */
 
+  /* MCU Configuration--------------------------------------------------------*/
 
-	/* USER CODE END 1 */
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
 
-	/* MCU Configuration--------------------------------------------------------*/
+  /* USER CODE BEGIN Init */
 
-	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-	HAL_Init();
+  /* USER CODE END Init */
 
-	/* USER CODE BEGIN Init */
+  /* Configure the system clock */
+  SystemClock_Config();
 
-	/* USER CODE END Init */
+  /* USER CODE BEGIN SysInit */
 
-	/* Configure the system clock */
-	SystemClock_Config();
+  /* USER CODE END SysInit */
 
-	/* USER CODE BEGIN SysInit */
-
-	/* USER CODE END SysInit */
-
-	/* Initialize all configured peripherals */
-	MX_GPIO_Init();
-	MX_USART2_UART_Init();
-	MX_TIM13_Init();
-	MX_SPI1_Init();
-	MX_TIM14_Init();
-	MX_TIM11_Init();
-	MX_TIM12_Init();
-	/* USER CODE BEGIN 2 */
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_USART2_UART_Init();
+  MX_TIM13_Init();
+  MX_SPI1_Init();
+  MX_TIM14_Init();
+  MX_TIM11_Init();
+  MX_TIM12_Init();
+  MX_ADC1_Init();
+  /* USER CODE BEGIN 2 */
 	HAL_TIM_Base_Start(&htim11);
 	//HAL_TIM_Base_Start(&htim12);
 
@@ -127,10 +127,16 @@ int main(void)
 
 	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf2, 5, 100);*/
 
-	LTC6811_startup(&ic);
-	get_init_SoC(&acc);
+	/*ic.address = 0b11010000;
+	ic.num_Cells = 8;*/
+	ic.UV_OV_Flag = 0;
+	ic.num_Cells = 15;
+	//LTC6811_startup_new(&ic);
 
-	HAL_TIM_Base_Start_IT(&htim13);
+	LTC6811_startup(&ic);
+	//get_init_SoC(&acc);
+
+	//HAL_TIM_Base_Start_IT(&htim13);
 	HAL_TIM_Base_Start_IT(&htim14);
 
 	//TEST_dischargeCell(&ic);
@@ -198,6 +204,56 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_10;
+  sConfig.Rank = 1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -289,7 +345,7 @@ static void MX_TIM12_Init(void)
   htim12.Instance = TIM12;
   htim12.Init.Prescaler = 33600-1;
   htim12.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim12.Init.Period = 25000-1;
+  htim12.Init.Period = 12500-1;
   htim12.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim12.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim12) != HAL_OK)
@@ -325,7 +381,7 @@ static void MX_TIM13_Init(void)
   htim13.Instance = TIM13;
   htim13.Init.Prescaler = 8400-1;
   htim13.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim13.Init.Period = 5000-1;
+  htim13.Init.Period = 10000-1;
   htim13.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim13.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim13) != HAL_OK)
@@ -418,10 +474,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, SPI2_CS_Pin|CS2_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOC, SPI2_CS_Pin|CS2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -449,36 +505,21 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//0.5 second timer
 		//chargeMODE(&ic);
+		//TEST_dischargeCell(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		//updateSegmentVoltages(&ic);		//update segment structure cell voltages
-		updateSegmentVoltages_And_Temp(&ic);
+		//updateSegmentVoltages_new(&ic);
+		/*updateSegmentVoltages(&ic);		//update segment structure cell voltages
+		//updateSegmentVoltages_And_Temp(&ic);
 		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
 			//do something?????
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 0);
-
-			/*uint16_t cell_undervoltage, cell_overvoltage;
-			ic.CFGR[0] = CFGR0_DEFAULT;
-			ic.num_balanced_cells=0;
-			//set UV & OV limits
-			cell_undervoltage = (CELL_UV/(16))-1;
-			cell_overvoltage = (CELL_OV/(16));
-			ic.CFGR[1] = (uint8_t)cell_undervoltage;
-			ic.CFGR[2] = (uint8_t)((cell_undervoltage>>8) | (cell_overvoltage << 4));
-			ic.CFGR[3] = (uint8_t)(cell_overvoltage>>4);
-
-			ic.CFGR[4] = CFGR4_DEFAULT;
-			ic.CFGR[5] = CFGR5_DEFAULT;
-
-			uint8_t cmd[]={0x00,0x01};
-
-			wakeup_sleep();
-			write_68(cmd, ic.CFGR);			//broadcast configuration to all ICs on bus*/
-
-
-
-		}else //HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
-
-		print_Cell_Voltages(&ic);			//print over serial
+			ic.UV_OV_Flag = 1;
+		}else{
+			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
+			ic.UV_OV_Flag = 0;
+		}*/
+		update_Current(&acc);
+		//print_Cell_Voltages(&ic);			//print over serial
 	}
 	else if(htim == &htim12){				//CHECK THAT THIS IS THE CORRECT TIMER
 		if(ic.num_balanced_cells != -1){	//if balance timer has triggered and we are balancing cells, disable balance

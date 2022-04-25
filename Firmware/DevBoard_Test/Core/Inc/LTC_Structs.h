@@ -21,7 +21,7 @@
 
 //cell limits
 #define CELL_UV         30000    //under cell voltage limit (E-4 V)
-#define CELL_OV         42100    //over cell voltage limit (E-4 V)
+#define CELL_OV         41000    //over cell voltage limit (E-4 V)
 #define PACK_CAPACITY_mAh	3000 //pack capacity in mAh
 
 #define dV_BAL_THRES 			50		//maximum allowed delta voltage, 10mV
@@ -33,6 +33,7 @@
 #define CMD_LEN             12     //number of bytes in an single read/write command
 
 #define CFGR0_DEFAULT   0b11111100
+#define CFGR0_SINGLEADC 0b10000100
 #define CFGR4_DEFAULT   0x00
 #define CFGR5_DEFAULT   0x00
 
@@ -42,8 +43,8 @@ typedef struct{
 	uint16_t cell_temp[4];				//thermistor measurements (raw)
 	uint8_t num_Cells;
 	int8_t num_balanced_cells;
-	uint8_t core_state;               	//variable indicates IC state 0 - sleep, 1 - standby, 2 - refup, 3 - measure, 4 - extended balancing
-    uint8_t address;                  	//address of IC
+	uint8_t UV_OV_Flag;               	//variable indicates IC state 0 - sleep, 1 - standby, 2 - refup, 3 - measure, 4 - extended balancing
+    uint8_t address;                  	//address of IC (in CMD[0] structure)
     uint8_t CFGR[BYTES_IN_REG];        	//configuration register group data
     uint8_t CFGRB[BYTES_IN_REG];
     uint8_t STAR[BYTES_IN_REG];        	//status register A group data
@@ -54,6 +55,7 @@ typedef struct{
 typedef struct{
 	uint16_t pack_SoC;
 	uint16_t pack_V;
+	uint16_t pack_Current;
 	float coulomb_count_mAh;
 } ACCUMULATOR;
 

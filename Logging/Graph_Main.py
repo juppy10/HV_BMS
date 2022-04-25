@@ -23,7 +23,7 @@ count = 0
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 xs = []  # store trials here (n)
-yData = [ []*1 for i in range(15)]
+yData = [ []*1 for i in range(8)]
 ys = []  # store relative frequency here
 y1s =[]
 y2s =[]
@@ -38,19 +38,19 @@ def animate(i, xs, ys):
     # Aquire and parse data from serial port
     i+=0.1
     cells = []
-    cells = [0 for i in range(19)]
-    for j in range(19):
+    cells = [0 for i in range(8)]
+    for j in range(8):
         rawData = serialPort.read(5)
         cells[j] = rawData.decode('Ascii')
     endBits1 = serialPort.read(2)
 
     # Add x and y to lists
     xs.append(i)
-    for ii in range(15):
+    for ii in range(8):
         yData[ii].append(cells[ii])
     ax.clear()
 
-    for jj in range(15):
+    for jj in range(8):
         ax.plot(xs, yData[jj], label="Cell Voltage")
     plt.title('Cell Voltage')
     plt.ylabel('Voltage')
