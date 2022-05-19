@@ -34,13 +34,17 @@ uint8_t check_UV_OV_flags(LTC6811_2_IC *ic);
 
 uint8_t check_UV_OV_flags_new(LTC6811_2_IC *ic);
 
-void print_Cell_Voltages(LTC6811_2_IC *ic);
+uint8_t check_temp(LTC6811_2_IC *ic);
+
+void print_Cell_Voltages(LTC6811_2_IC *ic, ACCUMULATOR *acc);
 
 uint8_t balanceThres(LTC6811_2_IC *ic);
 
-void chargeMODE(LTC6811_2_IC *ic);
+void chargeMODE(LTC6811_2_IC *ic, ACCUMULATOR *acc);
 
 uint8_t need_balance(LTC6811_2_IC *ic);
+
+uint8_t need_balance_new(LTC6811_2_IC *ic);
 
 void insertion_sort(uint16_t cellArry[15][2], uint8_t numCells);
 

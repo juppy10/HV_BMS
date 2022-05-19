@@ -85,4 +85,9 @@ Inputs ----
 */
 uint16_t LTC6811_pec15_calc(uint8_t len, uint8_t *data);
 
+
+void LTC6811_MUTE();
+
+void LTC6811_UNMUTE();
+
 #endif /* LTC6811_2_H_ */

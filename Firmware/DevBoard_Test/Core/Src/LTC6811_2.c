@@ -136,7 +136,7 @@ void refup_state(LTC6811_2_IC *ic){
 	LTC6811_WRCFGA(*ic);
 }
 
-/* Start cell voltage ADC Conversion for ALL devices */
+//Start cell voltage ADC Conversion for ALL devices
 void LTC6811_ADC_start(uint8_t MD, uint8_t DCP, uint8_t CH){
 	uint8_t cmd[2];
 	uint8_t md_bits;
@@ -145,7 +145,7 @@ void LTC6811_ADC_start(uint8_t MD, uint8_t DCP, uint8_t CH){
 	cmd[0] = md_bits + 0x02;
 	md_bits = (MD & 0x01) << 7;
 	cmd[1] =  md_bits + 0x60 + (DCP<<4) + CH;
-	
+
 	cmd_68(cmd);
 }
 
@@ -335,10 +335,12 @@ void LTC6811_rdcv_new(LTC6811_2_IC *ic){
 				}
 			}*/
 	}
-	for(int jj=0;jj<4;jj++){						//adjust for only 8 cells
+	if(ic->num_Cells == 8){
+		for(int jj=0;jj<4;jj++){						//adjust for only 8 cells
 			ic->cell_V[4+jj]=ic->cell_V[6+jj];
+		}
+		ic->cell_V[8]=0; ic->cell_V[9]=0;
 	}
-	ic->cell_V[8]=0; ic->cell_V[9]=0;
 	//LTC6811_check_pec(total_ic,CELL,ic);			//WORRY ABOUT PEC LATER
 	free(cell_data);
 }
@@ -415,7 +417,7 @@ void LTC6811_rdADC(LTC6811_2_IC *ic){
 	uint16_t cmd_pec;
 	uint8_t data[8];
 
-	cmd[0] = 0b11010000;					//changed to 0b11010000 from address for testing
+	cmd[0] = ic->address;					//changed to 0b11010000 from address for testing
 
 	//read GPIO ADC 1,2
 	cmd[1] = 0x0C;					//RDAUXA
@@ -436,6 +438,17 @@ void LTC6811_rdADC(LTC6811_2_IC *ic){
 	ic->cell_temp[3] = (data[3] << 8) | data[2];
 
 }
+
+void LTC6811_MUTE(){
+	uint8_t cmd[2] = {0b00000000, 0b00101000};
+	cmd_68(cmd);
+}
+
+void LTC6811_UNMUTE(){
+	uint8_t cmd[2] = {0b00000000, 0b00101001};
+	cmd_68(cmd);
+}
+
 
 /*Calculates  and returns the CRC15 
 Inputs ----

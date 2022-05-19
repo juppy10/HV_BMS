@@ -6,6 +6,9 @@
  */
 #include "current_sense_ADC.h"
 
+extern ADC_HandleTypeDef hadc1;
+
+
 void update_Current(ACCUMULATOR *acc){				//TODO!!!!: write readADC function
 	int16_t packCurrent;
 	uint32_t ADC_sum=0;
@@ -15,12 +18,12 @@ void update_Current(ACCUMULATOR *acc){				//TODO!!!!: write readADC function
 		ADC_sum += HAL_ADC_GetValue(&hadc1)*ADC_SCALE_3V3;
 	}
 	//uint32_t tim_Val = __HAL_TIM_GetCounter(&htim13);
-	packCurrent = (ADC_sum/NUM_ADC_SAMPLES-2500)/0.04;
+	packCurrent = ((float) ADC_sum/NUM_ADC_SAMPLES-2500)*25;
 	if(abs(packCurrent)<min_Pack_Current) packCurrent=0;
-	int str_len;
+	/*int str_len;
 	char cell_I[18];
 	str_len = snprintf(cell_I, 8, "%d\r\n",packCurrent);
-	//HAL_UART_Transmit(&huart2, (int *)cell_I, str_len, 100);
+	HAL_UART_Transmit(&huart2, (int *)cell_I, str_len, 100);*/
 	acc->pack_Current = packCurrent;
 
 	/*int16_t high_I = 0, low_I = 0;
@@ -32,3 +35,4 @@ void update_Current(ACCUMULATOR *acc){				//TODO!!!!: write readADC function
 	}
 	return low_I;			//return current in mA*/
 }
+

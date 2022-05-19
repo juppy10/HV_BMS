@@ -112,7 +112,6 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Base_Start(&htim11);
-	//HAL_TIM_Base_Start(&htim12);
 
 	HAL_GPIO_WritePin(CS1_GPIO_Port, CS1_Pin, 1);
 	HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
@@ -127,22 +126,26 @@ int main(void)
 
 	HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf2, 5, 100);*/
 
-	/*ic.address = 0b11010000;
-	ic.num_Cells = 8;*/
+	//ic.address = 0b11010000;
+	//ic.num_Cells = 8;
 	ic.UV_OV_Flag = 0;
 	ic.num_Cells = 15;
+	ic.address = 0x00;
 	//LTC6811_startup_new(&ic);
 
 	LTC6811_startup(&ic);
 	//get_init_SoC(&acc);
 
-	//HAL_TIM_Base_Start_IT(&htim13);
+
 	HAL_TIM_Base_Start_IT(&htim14);
+	//HAL_TIM_Base_Start_IT(&htim13);
 
 	//TEST_dischargeCell(&ic);
 
 	//if (chargePin == 1){						//Balance charging enable
-		//HAL_TIM_Base_Start_IT(&htim13);
+		if(ic.UV_OV_Flag == 0){
+			HAL_TIM_Base_Start_IT(&htim13);
+		}
 	//
 	//}
 
@@ -381,7 +384,7 @@ static void MX_TIM13_Init(void)
   htim13.Instance = TIM13;
   htim13.Init.Prescaler = 8400-1;
   htim13.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim13.Init.Period = 10000-1;
+  htim13.Init.Period = 100000-1;
   htim13.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim13.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim13) != HAL_OK)
@@ -393,6 +396,7 @@ static void MX_TIM13_Init(void)
   /* USER CODE END TIM13_Init 2 */
 
 }
+
 
 /**
   * @brief TIM14 Initialization Function
@@ -504,24 +508,29 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim13){				//0.5 second timer
-		//chargeMODE(&ic);
+		//TEST_dischargeCell(&ic);
+		if(ic.UV_OV_Flag == 1){
+			HAL_TIM_Base_Stop_IT(&htim13);
+		}else{
+			chargeMODE(&ic,&acc);
+		}
 		//TEST_dischargeCell(&ic);
 	}else if(htim == &htim14){			//100ms timer
-		//updateSegmentVoltages_new(&ic);
-		/*updateSegmentVoltages(&ic);		//update segment structure cell voltages
-		//updateSegmentVoltages_And_Temp(&ic);
-		if(check_UV_OV_flags(&ic)){		//check for UV/OV conditions
+		//updateSegmentVoltages_new(&ic);	//update segment structure cell voltages
+		updateSegmentVoltages_And_Temp(&ic);
+		if(check_UV_OV_flags_new(&ic)){// || check_temp(&ic)){		//check for UV/OV conditions
 			//do something?????
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 0);
 			ic.UV_OV_Flag = 1;
 		}else{
 			HAL_GPIO_WritePin(CS2_GPIO_Port, CS2_Pin, 1);
 			ic.UV_OV_Flag = 0;
-		}*/
-		update_Current(&acc);
-		//print_Cell_Voltages(&ic);			//print over serial
+		}
+		//update_Current(&acc);
+		//SoC_Update(&acc);
+		print_Cell_Voltages(&ic, &acc);			//print over serial
 	}
-	else if(htim == &htim12){				//CHECK THAT THIS IS THE CORRECT TIMER
+	else if(htim == &htim12){
 		if(ic.num_balanced_cells != -1){	//if balance timer has triggered and we are balancing cells, disable balance
 			ic.CFGR[4] = 0x00;
 			ic.CFGR[5] = 0x00;
