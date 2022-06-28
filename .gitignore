@@ -1,8 +1,20 @@
+# Various Altium files
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
+__Previews
+*.PrjPcbStructure
+*.Dat
+*.REP 
+*.TLT
+*.LOG
+*.log
+*.htm
+*.$$$
+
+Project\ Logs
+
 History
 
-Project\ Outputs
-Project\ Logs
-Project\ Project Logs for HV_BMS
-Project\ __Previews
-*.SchDocPreview
-*.LOG
+exports/*
+!exports/manual
